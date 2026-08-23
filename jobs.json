@@ -323,13 +323,13 @@
     "sector": "Commercial",
     "level": "VP",
     "location": "Remote - US",
-    "salary": "$312K–$493K Annually",
+    "salary": "$312Kâ$493K Annually",
     "salaryMin": 312000,
     "salaryMax": 493600,
     "roleType": "Cybersecurity",
     "clearance": "None",
     "url": "https://job-boards.greenhouse.io/elastic/jobs/8083459",
-    "notes": "VP leading Elastic's threat research and security intelligence org — distributed remote US, well above Executive floor.",
+    "notes": "VP leading Elastic's threat research and security intelligence org â distributed remote US, well above Executive floor.",
     "posted": "2026-08-21",
     "expiresOn": "",
     "verifiedNote": "Verified 2026-08-21 via Greenhouse API: location United States, salary $312K-$493K, remote confirmed in posting body.",
@@ -345,7 +345,7 @@
       "domain": "Threat research skews more technical/offensive than her governance PM background",
       "remote": "Elastic is distributed-remote with no office requirement",
       "comp": "Floor $312K well above $225K Executive threshold",
-      "industry": "Commercial security platform — strong sector fit"
+      "industry": "Commercial security platform â strong sector fit"
     }
   },
   {
@@ -402,13 +402,13 @@
     "sector": "Commercial",
     "level": "Senior Director",
     "location": "Remote - US",
-    "salary": "$212K–$403K Annually",
+    "salary": "$212Kâ$403K Annually",
     "salaryMin": 212100,
     "salaryMax": 403200,
     "roleType": "Technology Delivery",
     "clearance": "None",
     "url": "https://job-boards.greenhouse.io/elastic/jobs/7954418",
-    "notes": "Sr Director bridging field technology and AI at Elastic — remote US, strong comp ceiling at higher band.",
+    "notes": "Sr Director bridging field technology and AI at Elastic â remote US, strong comp ceiling at higher band.",
     "posted": "2026-08-21",
     "expiresOn": "",
     "verifiedNote": "Verified 2026-08-21 via Greenhouse API: location United States, salary $212K-$403K across zones, remote confirmed in body.",
@@ -424,7 +424,7 @@
       "domain": "Field technology is customer-facing technical leadership, different from risk/governance focus",
       "remote": "Elastic distributed remote confirmed",
       "comp": "Mid-band ~$274K aligns; low band $212K is below threshold",
-      "industry": "Commercial SaaS/AI — industry shift from government background"
+      "industry": "Commercial SaaS/AI â industry shift from government background"
     }
   },
   {
@@ -481,13 +481,13 @@
     "sector": "Commercial / Federal",
     "level": "Principal",
     "location": "Remote - US",
-    "salary": "$245K–$260K Annually",
+    "salary": "$245Kâ$260K Annually",
     "salaryMin": 245000,
     "salaryMax": 260000,
     "roleType": "GRC / Risk",
     "clearance": "None",
     "url": "https://job-boards.greenhouse.io/tines/jobs/5993765004",
-    "notes": "Principal PM owning public sector compliance (FedRAMP, FISMA, StateRAMP) at Tines — security automation widely used in government. Near-perfect match for Tiffany's RMF and compliance program management expertise.",
+    "notes": "Principal PM owning public sector compliance (FedRAMP, FISMA, StateRAMP) at Tines â security automation widely used in government. Near-perfect match for Tiffany's RMF and compliance program management expertise.",
     "posted": "2026-08-21",
     "expiresOn": "",
     "verifiedNote": "Verified 2026-08-21 via Greenhouse API: location United States (Remote), salary $245K-$260K, remote confirmed in posting body.",
@@ -499,11 +499,11 @@
       "industry": 4
     },
     "fitNotes": {
-      "leadership": "Principal PM — senior IC leadership driving compliance programs",
+      "leadership": "Principal PM â senior IC leadership driving compliance programs",
       "domain": "Public sector compliance (FedRAMP, FISMA, RMF) is core to her expertise",
       "remote": "United States (Remote) explicitly stated by employer",
       "comp": "$245K-$260K well above $175K PM/RMF floor",
-      "industry": "Security automation for government — excellent alignment"
+      "industry": "Security automation for government â excellent alignment"
     }
   },
   {
@@ -656,7 +656,7 @@
     "roleType": "GRC / Risk",
     "clearance": "None",
     "url": "https://job-boards.greenhouse.io/figma/jobs/6015630004",
-    "notes": "Pooled GRC hiring post covering Compliance Management, Security Risk Management, Policy & Governance, GRC Platforms, and Customer Trust — employer explicitly states role can be held remotely in the United States — SOC 2, ISO 27001, FedRAMP, SOX ITGC, GDPR all listed",
+    "notes": "Pooled GRC hiring post covering Compliance Management, Security Risk Management, Policy & Governance, GRC Platforms, and Customer Trust â employer explicitly states role can be held remotely in the United States â SOC 2, ISO 27001, FedRAMP, SOX ITGC, GDPR all listed",
     "posted": "2026-08-21",
     "expiresOn": "",
     "verifiedNote": "Verified 2026-08-21: LIVE on Greenhouse, employer body states 'remotely in the United States', $153K-$296K published hub rate (remote 80-100%)",
@@ -668,10 +668,10 @@
       "industry": 4
     },
     "fitNotes": {
-      "leadership": "IC GRC practitioner scope — not division-level people management, but deep seniority match",
+      "leadership": "IC GRC practitioner scope â not division-level people management, but deep seniority match",
       "domain": "SOC 2, ISO 27001, FedRAMP, SOX ITGC, GDPR map almost exactly to her RMF and controls background",
       "remote": "Employer body explicitly states remotely in the United States",
-      "comp": "Hub rate $153K-$296K — remote 80-100%; upper end well above the floor",
+      "comp": "Hub rate $153K-$296K â remote 80-100%; upper end well above the floor",
       "industry": "Figma has federal clients making her FedRAMP background directly relevant"
     }
   },
@@ -690,7 +690,7 @@
     "roleType": "Program Management",
     "clearance": "None",
     "url": "https://job-boards.greenhouse.io/gofundme/jobs/7735983",
-    "notes": "Staff TPM owning security program delivery at a consumer fintech — #LI-REMOTE confirmed in posting — scope covers risk, compliance, and engineering delivery across the security organization",
+    "notes": "Staff TPM owning security program delivery at a consumer fintech â #LI-REMOTE confirmed in posting â scope covers risk, compliance, and engineering delivery across the security organization",
     "posted": "2026-08-21",
     "expiresOn": "",
     "verifiedNote": "Verified 2026-08-21: LIVE on Greenhouse, #LI-REMOTE tag confirmed, $150K-$225K band published",
@@ -702,7 +702,7 @@
       "industry": 3
     },
     "fitNotes": {
-      "leadership": "Staff IC role — program leadership scope without direct people management",
+      "leadership": "Staff IC role â program leadership scope without direct people management",
       "domain": "Security TPM covering risk and compliance delivery maps to her GRC background",
       "remote": "#LI-REMOTE confirmed in posting",
       "comp": "$150K-$225K is above the PM/RMF floor but below her executive-track ceiling",
@@ -800,48 +800,48 @@
     "priority": "Stretch"
   },
   {
-    "key": "mca-connect--microsoft-d365-senior-project-manager--remote-us",
+    "key": "confluent--staff-security-risk-compliance-pm--remote-us",
     "track": "PM / RMF",
-    "score": 68,
-    "title": "Microsoft D365 Senior Project Manager",
-    "company": "MCA Connect",
+    "score": 86,
+    "title": "Staff, Security Risk & Compliance PM (Access Management)",
+    "company": "Confluent",
     "sector": "Commercial",
-    "level": "Senior / Lead",
+    "level": "Staff / Principal",
     "location": "Remote - US",
-    "salary": "$130,000-$205,000 plus bonus",
-    "salaryMin": 130000,
-    "salaryMax": 205000,
-    "roleType": "Project Management",
+    "salary": "$222K-$261K + equity",
+    "salaryMin": 222000,
+    "salaryMax": 261000,
+    "roleType": "GRC / Risk",
     "clearance": "None",
-    "url": "https://builtin.com/job/d365-senior-project-manager/9852038",
-    "notes": "Stretch and a significant step down - senior project manager delivering individual D365 implementations, not portfolio or division leadership - listed only because it is verified remote and the band top clears the floor",
-    "posted": "2026-08-12",
+    "url": "https://jobs.ashbyhq.com/confluent/39143513-ad4c-41fb-86ed-b939a66e53d2",
+    "notes": "New addition - staff-level security risk and compliance PM focused on access management at a well-funded data streaming platform ($9B+ valuation); GRC ownership scope is strong; comp clears the PM/RMF 175K floor by $47K and includes equity",
+    "posted": "2026-08-23",
     "expiresOn": "",
-    "verifiedNote": "Read the Built In posting 2026-08-19: employer work model field reads Hiring Remotely in USA - Remote, and the body states Salary: 130,000-205,000 PLUS Supplemental Compensation Plan (Bonus). Job Posted 7 Days Ago.",
+    "verifiedNote": "Navigated to Ashby posting 2026-08-22: confirmed active posting, Remote US, $222,000-$261,000 + equity, full role description visible at Confluent",
     "fit": {
       "leadership": 3,
-      "domain": 3,
+      "domain": 5,
       "remote": 5,
-      "comp": 3,
-      "industry": 2
+      "comp": 5,
+      "industry": 3
     },
     "fitNotes": {
-      "leadership": "Senior Project Manager running client implementations - well below her current division lead scope.",
-      "domain": "Microsoft D365 ERP implementation delivery - a technology stack outside her background.",
-      "remote": "Employer work model field reads Hiring Remotely in USA - Remote and the body states a single national salary range.",
-      "comp": "Band 130,000-205,000 plus bonus. Only the top clears the 175K floor.",
-      "industry": "Microsoft consulting partner - an industry ramp with a specific ERP specialization."
+      "leadership": "Staff PM individual contributor - no direct reports, but high-scope ownership of the security risk and compliance program for access management. Step down from leading 159 employees.",
+      "domain": "Security risk and compliance PM with NIST, access management, and GRC depth - direct match to her federal controls and FISMA background applied to commercial SaaS.",
+      "remote": "Ashby posting confirmed Remote US with no hybrid or travel requirement.",
+      "comp": "$222K-$261K base plus equity - well above the 175K PM/RMF floor and competitive with the top of the current pool.",
+      "industry": "Commercial data infrastructure (Kafka/Flink ecosystem) - significant industry ramp from federal services but GRC content remains directly relevant."
     },
     "intel": {
-      "size": "Not determined",
-      "hq": "Denver, CO",
-      "remotePolicy": "Hiring Remotely in USA per the posting work model field",
-      "news": "Not determined",
+      "size": "~3,000 employees",
+      "hq": "Mountain View, CA",
+      "remotePolicy": "Remote US confirmed on Ashby posting",
+      "news": "Well-funded; major cloud-native data streaming provider; strong GRC and compliance program as company scales",
       "levelHistory": "Not determined"
     },
     "id": 25,
-    "postedDate": "2026-08-12",
-    "verified": "2026-08-19",
-    "priority": "Stretch"
+    "postedDate": "2026-08-23",
+    "verified": true,
+    "priority": "High"
   }
 ]
