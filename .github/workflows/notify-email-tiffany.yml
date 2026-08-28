@@ -1,7 +1,10 @@
 name: Notify Tiffany on job refresh
 
 # Fires when jobs.json changes (Tiffany's daily refresh commit),
-# and can be run by hand from the Actions tab. Sends from Arnold's Gmail via App Password.
+# and can be run by hand from the Actions tab.
+# Sends from Arnold's Gmail via App Password.
+# Requires repo secrets GMAIL_ADDRESS and GMAIL_APP_PASSWORD.
+
 on:
   push:
     paths:
@@ -27,41 +30,56 @@ jobs:
           RECIPIENTS = ["tiffany.t.taylor@gmail.com", "arbatiste@gmail.com"]
 
           jobs = json.load(open('jobs.json'))
-          high = [j for j in jobs if j.get('priority') == 'High']
-          med = [j for j in jobs if j.get('priority') == 'Medium']
-          stretch = [j for j in jobs if j.get('priority') == 'Stretch']
+          execs = [j for j in jobs if j.get('track') == 'Executive']
+          pms   = [j for j in jobs if j.get('track') == 'PM / RMF']
+
+          def bucket(rows, name):
+              return len([j for j in rows if j.get('priority') == name])
 
           def sector_count(name):
               return len([j for j in jobs if j.get('sector') == name])
 
-          today = datetime.date.today().strftime('%A, %B %-d, %Y')
-          subject = f"Tiffany's Executive IT Job Dashboard Refreshed - {today}"
+          def top_lines(rows, n):
+              out = []
+              for j in sorted(rows, key=lambda r: -r.get('score', 0))[:n]:
+                  out.append(
+                      "  [%s] %s at %s\n      %s | %s\n      %s"
+                      % (j.get('score'), j.get('title'), j.get('company'),
+                         j.get('level'), j.get('salary'), j.get('url'))
+                  )
+              return "\n".join(out) if out else "  (none)"
 
-          top = '\n'.join(
-              f"- {j.get('score')} pts -- {j.get('title')} @ {j.get('company')}\n"
-              f"    {j.get('level')} | {j.get('sector')} | {j.get('salary')}"
-              for j in high[:4]
-          )
+          today = datetime.date.today().isoformat()
+          subject = "Tiffany job refresh %s - %d verified roles (%d Executive, %d PM/RMF)" % (
+              today, len(jobs), len(execs), len(pms))
 
           body = (
               "Hi Tiffany,\n\n"
-              "Your executive IT job search dashboard was refreshed this morning.\n"
-              "Every role below is 100 percent remote, at Senior Director or VP level.\n\n"
-              "Today's Summary:\n"
-              f"- Total roles: {len(jobs)}\n"
-              f"- High fit: {len(high)}\n"
-              f"- Medium fit: {len(med)}\n"
-              f"- Stretch: {len(stretch)}\n\n"
-              "Sector mix:\n"
+              "Your job search dashboard was refreshed this morning. Every role below was\n"
+              "opened and read individually today - 100 percent remote and Maryland-eligible,\n"
+              "with pay verified against the track floor.\n\n"
+              "TODAY'S SUMMARY\n"
+              f"- Total verified roles: {len(jobs)}\n\n"
+              f"EXECUTIVE TRACK - Senior Director / VP and above, $225K+ floor: {len(execs)}\n"
+              f"- High fit {bucket(execs,'High')} | Medium {bucket(execs,'Medium')} | Stretch {bucket(execs,'Stretch')}\n\n"
+              f"PM / RMF TRACK - Senior / Lead and above, $175K+ floor: {len(pms)}\n"
+              f"- High fit {bucket(pms,'High')} | Medium {bucket(pms,'Medium')} | Stretch {bucket(pms,'Stretch')}\n"
+              "- Note: many PM / RMF roles are a step down in managed scope from your\n"
+              "  current division lead position. Where that is true the dashboard says so\n"
+              "  plainly in the role notes - read those before applying.\n\n"
+              "SECTOR MIX\n"
               f"- Commercial IT: {sector_count('Commercial')}\n"
               f"- Healthcare IT: {sector_count('Healthcare')}\n"
               f"- State Government IT: {sector_count('State Gov')}\n"
               f"- Defense (non-NSA): {sector_count('Defense')}\n\n"
-              f"Top Opportunities:\n{top}\n\n"
+              "TOP EXECUTIVE OPPORTUNITIES\n"
+              f"{top_lines(execs, 4)}\n\n"
+              "TOP PM / RMF OPPORTUNITIES\n"
+              f"{top_lines(pms, 4)}\n\n"
               "View Dashboard: https://skillzstacking2023.github.io/tiffany-job-search/\n\n"
               "The dashboard has three tabs - Opportunities, Pipeline and Analytics.\n"
-              "Open any card's fit breakdown to see exactly why it scored what it did,\n"
-              "and use the stage buttons to track applications through to offer.\n\n"
+              "Use the track filter to switch between Executive and PM / RMF, and the\n"
+              "stage buttons to track applications through to offer.\n\n"
               "Target 3-5 tailored applications per week at this level. Depth beats volume.\n\n"
               "-- Automated notifier"
           )
@@ -69,7 +87,9 @@ jobs:
           gmail_addr = os.environ.get('GMAIL_ADDRESS')
           app_pw = os.environ.get('GMAIL_APP_PASSWORD')
           if not gmail_addr or not app_pw:
-              raise SystemExit("Missing GMAIL_ADDRESS or GMAIL_APP_PASSWORD repo secret.")
+              raise SystemExit(
+                  "Missing GMAIL_ADDRESS or GMAIL_APP_PASSWORD repo secret. "
+                  "Add both at Settings > Secrets and variables > Actions in this repo.")
           app_pw = "".join(ch for ch in app_pw if ch.isalnum() and ord(ch) < 128)
           gmail_addr = gmail_addr.strip()
 
@@ -83,5 +103,5 @@ jobs:
               s.starttls(context=ctx)
               s.login(gmail_addr, app_pw)
               s.send_message(msg, from_addr=gmail_addr, to_addrs=RECIPIENTS)
-          print("Email sent from", gmail_addr, "to", ", ".join(RECIPIENTS))
+          print("Sent to", RECIPIENTS)
           PY
