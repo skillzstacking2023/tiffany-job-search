@@ -108,12 +108,12 @@
     "priority": "High",
     "clearance": "None",
     "url": "https://builtin.com/job/vice-president-information-security-manufacturing-plant-security-product-security-application-security/10809105",
-    "notes": "Global security strategy across OT/ICS plant security, connected medical device security and application security - FDA medical device cybersecurity compliance is a regulated-controls problem close to her assessment background - expect regular global travel",
+    "notes": "Global security strategy across OT/ICS plant security, connected medical device security and application security - FDA medical device cybersecurity compliance is a regulated-controls problem close to her assessment background - posting requires domestic and international travel up to 30 percent",
     "posted": "2026-08-22",
     "postedDate": "2026-08-22",
     "expiresOn": "",
-    "verified": "2026-09-07",
-    "lastVerified": "2026-09-07",
+    "verified": "2026-09-09",
+    "lastVerified": "2026-09-09",
     "verifiedNote": "Built In posting opened 2026-09-07 and still accepting applications; body states the role 'will be a remote, with regular travel required to Danaher operating company and manufacturing locations globally'; posted pay 250K-350K annually; Built In showed 'Job Posted 16 Days Ago'",
     "fit": {
       "leadership": 5,
@@ -125,7 +125,7 @@
     "fitNotes": {
       "leadership": "Corporate VP owning three security functions across a global manufacturer",
       "domain": "Security strategy and regulated compliance overlap strongly; OT/ICS and product security are new technical ground",
-      "remote": "Posting states the role will be remote with regular travel to operating company and manufacturing sites globally",
+      "remote": "Posting states the role is part of an organization located in Washington DC and 'will be a remote' role with regular travel required to operating company and manufacturing locations globally, up to 30 percent of the time",
       "comp": "Posted band of $250,000-$350,000 is above the track floor",
       "industry": "Healthtech manufacturing is adjacent to her federal services background"
     },
@@ -204,8 +204,8 @@
     "posted": "2026-05-13",
     "postedDate": "2026-05-13",
     "expiresOn": "",
-    "verified": "2026-09-07",
-    "lastVerified": "2026-09-07",
+    "verified": "2026-09-09",
+    "lastVerified": "2026-09-09",
     "verifiedNote": "Req confirmed live on the Ashby board index for sardine on 2026-09-07; posting is flagged remote with location 'United States'; published base range $235,000-$270,000; published 2026-05-13",
     "fit": {
       "leadership": 5,
@@ -217,8 +217,8 @@
     "fitNotes": {
       "leadership": "Deputy CISO with direct succession scope, though over a smaller organization",
       "domain": "Security program ownership, risk and compliance - a direct domain match",
-      "remote": "Ashby board record marks the posting remote with location 'United States'; no office requirement stated",
-      "comp": "Published range $235,000-$270,000 plus equity, above the track floor",
+      "remote": "Posting states 'Location: Remote, Bay Area, United States' and describes a remote-first, work-from-anywhere culture; anticipated quarterly meetings at the Berkeley CA office and travel roughly every 1-2 months, primarily North America",
+      "comp": "Posting page publishes an estimated base range of $235K-$270K plus equity, above the track floor",
       "industry": "Fraud and risk infrastructure is a new vertical"
     },
     "intel": {
@@ -231,6 +231,52 @@
   },
   {
     "id": 6,
+    "key": "tidal-financial-group--vp-it-and-cybersecurity--remote-us",
+    "track": "Executive",
+    "score": 84,
+    "title": "VP of IT and Cybersecurity",
+    "company": "Tidal Financial Group",
+    "sector": "Commercial",
+    "level": "VP",
+    "location": "Remote - US",
+    "salary": "Not disclosed - est. $230K-$310K base",
+    "salaryMin": 230000,
+    "salaryMax": 310000,
+    "roleType": "IT Leadership",
+    "priority": "Medium",
+    "clearance": "None",
+    "url": "https://builtin.com/job/vp-it-and-cybersecurity/11008198",
+    "notes": "Owns enterprise IT and cybersecurity together - strategy, teams, budgets, service delivery, infrastructure reliability, security governance, incident response, compliance and audits, vendor relationships and operational resilience - close match to her combined IT services and cyber risk background - board and executive reporting is explicit in the posting - no salary band is published, so comp must be established in screening",
+    "posted": "2026-09-03",
+    "postedDate": "2026-09-03",
+    "expiresOn": "",
+    "verified": "2026-09-09",
+    "lastVerified": "2026-09-09",
+    "verifiedNote": "Opened the Built In posting 2026-09-09: live, header reads 'Hiring Remotely in United States' with work model 'Remote', level shown as Expert/Leader, posted 6 days ago; no compensation figures appear anywhere on the posting",
+    "fit": {
+      "leadership": 5,
+      "domain": 5,
+      "remote": 5,
+      "comp": 3,
+      "industry": 3
+    },
+    "fitNotes": {
+      "leadership": "VP scope over both IT and cybersecurity functions, advising executives and boards on technology risk, investments and risk acceptance",
+      "domain": "Security governance, compliance, audits, incident response and vendor management line up directly with her cyber risk and IT services record",
+      "remote": "Posting header states 'Hiring Remotely in United States' and the work model field reads 'Remote'; no office attendance requirement appears in the posting",
+      "comp": "Posting does not state a salary range - the figure shown is an unverified market estimate for a VP of IT and Cybersecurity in financial services and must be confirmed with the employer",
+      "industry": "ETF and fund services fintech - a commercial financial services ramp rather than a direct extension of her current sector"
+    },
+    "intel": {
+      "size": "Not determined",
+      "hq": "Not determined - posting notes offices in New York, Chicago, Milwaukee, West Palm and Detroit",
+      "remotePolicy": "Posting advertises the role as remote within the United States",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
+  },
+  {
+    "id": 7,
     "key": "gitlab--senior-director-internal-audit--remote-us",
     "track": "Executive",
     "score": 80,
@@ -295,8 +341,8 @@
     "posted": "2026-08-07",
     "postedDate": "2026-08-07",
     "expiresOn": "",
-    "verified": "2026-09-07",
-    "lastVerified": "2026-09-07",
+    "verified": "2026-09-09",
+    "lastVerified": "2026-09-09",
     "verifiedNote": "Built In posting opened 2026-09-07 and still accepting applications; body states 'May require as-needed travel (0-20%). Location: Remote US (east coast preference). Relocation assistance is NOT provided'; body states the range for a position based in North Carolina is $167,500.00-$278,000.00; Built In showed 'Job Posted One Month Ago'",
     "fit": {
       "leadership": 4,
@@ -308,7 +354,7 @@
     "fitNotes": {
       "leadership": "Senior Director level matches the track, though the posting does not state the size of the team or portfolio",
       "domain": "Risk and compliance program leadership overlaps her NIST RMF and controls background, but the AI-specific subject matter is adjacent rather than core",
-      "remote": "Posting states 'Location: Remote US (east coast preference)' with as-needed travel of 0-20 percent, and Maryland is East Coast",
+      "remote": "Posting states 'Location: Remote US (east coast preference). Relocation assistance is NOT provided.' - Maryland sits in the preferred east coast band",
       "comp": "Posting publishes $167,500-$278,000 for a North Carolina base; the top of the band clears the track floor but the Maryland-specific figure is not stated",
       "industry": "Life sciences and diagnostics is a regulated environment that rewards her audit and controls experience"
     },
@@ -319,7 +365,53 @@
       "news": "Not determined",
       "levelHistory": "Posting was marked as reposted"
     },
-    "id": 7
+    "id": 8
+  },
+  {
+    "id": 9,
+    "key": "capital-one--sr-director-technical-program-management--remote-us",
+    "track": "Executive",
+    "score": 78,
+    "title": "Sr. Director, Technical Program Management (Remote-Eligible)",
+    "company": "Capital One",
+    "sector": "Commercial",
+    "level": "Senior Director",
+    "location": "Remote - US",
+    "salary": "$245,100-$279,800 base (remote, regardless of location)",
+    "salaryMin": 245100,
+    "salaryMax": 279800,
+    "roleType": "Program Management",
+    "priority": "Medium",
+    "clearance": "None",
+    "url": "https://builtin.com/job/sr-director-technical-program-management-remote-eligible/10915371",
+    "notes": "Senior Director running technical program management for Business Cards and Payments, including integrating the Brex acquisition and standing up a TPM practice - strong level and comp match and a clean remote band, but the work is product and platform delivery rather than cyber risk, so it is a domain pivot more than a continuation",
+    "posted": "2026-08-28",
+    "postedDate": "2026-08-28",
+    "expiresOn": "",
+    "verified": "2026-09-09",
+    "lastVerified": "2026-09-09",
+    "verifiedNote": "Opened the Built In posting 2026-09-09: live, posted 12 days ago, body states 'Capital One is open to hiring a Remote Employee for this opportunity' and the pay table lists a distinct 'Remote (Regardless of Location)' band of $245,100-$279,800",
+    "fit": {
+      "leadership": 5,
+      "domain": 3,
+      "remote": 5,
+      "comp": 5,
+      "industry": 3
+    },
+    "fitNotes": {
+      "leadership": "Senior Director scope - mentors and develops TPM leaders, establishes delivery accountability and drives execution across product, engineering, design and data science",
+      "domain": "Technical program management over payments platforms and an acquisition integration - her program management and delivery record transfers, her cyber risk and RMF depth is not the focus here",
+      "remote": "Body states 'Capital One is open to hiring a Remote Employee for this opportunity' and the pay table carries a separate remote-regardless-of-location band",
+      "comp": "Published remote band $245,100-$279,800, above the track floor; the San Francisco band is higher at $294,100-$335,700 but does not apply from Maryland",
+      "industry": "Large consumer fintech - adjacent to her regulated-industry experience but a different operating model"
+    },
+    "intel": {
+      "size": "Not determined",
+      "hq": "McLean, Virginia",
+      "remotePolicy": "Posting explicitly offers remote employment for this requisition",
+      "news": "Posting references integrating the Brex acquisition into Business Cards and Payments",
+      "levelHistory": "Not determined"
+    }
   },
   {
     "key": "drata--field-ciso--remote-us",
@@ -365,10 +457,10 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 8
+    "id": 10
   },
   {
-    "id": 9,
+    "id": 11,
     "key": "reddit--senior-director-product-and-finance-technology--remote-us",
     "track": "Executive",
     "score": 76,
@@ -414,7 +506,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 12,
     "key": "mercury--head-of-revenue-technology-and-architecture--remote-us",
     "track": "Executive",
     "score": 72,
@@ -460,7 +552,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 13,
     "key": "confluent--staff-security-risk-compliance-pm--remote-us",
     "track": "PM / RMF",
     "score": 90,
@@ -506,7 +598,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 14,
     "key": "vanta--lead-product-grc-subject-matter-expert--remote-us",
     "track": "PM / RMF",
     "score": 86,
@@ -552,7 +644,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 15,
     "key": "openai--senior-technical-program-manager-security--remote-us",
     "track": "PM / RMF",
     "score": 85,
@@ -598,7 +690,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 16,
     "key": "instacart--director-it-internal-audit--remote-us",
     "track": "PM / RMF",
     "score": 84,
@@ -644,7 +736,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 17,
     "key": "onebrief--senior-program-architect-governance-risk-and-compliance--remote-us",
     "track": "PM / RMF",
     "score": 84,
@@ -690,7 +782,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 18,
     "key": "coinbase--manager-grc--remote-us",
     "track": "PM / RMF",
     "score": 83,
@@ -736,7 +828,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 19,
     "key": "zscaler--staff-technical-program-manager-government-authorizations--remote-us",
     "track": "PM / RMF",
     "score": 83,
@@ -825,10 +917,10 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 18
+    "id": 20
   },
   {
-    "id": 19,
+    "id": 21,
     "key": "gitlab--senior-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 80,
@@ -874,7 +966,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 22,
     "key": "gitlab--senior-program-manager-enterprise-technology-and-ai--remote-us",
     "track": "PM / RMF",
     "score": 79,
@@ -920,7 +1012,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 23,
     "key": "abnormal-security--senior-security-engineer-fedramp--remote-us",
     "track": "PM / RMF",
     "score": 78,
@@ -966,7 +1058,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 24,
     "key": "reddit--staff-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 78,
@@ -1012,7 +1104,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 25,
     "key": "affirm--staff-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 77,
@@ -1058,7 +1150,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 26,
     "key": "reddit--principal-technical-program-manager-performance--remote-us",
     "track": "PM / RMF",
     "score": 76,
@@ -1104,7 +1196,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 27,
     "key": "gitlab--manager-it-sox-pmo--remote-us",
     "track": "PM / RMF",
     "score": 76,
@@ -1150,7 +1242,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 28,
     "key": "coinbase--internal-audit-it-manager--remote-us",
     "track": "PM / RMF",
     "score": 75,
@@ -1196,7 +1288,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 29,
     "key": "sardine--security-compliance-manager--remote-us",
     "track": "PM / RMF",
     "score": 74,
@@ -1242,7 +1334,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 30,
     "key": "coinbase--staff-it-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 73,
@@ -1331,6 +1423,6 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 29
+    "id": 31
   }
 ]
