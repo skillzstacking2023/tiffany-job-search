@@ -185,6 +185,23 @@ h1{font-size:22px}
 .wntitle{font-size:13.5px;font-weight:700}
 .wnbody{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.5}
 .wndate{font-size:11px;color:var(--muted);margin-top:3px;opacity:.7}
+
+/* card-footer-layout-v2 (2026-09-10): the verified badge was inserted into .linkrow,
+   a flex row, where display:inline-block blockifies and default align-items:stretch
+   grew it to the tallest sibling - producing an oversized green block. The nowrap
+   badge also squeezed .expand and a.apply until their labels wrapped to three lines.
+   Fixed by laying .actions out as an explicit grid: badge on its own row, the two
+   buttons side by side beneath it. */
+.actions{display:grid;grid-template-columns:1fr auto;grid-template-areas:"vb vb" "ex ap";gap:8px 10px;align-items:center}
+.linkrow{display:contents}
+.job .verified-badge-v1{grid-area:vb;justify-self:start;margin:0 !important}
+.expand{grid-area:ex;justify-self:start;white-space:nowrap}
+.job a.apply{grid-area:ap;justify-self:end;white-space:nowrap;text-align:center}
+.stagebar{gap:5px}
+@media(max-width:400px){
+  .actions{grid-template-columns:1fr;grid-template-areas:"vb" "ex" "ap"}
+  .expand,.job a.apply{justify-self:stretch;text-align:center}
+}
 </style>
 </head>
 <body>
