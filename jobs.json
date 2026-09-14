@@ -20,8 +20,8 @@
     "posted": "2026-08-12",
     "postedDate": "2026-08-12",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index with location United States - Remote and a published band of 282,000 to 322,000; req updated 2026-09-10",
     "fit": {
       "leadership": 5,
@@ -46,6 +46,52 @@
     }
   },
   {
+    "key": "r1-rcm--vp-security-technology--remote-us",
+    "track": "Executive",
+    "score": 90,
+    "title": "VP, Security Technology (Deputy CISO)",
+    "company": "R1 RCM",
+    "sector": "Healthcare",
+    "level": "VP",
+    "location": "Remote - US",
+    "salary": "$220,000-$311,000 annually",
+    "salaryMin": 220000,
+    "salaryMax": 311000,
+    "roleType": "Cybersecurity",
+    "priority": "High",
+    "clearance": "None",
+    "url": "https://builtin.com/job/vp-security-technology/11137095",
+    "notes": "Deputy CISO title with enterprise scope - security architecture, engineering, IAM, cloud security, threat and exposure management, incident preparedness - Healthcare revenue cycle technology, so the regulated-environment framing maps well - Presents security risk and performance metrics to executives, which is the reporting cadence she already runs - Newly posted, apply early",
+    "posted": "2026-09-11",
+    "postedDate": "2026-09-11",
+    "expiresOn": "",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
+    "verifiedNote": "Opened the posting 2026-09-14. Employer-supplied work location reads Remote, hiring remotely in USA. Published band 220K-311K annually. Title and body confirm VP level with Deputy CISO scope. Listed as posted 3 days ago, which resolves to 2026-09-11. No close date published.",
+    "fit": {
+      "leadership": 5,
+      "domain": 5,
+      "remote": 5,
+      "comp": 5,
+      "industry": 4
+    },
+    "fitNotes": {
+      "leadership": "Deputy CISO over a multi-team security organization with budget ownership and executive and board-facing reporting - a lateral-to-up move from division leadership.",
+      "domain": "Direct overlap on security risk management, compliance, IAM and incident preparedness; her CISSP and RMF assessment background line up with the architecture and controls scope.",
+      "remote": "Posting lists the work location as Remote, hiring remotely in USA, with no stated office-day requirement.",
+      "comp": "Published band of 220K-311K clears the track floor with room at the top.",
+      "industry": "Healthcare revenue cycle rather than federal services - the regulatory vocabulary differs (HIPAA, HITRUST) but the control discipline transfers."
+    },
+    "intel": {
+      "size": "Not determined",
+      "hq": "Not determined",
+      "remotePolicy": "Posting states remote, hiring remotely in USA",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    },
+    "id": 2
+  },
+  {
     "key": "attain-finance--svp-chief-information-security-officer--remote-us",
     "track": "Executive",
     "score": 89,
@@ -65,8 +111,8 @@
     "posted": "2026-09-10",
     "postedDate": "2026-09-10",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Opened the Built In posting and read it as rendered: work model listed as Remote, hiring remotely in United States, with the base salary range 250,000 to 325,000 USD stated in the posting body; posted yesterday",
     "fit": {
       "leadership": 5,
@@ -89,10 +135,10 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 2
+    "id": 3
   },
   {
-    "id": 3,
+    "id": 4,
     "key": "danaher--vice-president-information-security--remote-us",
     "track": "Executive",
     "score": 88,
@@ -112,8 +158,8 @@
     "posted": "2026-08-22",
     "postedDate": "2026-08-22",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Opened the Built In posting and read it as rendered: listed Remote, hiring remotely in USA, 250K-350K annually, posted 20 days ago",
     "fit": {
       "leadership": 5,
@@ -138,7 +184,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "key": "affirm-senior-director-enterprise-risk-strategy",
     "track": "Executive",
     "score": 88,
@@ -158,8 +204,8 @@
     "posted": "2026-06-10",
     "postedDate": "2026-06-10",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote US; read both published bands and took the all-other-US band that applies to Maryland",
     "fit": {
       "leadership": 5,
@@ -184,6 +230,52 @@
     }
   },
   {
+    "key": "guild-mortgage--vp-chief-information-security-officer--remote-us",
+    "track": "Executive",
+    "score": 86,
+    "title": "VP, Chief Information Security Officer",
+    "company": "Guild Mortgage",
+    "sector": "Commercial",
+    "level": "VP",
+    "location": "Remote - US",
+    "salary": "$197,000-$288,000 annually",
+    "salaryMin": 197000,
+    "salaryMax": 288000,
+    "roleType": "Cybersecurity",
+    "priority": "High",
+    "clearance": "None",
+    "url": "https://builtin.com/job/vp-chief-information-security-officer/11139709",
+    "notes": "A true CISO seat - establishes and leads the enterprise information security program end to end - Advises executives and the Board, engages regulators and auditors, manages distributed security teams - Strong match for her policy, compliance and third-party risk experience - Band starts at 197K, so the offer would need to land in the upper half to clear the target floor",
+    "posted": "2026-09-11",
+    "postedDate": "2026-09-11",
+    "expiresOn": "",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
+    "verifiedNote": "Opened the posting 2026-09-14. Employer-supplied work location reads Remote, hiring remotely in United States. Published band 197K-288K annually. Body confirms VP and CISO scope with board-level reporting. Listed as posted 3 days ago, which resolves to 2026-09-11. No close date published.",
+    "fit": {
+      "leadership": 5,
+      "domain": 5,
+      "remote": 5,
+      "comp": 4,
+      "industry": 3
+    },
+    "fitNotes": {
+      "leadership": "Owns the enterprise security program and advises the Board - a genuine step up in title and organizational authority.",
+      "domain": "Security strategy, architecture, policy, compliance, risk management, third-party partners and security operations all sit inside her current remit.",
+      "remote": "Posting lists the work location as Remote, hiring remotely in United States, with no stated office-day requirement.",
+      "comp": "Band top of 288K clears the floor, but the 197K bottom means negotiation matters - the band is wide.",
+      "industry": "Mortgage lending is a new vertical; the regulator and audit engagement pattern is familiar but the business model is not."
+    },
+    "intel": {
+      "size": "Not determined",
+      "hq": "Not determined",
+      "remotePolicy": "Posting states remote, hiring remotely in United States",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    },
+    "id": 6
+  },
+  {
     "key": "kroll--senior-director-cyber-strategy-and-risk-advisory--remote-us",
     "track": "Executive",
     "score": 85,
@@ -203,8 +295,8 @@
     "posted": "2026-09-04",
     "postedDate": "2026-09-04",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Opened the Built In posting and read it as rendered: carries an LI-Remote tag in the posting body, listed as Remote, hiring remotely in United States, with the text stating the current salary range for this position is 200,000 to 250,000; reposted 7 days ago",
     "fit": {
       "leadership": 4,
@@ -227,10 +319,10 @@
       "news": "Not determined",
       "levelHistory": "Posting was reposted rather than newly created, which can indicate an earlier search that did not close"
     },
-    "id": 5
+    "id": 7
   },
   {
-    "id": 6,
+    "id": 8,
     "key": "tidal-financial-group--vp-it-and-cybersecurity--remote-us",
     "track": "Executive",
     "score": 84,
@@ -250,8 +342,8 @@
     "posted": "2026-09-03",
     "postedDate": "2026-09-03",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Opened the Built In posting and read it as rendered: listed Remote, hiring remotely in United States, posted 8 days ago; no salary band is published anywhere on the posting",
     "fit": {
       "leadership": 5,
@@ -295,8 +387,8 @@
     "posted": "2026-09-01",
     "postedDate": "2026-09-01",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Opened the Built In posting and read it as rendered: listed as Remote, hiring remotely in United States, with 250,000 to 350,000 USD stated in the posting body; posted 10 days ago",
     "fit": {
       "leadership": 5,
@@ -319,10 +411,10 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 7
+    "id": 9
   },
   {
-    "id": 8,
+    "id": 10,
     "key": "capital-one--sr-director-technical-program-management--remote-us",
     "track": "Executive",
     "score": 78,
@@ -342,8 +434,8 @@
     "posted": "2026-08-28",
     "postedDate": "2026-08-28",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Opened the Built In posting and read it as rendered: posting states Capital One is open to hiring a Remote Employee for this opportunity, with a Remote regardless of location band of 245,100 to 279,800",
     "fit": {
       "leadership": 5,
@@ -387,8 +479,8 @@
     "posted": "2026-07-23",
     "postedDate": "2026-07-23",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Ashby job board feed with isRemote true and location Remote - US; band of 210,000 to 350,000 read from the description",
     "fit": {
       "leadership": 4,
@@ -411,10 +503,10 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 9
+    "id": 11
   },
   {
-    "id": 10,
+    "id": 12,
     "key": "reddit--senior-director-product-and-finance-technology--remote-us",
     "track": "Executive",
     "score": 76,
@@ -434,8 +526,8 @@
     "posted": "2026-06-24",
     "postedDate": "2026-06-24",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - United States; req updated 2026-09-10",
     "fit": {
       "leadership": 5,
@@ -460,7 +552,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 13,
     "key": "mercury--head-of-revenue-technology-and-architecture--remote-us",
     "track": "Executive",
     "score": 72,
@@ -480,8 +572,8 @@
     "posted": "2026-08-03",
     "postedDate": "2026-08-03",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index; employer location field reads San Francisco, New York, Portland, or Remote within United States",
     "fit": {
       "leadership": 4,
@@ -506,7 +598,53 @@
     }
   },
   {
-    "id": 12,
+    "key": "vida-health--senior-director-engineering-operations-and-security--remote-us",
+    "track": "Executive",
+    "score": 68,
+    "title": "Senior Director, Engineering Operations & Security",
+    "company": "Vida Health",
+    "sector": "Healthcare",
+    "level": "Senior Director",
+    "location": "Remote - US",
+    "salary": "$240,000-$250,000 annually",
+    "salaryMin": 240000,
+    "salaryMax": 250000,
+    "roleType": "IT Leadership",
+    "priority": "Stretch",
+    "clearance": "None",
+    "url": "https://builtin.com/job/senior-director-engineering-operations-security/11118441",
+    "notes": "Honest read - this one leans engineering, not program leadership - Owns security strategy and compliance, corporate IT and incident management, which she can speak to directly - But it also owns DevOps, CI CD, infrastructure as code, cloud infrastructure and quality engineering, and the posting asks for roughly a decade of software engineering - She would be arguing around that requirement rather than meeting it - Tight band with little negotiating room",
+    "posted": "2026-09-10",
+    "postedDate": "2026-09-10",
+    "expiresOn": "",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
+    "verifiedNote": "Opened the posting 2026-09-14. Employer-supplied work location reads Remote, hiring remotely in United States, and the description carries an LI-remote tag. Band of 240K-250K comes from the posting's published salary field; the description text does not restate it. Listed as posted 4 days ago, which resolves to 2026-09-10. Description says postings remain open through end of year or until filled, so no fixed close date.",
+    "fit": {
+      "leadership": 4,
+      "domain": 3,
+      "remote": 5,
+      "comp": 4,
+      "industry": 4
+    },
+    "fitNotes": {
+      "leadership": "Senior Director over several technical functions with manager development and team restructuring - narrower span than a division lead but real leadership.",
+      "domain": "Security strategy, compliance, incident management and corporate IT overlap; DevOps, CI CD, reliability engineering and quality engineering do not.",
+      "remote": "Posting lists the work location as Remote, hiring remotely in United States, and carries an LI-remote tag.",
+      "comp": "240K-250K clears the floor but the band is only 10K wide, so there is almost no negotiating room.",
+      "industry": "Digital health - adjacent to the healthcare IT target and a reasonable industry ramp."
+    },
+    "intel": {
+      "size": "Not determined",
+      "hq": "Not determined",
+      "remotePolicy": "Posting states remote, hiring remotely in United States",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    },
+    "id": 14
+  },
+  {
+    "id": 15,
     "key": "confluent--staff-security-risk-compliance-pm--remote-us",
     "track": "PM / RMF",
     "score": 90,
@@ -526,8 +664,8 @@
     "posted": "2026-07-10",
     "postedDate": "2026-07-10",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Ashby job board feed with isRemote true, location Remote, United States, and a published tier of 222.1K to 261K plus equity",
     "fit": {
       "leadership": 3,
@@ -552,7 +690,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 16,
     "key": "vanta--lead-product-grc-subject-matter-expert--remote-us",
     "track": "PM / RMF",
     "score": 86,
@@ -572,8 +710,8 @@
     "posted": "2026-08-12",
     "postedDate": "2026-08-12",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Ashby job board feed with isRemote true, location Remote U.S., and a published tier of 230K to 270K plus equity",
     "fit": {
       "leadership": 2,
@@ -598,7 +736,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 17,
     "key": "openai--senior-technical-program-manager-security--remote-us",
     "track": "PM / RMF",
     "score": 85,
@@ -618,8 +756,8 @@
     "posted": "2026-06-25",
     "postedDate": "2026-06-25",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Ashby job board feed with isRemote true, location US - Remote, and a published tier of 165.4K to 285K across multiple ranges",
     "fit": {
       "leadership": 3,
@@ -644,7 +782,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 18,
     "key": "instacart--director-it-internal-audit--remote-us",
     "track": "PM / RMF",
     "score": 84,
@@ -664,8 +802,8 @@
     "posted": "2026-08-10",
     "postedDate": "2026-08-10",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location United States - Remote; read the four published geographic bands and took the Maryland-applicable tier",
     "fit": {
       "leadership": 4,
@@ -690,53 +828,7 @@
     }
   },
   {
-    "id": 16,
-    "key": "onebrief--senior-program-architect-governance-risk-and-compliance--remote-us",
-    "track": "PM / RMF",
-    "score": 84,
-    "title": "Senior Program Architect - Governance, Risk, and Compliance",
-    "company": "Onebrief",
-    "sector": "Defense",
-    "level": "Senior / Lead",
-    "location": "United States - Remote",
-    "salary": "$160,000-$200,000 plus equity",
-    "salaryMin": 160000,
-    "salaryMax": 200000,
-    "roleType": "RMF / A&A",
-    "priority": "Medium",
-    "clearance": "None",
-    "url": "https://jobs.ashbyhq.com/onebrief/e7725d7d-37d5-4a80-b0dd-dd0acff4d82a",
-    "notes": "Defense software company building GRC architecture for military planning products - one of the very few genuinely remote defense-side GRC seats - her active clearance is a differentiator here - senior individual-contributor scope, below her current managed headcount",
-    "posted": "2026-07-29",
-    "postedDate": "2026-07-29",
-    "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
-    "verifiedNote": "Confirmed live on the Ashby job board feed with isRemote true, location United States Remote, and a published tier of 160K to 200K plus equity",
-    "fit": {
-      "leadership": 3,
-      "domain": 5,
-      "remote": 5,
-      "comp": 4,
-      "industry": 5
-    },
-    "fitNotes": {
-      "leadership": "Senior architect scope - designs and owns the GRC program, not an organization",
-      "domain": "Governance, risk and compliance architecture in a defense product context is a direct match to her assessment and authorization work",
-      "remote": "Ashby board record marks the posting remote with location 'United States | Remote'",
-      "comp": "Published range $160,000-$200,000 plus equity; the maximum clears the track floor, the minimum does not",
-      "industry": "Defense mission software - the closest industry match on this board"
-    },
-    "intel": {
-      "size": "Not determined",
-      "hq": "Honolulu, HI",
-      "remotePolicy": "United States remote per the job board record",
-      "news": "Not determined",
-      "levelHistory": "Not determined"
-    }
-  },
-  {
-    "id": 17,
+    "id": 19,
     "key": "coinbase--manager-grc--remote-us",
     "track": "PM / RMF",
     "score": 83,
@@ -756,8 +848,8 @@
     "posted": "2026-08-31",
     "postedDate": "2026-08-31",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - USA, band 193,970 to 228,200; req updated 2026-09-03",
     "fit": {
       "leadership": 4,
@@ -801,8 +893,8 @@
     "posted": "2026-07-29",
     "postedDate": "2026-07-29",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index; read the work-model paragraph directly, which requires in-person collaboration 1-2 times per quarter and states the role can be situated anywhere in the country, and carries an LI-REMOTE tag",
     "fit": {
       "leadership": 3,
@@ -825,10 +917,10 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 18
+    "id": 20
   },
   {
-    "id": 19,
+    "id": 21,
     "key": "gitlab--senior-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 80,
@@ -848,8 +940,8 @@
     "posted": "2026-08-25",
     "postedDate": "2026-08-25",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote United States and Canada, band 203,200 to 345,600; req updated 2026-08-31",
     "fit": {
       "leadership": 3,
@@ -874,7 +966,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 22,
     "key": "gitlab--senior-program-manager-enterprise-technology-and-ai--remote-us",
     "track": "PM / RMF",
     "score": 79,
@@ -894,8 +986,8 @@
     "posted": "2026-08-25",
     "postedDate": "2026-08-25",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote, United States, band 126,400 to 213,600; req updated 2026-08-31",
     "fit": {
       "leadership": 3,
@@ -920,7 +1012,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 23,
     "key": "abnormal-security--senior-security-engineer-fedramp--remote-us",
     "track": "PM / RMF",
     "score": 78,
@@ -940,8 +1032,8 @@
     "posted": "2026-03-12",
     "postedDate": "2026-03-12",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - USA, band 153,000 to 220,000; req updated 2026-08-31",
     "fit": {
       "leadership": 1,
@@ -966,7 +1058,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 24,
     "key": "reddit--staff-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 78,
@@ -986,8 +1078,8 @@
     "posted": "2026-07-07",
     "postedDate": "2026-07-07",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - United States, band 194,600 to 272,400",
     "fit": {
       "leadership": 3,
@@ -1012,7 +1104,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 25,
     "key": "affirm--staff-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 77,
@@ -1032,8 +1124,8 @@
     "posted": "2026-05-12",
     "postedDate": "2026-05-12",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote US; read both published bands and took the all-other-US band that applies to Maryland",
     "fit": {
       "leadership": 3,
@@ -1058,7 +1150,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 26,
     "key": "reddit--principal-technical-program-manager-performance--remote-us",
     "track": "PM / RMF",
     "score": 76,
@@ -1078,8 +1170,8 @@
     "posted": "2026-05-20",
     "postedDate": "2026-05-20",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - United States, band 260,800 to 365,100",
     "fit": {
       "leadership": 3,
@@ -1104,7 +1196,7 @@
     }
   },
   {
-    "id": 25,
+    "id": 27,
     "key": "gitlab--manager-it-sox-pmo--remote-us",
     "track": "PM / RMF",
     "score": 76,
@@ -1124,8 +1216,8 @@
     "posted": "2026-07-28",
     "postedDate": "2026-07-28",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote, United States, band 115,000 to 194,000; req updated 2026-08-31",
     "fit": {
       "leadership": 3,
@@ -1150,7 +1242,7 @@
     }
   },
   {
-    "id": 26,
+    "id": 28,
     "key": "coinbase--internal-audit-it-manager--remote-us",
     "track": "PM / RMF",
     "score": 75,
@@ -1170,8 +1262,8 @@
     "posted": "2026-03-27",
     "postedDate": "2026-03-27",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - USA, band 166,345 to 195,700; req updated 2026-09-10",
     "fit": {
       "leadership": 3,
@@ -1196,7 +1288,7 @@
     }
   },
   {
-    "id": 27,
+    "id": 29,
     "key": "sardine--security-compliance-manager--remote-us",
     "track": "PM / RMF",
     "score": 74,
@@ -1216,8 +1308,8 @@
     "posted": "2026-08-25",
     "postedDate": "2026-08-25",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Ashby job board feed with isRemote true, location United States, and a published tier of 130K to 190K plus equity",
     "fit": {
       "leadership": 2,
@@ -1242,7 +1334,7 @@
     }
   },
   {
-    "id": 28,
+    "id": 30,
     "key": "coinbase--staff-it-technical-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 73,
@@ -1262,8 +1354,8 @@
     "posted": "2026-08-24",
     "postedDate": "2026-08-24",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location Remote - USA, band 148,835 to 175,100",
     "fit": {
       "leadership": 3,
@@ -1307,8 +1399,8 @@
     "posted": "2026-08-27",
     "postedDate": "2026-08-27",
     "expiresOn": "",
-    "verified": "2026-09-11",
-    "lastVerified": "2026-09-11",
+    "verified": "2026-09-14",
+    "lastVerified": "2026-09-14",
     "verifiedNote": "Confirmed live on the Greenhouse board index, location United States - Remote, band 153,000 to 180,000",
     "fit": {
       "leadership": 3,
@@ -1331,6 +1423,6 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 29
+    "id": 31
   }
 ]
