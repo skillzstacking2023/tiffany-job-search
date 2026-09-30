@@ -5,6 +5,7 @@ name: Notify Tiffany on job refresh
 # Sends from Arnold's Gmail via App Password.
 # Requires repo secrets GMAIL_ADDRESS and GMAIL_APP_PASSWORD.
 
+# Tiffany's address lives in the TIFFANY_EMAIL repo secret, not in this file: the repo is public.
 on:
   push:
     paths:
@@ -22,12 +23,16 @@ jobs:
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TIFFANY_EMAIL: ${{ secrets.TIFFANY_EMAIL }}
         run: |
           python3 - <<'PY'
           import json, os, ssl, smtplib, datetime
           from email.mime.text import MIMEText
 
-          RECIPIENTS = ["tiffany.t.taylor@gmail.com", "arbatiste@gmail.com"]
+          person = (os.environ.get('TIFFANY_EMAIL') or '').strip()
+          if not person:
+              raise SystemExit("Missing TIFFANY_EMAIL repo secret.")
+          RECIPIENTS = [person, "arbatiste@gmail.com"]
 
           jobs = json.load(open('jobs.json'))
           execs = [j for j in jobs if j.get('track') == 'Executive']
@@ -103,5 +108,5 @@ jobs:
               s.starttls(context=ctx)
               s.login(gmail_addr, app_pw)
               s.send_message(msg, from_addr=gmail_addr, to_addrs=RECIPIENTS)
-          print("Sent to", RECIPIENTS)
+          print("Sent to", len(RECIPIENTS), "recipients")
           PY
