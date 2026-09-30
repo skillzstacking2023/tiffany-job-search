@@ -29,10 +29,10 @@ h1{margin:0 0 6px;font-size:29px;letter-spacing:-.02em}
 .theme-btn{flex:none;background:var(--card);border:1px solid var(--line);color:var(--text);
 padding:9px 15px;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer}
 .theme-btn:hover{border-color:var(--accent)}
-.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 16px;min-width:104px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px;max-width:760px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 16px;min-width:0}
 .stat .n{font-size:23px;font-weight:800;letter-spacing:-.02em}
-.stat .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
 .updated{color:var(--muted);font-size:12px;margin-top:12px}
 
 .tabs{display:flex;gap:4px;margin:22px 0 0;border-bottom:1px solid var(--line)}
@@ -71,7 +71,7 @@ display:flex;flex-direction:column;gap:10px;border-left:3px solid var(--line);tr
 .ring .val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
 font-weight:800;font-size:15px}
 .badges{display:flex;flex-wrap:wrap;gap:6px}
-.chip{font-size:11px;padding:3.5px 9px;border-radius:999px;background:var(--chip);
+.chip{font-size:12px;padding:3.5px 9px;border-radius:999px;background:var(--chip);
 color:var(--text);border:1px solid var(--line);font-weight:600}
 .chip.sec-Commercial{background:#14532d33;border-color:#22c55e;color:#86efac}
 .chip.sec-Healthcare{background:#0e747033;border-color:#2dd4bf;color:#99f6e4}
@@ -83,14 +83,33 @@ color:var(--text);border:1px solid var(--line);font-weight:600}
 .chip.trk.pmrmf{background:#42200655;border-color:#eab308;color:#fde68a}
 .chip.remote{background:#0e747033;border-color:#2dd4bf;color:#99f6e4}
 .chip.clr-active{background:#7c2d1233;border-color:#f97316;color:#fdba74}
+[data-theme="light"] .chip.sec-Healthcare{background:#ccfbf1;border-color:#0d9488;color:#134e4a}
+[data-theme="light"] .chip.sec-Defense{background:#ffedd5;border-color:#ea580c;color:#7c2d12}
+[data-theme="light"] .chip.secStateGov{background:#dbeafe;border-color:#2563eb;color:#1e3a8a}
+[data-theme="light"] .chip.lvl{background:#f3e8ff;border-color:#9333ea;color:#581c87}
+[data-theme="light"] .chip.trk.exec{background:#e0e7ff;border-color:#4f46e5;color:#312e81}
+[data-theme="light"] .chip.trk.pmrmf{background:#fef3c7;border-color:#d97706;color:#78350f}
+[data-theme="light"] .floorwarn{color:#c2410c}
+.vbadge{display:inline-block;font-size:12px;line-height:1.4;margin:0 8px 0 0;padding:2px 7px;border-radius:999px;white-space:nowrap;vertical-align:middle;background:#14532d55;color:#86efac}
+.vbadge.stale{background:#7c2d1255;color:#fdba74;font-weight:600}
+[data-theme="light"] .vbadge{background:#dcfce7;color:#14532d}
+[data-theme="light"] .vbadge.stale{background:#ffedd5;color:#7c2d12}
+/* Light theme: the tinted chips above are tuned for dark cards only */
+[data-theme="light"] .chip.sec-Commercial,[data-theme="light"] .chip.clr-none,[data-theme="light"] .chip.sec-Health{background:#dcfce7;border-color:#16a34a;color:#14532d}
+[data-theme="light"] .chip.sec-Federal,[data-theme="light"] .chip.clr-active{background:#ffedd5;border-color:#ea580c;color:#7c2d12}
+[data-theme="light"] .chip.sec-Government,[data-theme="light"] .chip.sec-State,[data-theme="light"] .chip.clr-elig{background:#dbeafe;border-color:#2563eb;color:#1e3a8a}
+[data-theme="light"] .chip.remote,[data-theme="light"] .chip.sec-Travel{background:#ccfbf1;border-color:#0d9488;color:#134e4a}
+[data-theme="light"] .chip.cert{background:#fef3c7;border-color:#d97706;color:#78350f}
+[data-theme="light"] .agel.urgent{color:#c2410c}
+.chip.cert{background:#422006;border-color:#eab308;color:#fde68a;font-weight:700}
 .chip.clr-elig{background:#1e3a8a33;border-color:#60a5fa;color:#bfdbfe}
-.pri{font-weight:800;font-size:11px;padding:3.5px 10px;border-radius:999px}
+.pri{font-weight:800;font-size:12px;padding:3.5px 10px;border-radius:999px}
 .pri.High{background:#14532d;color:#86efac}
 .pri.Medium{background:#422006;color:#fde68a}
 .pri.Stretch{background:#431407;color:#fdba74}
 .salary{color:var(--text);font-size:13.5px;font-weight:600}
 .notes{color:var(--muted);font-size:13px}
-.floorwarn{font-size:11.5px;color:#fdba74;font-weight:600}
+.floorwarn{font-size:12px;color:#fdba74;font-weight:600}
 .actbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);
 border:1px solid var(--accent);border-radius:12px;padding:12px 15px;margin:16px 0 2px}
 .actcount{font-size:13px;font-weight:700;margin-right:4px}
@@ -109,11 +128,11 @@ background:transparent;color:var(--text);cursor:pointer;font-family:inherit}
 border-radius:10px;padding:14px 17px;margin:0 0 16px}
 .guide .callout.warn{border-left-color:#f97316}
 .guide .callout p:last-child{margin-bottom:0}
-.agel{font-size:11.5px;color:var(--muted)}
+.agel{font-size:12px;color:var(--muted)}
 .agel.urgent{color:#fdba74;font-weight:700}
 .stagebar{display:flex;gap:4px;flex-wrap:wrap;padding-top:2px;align-items:center}
-.savehint{font-size:11px;color:var(--muted);font-weight:700;margin-right:2px}
-.stagebtn{font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;border:1px solid var(--line);
+.savehint{font-size:12px;color:var(--muted);font-weight:700;margin-right:2px}
+.stagebtn{font-size:12px;font-weight:700;padding:5px 10px;border-radius:8px;border:1px solid var(--line);
 background:transparent;color:var(--muted);cursor:pointer;font-family:inherit}
 .stagebtn:hover{border-color:var(--accent);color:var(--text)}
 .stagebtn.on{color:#04283a}
@@ -121,6 +140,42 @@ background:transparent;color:var(--muted);cursor:pointer;font-family:inherit}
 .stagebtn.on.applied{background:var(--accent);border-color:var(--accent)}
 .stagebtn.on.screening{background:var(--teal);border-color:var(--teal)}
 .stagebtn.on.interview{background:var(--amber);border-color:var(--amber)}
+.cardtools{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.stagesel{font-size:12.5px;padding:6px 9px;border-radius:8px;font-weight:700}
+.stagesel.on{border-color:var(--accent)}
+.linkbtn{background:none;border:none;padding:4px 2px;color:var(--accent);font-size:12.5px;font-weight:700;
+cursor:pointer;font-family:inherit;text-decoration:underline;text-underline-offset:3px}
+.linkbtn:hover{color:var(--text)}
+.aitools{display:flex;gap:10px;align-items:center}
+.notes.clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.morebtn{align-self:flex-start;margin-top:-6px}
+.chip.newjob{background:var(--accent);border-color:var(--accent);color:#04283a;font-weight:800}
+[data-theme="light"] .chip.newjob{color:#fff}
+.minibar{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--bg2);border-bottom:1px solid var(--line);
+box-shadow:0 4px 14px #0003;transform:translateY(-110%);transition:transform .18s;visibility:hidden}
+.minibar.show{transform:none;visibility:visible}
+.minibar .wrap{display:flex;gap:10px;align-items:center;padding-top:9px;padding-bottom:9px}
+.minibar input[type=search]{min-width:0;padding:8px 12px}
+.minicount{color:var(--muted);font-size:13px;white-space:nowrap}
+@media(max-width:640px){.minicount{display:none}}
+@media(prefers-reduced-motion:reduce){.minibar{transition:none}}
+.morefilters{display:none;flex-wrap:wrap;gap:9px;width:100%}
+.morefilters.open{display:flex}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.aibtn{font-size:12px;font-weight:700;padding:6px 11px;border-radius:8px;border:1px solid var(--accent2);
+background:transparent;color:var(--text);cursor:pointer;font-family:inherit}
+.aibtn:hover{background:var(--accent2);color:#fff}
+dialog.aidlg{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:15px;
+padding:0;width:min(720px,calc(100vw - 32px));max-height:calc(100vh - 48px)}
+dialog.aidlg::backdrop{background:#0008}
+.aidlg-in{display:flex;flex-direction:column;gap:12px;padding:20px;max-height:calc(100vh - 48px)}
+.aidlg h3{margin:0;font-size:18px}
+.aidlg .aisub{margin:0;color:var(--muted);font-size:13px}
+.aidlg ol{margin:0;padding-left:20px;font-size:13.5px}
+.aidlg textarea{width:100%;flex:1;min-height:220px;resize:vertical;background:var(--bg2);color:var(--text);
+border:1px solid var(--line);border-radius:10px;padding:12px;font:12.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+.aiact{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+.aimsg{flex:1;font-size:12.5px;color:var(--green);font-weight:600}
 .stagebtn.on.offer{background:var(--green);border-color:var(--green);color:#052e16}
 .actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:2px}
 .linkrow{display:flex;gap:8px}
@@ -133,7 +188,7 @@ font-weight:700;padding:8px 12px;border-radius:9px;cursor:pointer;font-family:in
 .detail{display:none;border-top:1px solid var(--line);padding-top:13px;margin-top:4px;gap:14px;
 flex-direction:column}
 .detail.open{display:flex}
-.dh{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);
+.dh{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);
 font-weight:700;margin-bottom:8px}
 .fitrow{display:grid;grid-template-columns:88px 1fr 26px;gap:9px;align-items:center;margin-bottom:7px}
 .fitlabel{font-size:12px;color:var(--muted);font-weight:600}
@@ -152,15 +207,15 @@ overflow-x:auto;padding-bottom:44px;margin-top:18px}
 .col{background:var(--card2);border:1px solid var(--line);border-radius:13px;padding:12px;min-height:180px}
 .colhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px}
 .colname{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
-.colcount{font-size:11px;font-weight:800;background:var(--chip);padding:2px 8px;border-radius:99px;color:var(--muted)}
+.colcount{font-size:12px;font-weight:800;background:var(--chip);padding:2px 8px;border-radius:99px;color:var(--muted)}
 .pcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px;margin-bottom:9px}
 .pcard .pt{font-size:13px;font-weight:700;line-height:1.35}
 .pcard .pc{font-size:12px;color:var(--accent);font-weight:600;margin-top:2px}
-.pcard .pm{font-size:11px;color:var(--muted);margin-top:5px}
-.pcard .pn{font-size:11.5px;color:var(--muted);margin-top:7px;padding-top:7px;border-top:1px solid var(--line);
+.pcard .pm{font-size:12px;color:var(--muted);margin-top:5px}
+.pcard .pn{font-size:12px;color:var(--muted);margin-top:7px;padding-top:7px;border-top:1px solid var(--line);
 white-space:pre-wrap}
 .movebar{display:flex;gap:4px;margin-top:8px}
-.movebtn{flex:1;font-size:10.5px;font-weight:700;padding:4px 6px;border-radius:6px;
+.movebtn{flex:1;font-size:12px;font-weight:700;padding:4px 6px;border-radius:6px;
 border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font-family:inherit}
 .movebtn:hover{border-color:var(--accent);color:var(--text)}
 .colempty{color:var(--muted);font-size:12px;text-align:center;padding:18px 6px}
@@ -184,7 +239,7 @@ h1{font-size:22px}
 .wnitem{padding:8px 0;border-top:1px solid var(--line)}
 .wntitle{font-size:13.5px;font-weight:700}
 .wnbody{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.5}
-.wndate{font-size:11px;color:var(--muted);margin-top:3px;opacity:.7}
+.wndate{font-size:12px;color:var(--muted);margin-top:3px;}
 
 /* card-footer-layout-v2 (2026-09-10): the verified badge was inserted into .linkrow,
    a flex row, where display:inline-block blockifies and default align-items:stretch
@@ -203,15 +258,26 @@ h1{font-size:22px}
   .expand,.job a.apply{justify-self:stretch;text-align:center}
 }
 </style>
+<script>
+(function(){var t=null;try{t=localStorage.getItem("tt_theme");}catch(e){}
+if(t!=="light"&&t!=="dark")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";
+document.documentElement.setAttribute("data-theme",t);})();
+</script>
 </head>
 <body>
+<div class="minibar" id="minibar" aria-hidden="true">
+<div class="wrap">
+<input type="search" id="q2" placeholder="Search jobs..." aria-label="Search jobs" tabindex="-1">
+<span class="minicount" id="minicount"></span>
+<button class="reset" type="button" tabindex="-1" onclick="toFilters()">Filters</button>
+</div>
+</div>
 <header>
 <div class="wrap">
 <div class="header-top">
 <div>
-<h1>Tiffany T. Taylor - Executive IT Job Search</h1>
+<h1>Tiffany T. Taylor</h1>
 <div class="creds">CISSP - PMP - MS Computer Systems Management - Active clearance (details on request)</div>
-<div class="sub">Senior Director, Cyber Risk Management and IT Services Division Lead - large-portfolio division leadership spanning cyber risk, IT services, and staff and subcontractor management. Targeting 100% remote Senior Director and VP roles in Commercial IT, Healthcare IT, State Government IT, and Defense.</div>
 </div>
 <button class="theme-btn" id="wnbtn" onclick="renderWhatsNew(true)">What&#39;s new</button>
 <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">Light Mode</button>
@@ -229,30 +295,30 @@ h1{font-size:22px}
 <button class="tab" data-panel="p-analytics" onclick="showTab(this)">Analytics</button>
 <button class="tab" data-panel="p-guide" onclick="showTab(this)">How to use</button>
 </div>
-<div class="actbar">
-<span class="actcount" id="actcount"></span>
-<button class="actbtn" type="button" onclick="emailPipeline()">Email to me</button>
-<button class="actbtn" type="button" onclick="copyPipeline()">Copy list</button>
-<button class="actbtn" type="button" onclick="downloadCSV()">Download CSV</button>
-<button class="actbtn" type="button" onclick="backupJSON()">Backup</button>
-<label class="actbtn" style="cursor:pointer">Restore<input type="file" id="restorefile" accept="application/json,.json" style="display:none" onchange="restoreJSON(event)"></label>
-<span class="actmsg" id="actmsg"></span>
-</div>
 
 <div class="panel active" id="p-opps">
 <div class="controls">
-<input type="search" id="q" placeholder="Search title, company, notes, intel...">
+<input type="search" id="q" placeholder="Search title, company, notes, intel..." aria-label="Search jobs">
 <select id="track"><option value="">Both tracks</option><option value="Executive">Executive (Sr Dir / VP, $225K+)</option><option value="PM / RMF">PM / RMF (Senior+, $175K+)</option></select>
-<select id="priority"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Stretch</option></select>
-<select id="sector"><option value="">All sectors</option><option>Commercial</option><option>Healthcare</option><option>State Gov</option><option>Defense</option></select>
-<select id="level"><option value="">All levels</option><option>VP</option><option>Senior Director</option><option>Director</option><option>Senior Manager</option><option>Senior / Lead</option></select>
-<select id="role"><option value="">All functions</option></select>
 <select id="comp">
 <option value="">Any compensation</option>
 <option value="min225000">Guaranteed $225K+ (band minimum)</option>
 <option value="min250000">Guaranteed $250K+ (band minimum)</option>
 <option value="max300000">Could reach $300K+ (band maximum)</option>
 </select>
+<select id="sort">
+<option value="score">Sort: fit score</option>
+<option value="compdesc">Sort: comp high to low</option>
+<option value="company">Sort: company A-Z</option>
+<option value="fresh">Sort: newest first</option><option value="new">Sort: new since last visit</option>
+</select>
+<button class="reset" type="button" onclick="resetFilters()">Reset</button>
+<button class="reset" type="button" id="morebtn" aria-expanded="false" onclick="toggleMore()">More filters</button>
+<div class="morefilters" id="morefilters">
+<select id="priority"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Stretch</option></select>
+<select id="sector"><option value="">All sectors</option><option>Commercial</option><option>Healthcare</option><option>State Gov</option><option>Defense</option></select>
+<select id="level"><option value="">All levels</option><option>VP</option><option>Senior Director</option><option>Director</option><option>Senior Manager</option><option>Senior / Lead</option></select>
+<select id="role"><option value="">All functions</option></select>
 <select id="stage">
 <option value="">All pipeline stages</option>
 <option value="untracked">Not tracked</option>
@@ -262,18 +328,22 @@ h1{font-size:22px}
 <option value="interview">Interview</option>
 <option value="offer">Offer</option>
 </select>
-<select id="sort">
-<option value="score">Sort: fit score</option>
-<option value="compdesc">Sort: comp high to low</option>
-<option value="company">Sort: company A-Z</option>
-</select>
-<button class="reset" onclick="resetFilters()">Reset</button>
+</div>
 </div>
 <div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
 </div>
 
 <div class="panel" id="p-pipe">
+<div class="actbar">
+<span class="actcount" id="actcount"></span>
+<button class="actbtn" type="button" onclick="emailPipeline()">Email to me</button>
+<button class="actbtn" type="button" onclick="copyPipeline()">Copy list</button>
+<button class="actbtn" type="button" onclick="downloadCSV()">Download CSV</button>
+<button class="actbtn" type="button" onclick="backupJSON()">Backup</button>
+<label class="actbtn" style="cursor:pointer">Restore<input type="file" id="restorefile" accept="application/json,.json" style="display:none" onchange="restoreJSON(event)"></label>
+<span class="actmsg" id="actmsg"></span>
+</div>
 <div class="count" id="pipecount" style="margin-top:20px"></div>
 <div class="board" id="board"></div>
 </div>
@@ -291,14 +361,16 @@ h1{font-size:22px}
 </ul>
 <p>Roles that fail any of these are removed entirely rather than kept at a lower score. That is why the list is short. A shorter honest list is the point.</p>
 
+<div class="callout"><p><strong>The search profile behind the scores.</strong> Senior Director, Cyber Risk Management and IT Services Division Lead - large-portfolio division leadership spanning cyber risk, IT services, and staff and subcontractor management. Targeting 100% remote Senior Director and VP roles in Commercial IT, Healthcare IT, State Government IT, and Defense.</p></div>
+
 <h2>Reading a role card</h2>
 <p>The <strong>number in the ring</strong> is an overall fit score out of 100. Green is a strong fit (85+), amber is good with a gap (75-84), orange is a stretch (65-74).</p>
 <p>Under the salary you may see an <strong>amber warning</strong> that the band starts below $225K. That means the employer published a wide range and the top of it is not guaranteed - worth knowing before you invest time.</p>
 <p>The grey line at the bottom shows <strong>how old the posting is, when it closes</strong>, and the date it was last checked against the live listing. Anything closing within seven days is highlighted in amber.</p>
-<p>Click <strong>Fit breakdown + intel</strong> on any card to open three things: a five-part score breakdown explaining exactly why it scored what it did, what is known about the company, and a free-text notes box that saves as you type.</p>
+<p>Click <strong>Details</strong> on any card to open three things: a five-part score breakdown explaining exactly why it scored what it did, what is known about the company, and a free-text notes box that saves as you type.</p>
 
 <h2>Tracking roles you are interested in</h2>
-<p>Every card has five stage buttons: <strong>Interested, Applied, Screening, Interview, Offer</strong>. Click one to track the role. Click the same button again to untrack it.</p>
+<p>Every card has a <strong>Save to pipeline</strong> menu - choose Interested, Applied, Screening, Interview or Offer to track the role. Choose <strong>Save to pipeline</strong> again to untrack it.</p>
 <p>Tracked roles appear on the <strong>Pipeline</strong> tab as a board, one column per stage, and the arrows under each card move it forward or back. Your notes travel with the role.</p>
 <div class="callout">
 <p><strong>Your tracking survives the daily refresh.</strong> Each role is remembered by company and title rather than by position in the list, so a role you marked Applied stays Applied tomorrow even though the list around it changes.</p>
@@ -307,7 +379,7 @@ h1{font-size:22px}
 <h2>Sending roles to yourself</h2>
 <p>The buttons at the top of the Pipeline tab work on whatever you have tracked:</p>
 <ul>
-<li><strong>Email to me</strong> - opens your email app with a message already written, addressed to you, listing every tracked role grouped by stage with links, salary and your own notes. You just press send.</li>
+<li><strong>Email to me</strong> - opens Gmail with a message already written - add your own address - listing every tracked role grouped by stage with links, salary and your own notes. You just press send.</li>
 <li><strong>Copy list</strong> - puts the same text on your clipboard to paste into a document, a message, or an email to someone else</li>
 <li><strong>Download CSV</strong> - a spreadsheet of everything you are tracking, for Excel or Google Sheets</li>
 <li><strong>Backup</strong> and <strong>Restore</strong> - see the caveat below</li>
@@ -317,17 +389,25 @@ h1{font-size:22px}
 <p>Use <strong>Backup</strong> now and then to download a small file of your pipeline, and <strong>Restore</strong> to load it back or move it to another device.</p>
 </div>
 
+<h2>New jobs and finding your place</h2>
+<p>Jobs added since your last visit carry a <strong>New</strong> badge, and the line above the cards says how many there are. Choose <strong>Sort: new since last visit</strong> to put them first. Once you scroll past the filters, a search bar stays pinned to the top of the screen; <strong>Filters</strong> takes you back to the full set.</p>
+
+<h2>Gap analysis and tailored resume</h2>
+<p>Every card has two links, <strong>Gap analysis</strong> and <strong>Tailor resume</strong>:</p>
+<ul>
+<li><strong>Gap analysis</strong> - compares the posting with your resume: what you match, what's missing, which gaps are hard barriers and which you can close or explain, and whether it's worth applying.</li>
+<li><strong>Tailor resume</strong> - rewrites your resume for that posting, using only what's already in it. Anything the job asks for that you don't have is listed separately instead of being added.</li>
+</ul>
+<p>Each link prepares a prompt with that job's details. Click <strong>Copy prompt</strong>, then open whichever AI assistant you use - ChatGPT, Claude, Gemini, Microsoft Copilot or another - start a new chat, attach your resume, paste and send. Your resume and the results stay in your own chat - nothing is posted to this page. Always read a tailored resume before you send it.</p>
+
 <h2>What the tiles at the top mean</h2>
 <ul>
-<li><strong>Verified roles</strong> - the total, all individually checked</li>
+<li><strong>Verified roles</strong> - the total, all individually checked and all 100% remote</li>
 <li><strong>High fit</strong> - scored 85 or above</li>
-<li><strong>VP level</strong> - the rest are Senior Director</li>
-<li><strong>100% remote</strong> - always equals the total; anything not genuinely remote is removed rather than listed</li>
-<li><strong>No clearance</strong> - roles needing no security clearance at all. Your active clearance is an asset on the others, never a barrier</li>
-<li><strong>Min $225K+</strong> - roles where even the <em>bottom</em> of the published band clears your floor. This deliberately does not count roles that merely <em>could</em> reach a high number</li>
-<li><strong>Closing &lt;= 7d</strong> - apply to these first</li>
+<li><strong>Min clears floor</strong> - roles where even the <em>bottom</em> of the published band clears your floor for that track ($225K Executive, $175K PM / RMF). This deliberately does not count roles that merely <em>could</em> reach a high number</li>
 <li><strong>In pipeline</strong> - how many you are tracking</li>
 </ul>
+<p>Roles closing within 7 days are counted on the line under the tiles, and flagged on their cards.</p>
 
 <h2>The Analytics tab</h2>
 <p>Six views of the same data: where the remote executive market actually is by sector, how scores are distributed, published salary bands with a dashed line marking your $225K floor, an average of where this slate is strong and where it is thin, your application funnel, and which kinds of executive roles exist remotely.</p>
@@ -350,7 +430,7 @@ h1{font-size:22px}
 <div class="charts">
 <div class="chartbox">
 <h3>Opportunities by sector</h3>
-<div class="cs">Where the remote executive market actually is for her profile</div>
+<div class="cs">Where the remote executive market actually is for your profile</div>
 <div class="canvaswrap"><canvas id="c-sector"></canvas></div>
 </div>
 <div class="chartbox">
@@ -382,7 +462,25 @@ h1{font-size:22px}
 </div>
 </div>
 
-<footer>Auto-refreshed daily. Built for Tiffany T. Taylor. Scores reflect fit to her profile: 100% remote, Senior Director or VP, executive-band compensation, Commercial / Healthcare / State Government IT, and Defense. Every role here was opened and re-checked against the live posting for remote status, seniority and published salary - roles that failed were removed rather than downgraded. Where a salary is an estimate rather than a published band, the card says so. Pipeline stages and notes are saved in this browser only.</footer>
+<dialog class="aidlg" id="aidlg" aria-labelledby="aititle">
+<div class="aidlg-in">
+<h3 id="aititle"></h3>
+<p class="aisub" id="aisub"></p>
+<ol>
+<li>Click <strong>Copy prompt</strong>.</li>
+<li>Open the AI assistant you use (ChatGPT, Claude, Gemini, Copilot or another), start a new chat and attach your current resume (usually the paperclip or + button).</li>
+<li>Paste (Cmd+V or Ctrl+V) and send.</li>
+</ol>
+<textarea id="aitext" aria-label="Prompt to send to your AI assistant" spellcheck="false"></textarea>
+<div class="aiact">
+<span class="aimsg" id="aimsg" role="status"></span>
+<button class="expand" type="button" onclick="document.getElementById('aidlg').close()">Close</button>
+<button class="aibtn" id="aigo" type="button" onclick="aiCopy()">Copy prompt</button>
+</div>
+</div>
+</dialog>
+
+<footer>Auto-refreshed daily. Built for Tiffany T. Taylor. Scores reflect fit to your profile: 100% remote, Senior Director or VP, executive-band compensation, Commercial / Healthcare / State Government IT, and Defense. Every role here was opened and re-checked against the live posting for remote status, seniority and published salary - roles that failed were removed rather than downgraded. Where a salary is an estimate rather than a published band, the card says so. Pipeline stages and notes are saved in this browser only.</footer>
 
 <script>
 var JOBS=[];
@@ -404,6 +502,7 @@ function setNotes(id,v){getRec(id).notes=v;saveState();}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
 function val(id){return document.getElementById(id).value;}
 function scoreColor(s){return s>=85?"#22c55e":s>=75?"#eab308":"#f97316";}
+function migrateOld(){return 0;}
 function secClass(s){return s==="State Gov"?"secStateGov":"sec-"+s;}
 function slugify(s){return String(s==null?"":s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+/,"").replace(/-+$/,"").slice(0,80);}
 function jobKey(j){return j.key?j.key:(slugify(j.company)+"--"+slugify(j.title)+"--"+slugify(j.location||""));}
@@ -505,36 +604,68 @@ function sortJobs(list){
 var s=val("sort");
 var out=list.slice();
 if(s==="compdesc")out.sort(function(a,b){return (b.salaryMax||0)-(a.salaryMax||0);});
+else if(s==="new")out.sort(function(a,b){return (NEWJOBS[jobKey(b)]?1:0)-(NEWJOBS[jobKey(a)]?1:0)||b.score-a.score;});
+else if(s==="fresh")out.sort(function(a,b){return String(b.posted||"").localeCompare(String(a.posted||""));});
 else if(s==="company")out.sort(function(a,b){return a.company.localeCompare(b.company);});
 else out.sort(function(a,b){return b.score-a.score;});
 return out;
 }
 
+var NOTECHK=[];
+/* Jobs not seen on the previous visit get a "New" chip. The list for this visit is kept in
+   sessionStorage so reloading during the same visit doesn't clear the markers. */
+var NEWJOBS={};
+function markNewJobs(){
+var SEEN="tiffany_seen_jobs",SESS="tiffany_new_this_visit";
+try{
+var cached=sessionStorage.getItem(SESS);
+if(cached){NEWJOBS=JSON.parse(cached);}
+else{
+var prev=JSON.parse(localStorage.getItem(SEEN)||"null");
+if(prev){var p={};prev.forEach(function(x){p[x]=1;});
+JOBS.forEach(function(j){var k=jobKey(j);if(!p[k])NEWJOBS[k]=1;});}
+sessionStorage.setItem(SESS,JSON.stringify(NEWJOBS));}
+localStorage.setItem(SEEN,JSON.stringify(JOBS.map(jobKey)));
+}catch(e){NEWJOBS={};}}
+function toFilters(){document.getElementById("q").scrollIntoView({behavior:"smooth",block:"center"});
+setTimeout(function(){document.getElementById("q").focus({preventScroll:true});},300);}
+function initMinibar(){
+var bar=document.getElementById("minibar"),q=document.getElementById("q"),q2=document.getElementById("q2");
+q2.addEventListener("input",function(){q.value=q2.value;moreLabel();renderGrid();});
+q.addEventListener("input",function(){q2.value=q.value;});
+var ctl=document.querySelector("#p-opps .controls"),ticking=false;
+/* show once the filter row has scrolled fully above the screen; checked on every scroll
+   so a fast flick past the filters can't be missed */
+function check(){ticking=false;
+var show=ctl.getBoundingClientRect().bottom<0&&document.getElementById("p-opps").classList.contains("active");
+if(show===bar.classList.contains("show"))return;
+bar.classList.toggle("show",show);bar.setAttribute("aria-hidden",show?"false":"true");
+[].forEach.call(bar.querySelectorAll("input,button"),function(x){x.tabIndex=show?0:-1;});}
+window.addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(check);}},{passive:true});
+window.addEventListener("resize",check);check();}
 function renderGrid(){
-var grid=document.getElementById("grid");grid.innerHTML="";
+var grid=document.getElementById("grid");grid.innerHTML="";NOTECHK=[];
 var list=sortJobs(JOBS.filter(matches));
-document.getElementById("count").textContent=
-list.length+" of "+JOBS.length+" roles shown";
+var nNew=Object.keys(NEWJOBS).length;
+var ctext=list.length+" of "+JOBS.length+" roles shown";
+document.getElementById("count").textContent=ctext+(nNew?" - "+nNew+" new since your last visit":"");
+document.getElementById("minicount").textContent=ctext;
 if(!list.length){grid.innerHTML='<div class="empty">No matches. Try clearing filters.</div>';return;}
 list.forEach(function(j){
-var rec=getRec(jobKey(j));
+var k=jobKey(j),rec=getRec(k);
 var card=el("div","job"+(rec.stage?" st-"+rec.stage:""));
 
 var row=el("div","row");
 var left=el("div");
 left.appendChild(el("p","title",j.title));
 left.appendChild(el("div","company",j.company));
-row.appendChild(left);
-row.appendChild(ring(j.score));
-card.appendChild(row);
+row.appendChild(left);var rg=ring(j.score);rg.setAttribute("role","img");rg.setAttribute("aria-label","Fit score "+j.score+" of 100 - "+j.priority);rg.title=j.priority+" fit";
+row.appendChild(rg);card.appendChild(row);
 
 var b=el("div","badges");
-b.appendChild(el("span","pri "+j.priority,j.priority));
+if(NEWJOBS[k])b.appendChild(el("span","chip newjob","New"));
 b.appendChild(el("span","chip trk"+(j.track==="Executive"?" exec":" pmrmf"),j.track));
-b.appendChild(el("span","chip lvl",j.level));
-b.appendChild(el("span","chip "+secClass(j.sector),j.sector));
 b.appendChild(el("span","chip remote",j.location));
-b.appendChild(el("span","chip",j.roleType));
 if(j.clearance==="Active Required")b.appendChild(el("span","chip clr-active","Active clearance required"));
 else if(j.clearance==="Eligible/Sponsor")b.appendChild(el("span","chip clr-elig","Clearance eligible"));
 card.appendChild(b);
@@ -543,21 +674,27 @@ card.appendChild(el("div","salary",j.salary));
 var jf=(j.track==="Executive")?225000:175000;
 if((j.salaryMin||0)<jf)card.appendChild(el("div","floorwarn",
 "Band starts at $"+Math.round((j.salaryMin||0)/1000)+"K - below the $"+Math.round(jf/1000)+"K floor for this track, so the top of this band is not guaranteed"));
-card.appendChild(el("div","notes",j.notes));
+var nt=el("div","notes"+(OPEN["n:"+k]?"":" clamp"),j.notes);card.appendChild(nt);
+var nm=el("button","linkbtn morebtn",OPEN["n:"+k]?"Less":"More");nm.type="button";nm.hidden=true;
+nm.onclick=(function(kk){return function(){OPEN["n:"+kk]=!OPEN["n:"+kk];renderGrid();};})(k);
+card.appendChild(nm);NOTECHK.push([nt,nm]);
 card.appendChild(el("div","agel"+(isUrgent(j)?" urgent":""),ageLine(j)));
 
-var sb=el("div","stagebar");
-sb.appendChild(el("span","savehint","Save as:"));
-STAGES.forEach(function(s){
-var btn=el("button","stagebtn"+(rec.stage===s?" on "+s:""),STAGE_LABEL[s]);
-btn.type="button";
-btn.onclick=function(){setStage(jobKey(j),s);};
-sb.appendChild(btn);
-});
-card.appendChild(sb);
+var tools=el("div","cardtools");
+var ss=el("select","stagesel"+(rec.stage?" on":""));ss.setAttribute("aria-label","Pipeline stage for "+j.title);
+[["","Save to pipeline"]].concat(STAGES.map(function(x){return [x,STAGE_LABEL[x]];})).forEach(function(o){
+var op=document.createElement("option");op.value=o[0];op.textContent=o[1];if(rec.stage===o[0])op.selected=true;ss.appendChild(op);});
+ss.onchange=(function(kk){return function(){var r=getRec(kk);r.stage=this.value;saveState();renderAll();};})(k);
+tools.appendChild(ss);
+var ai=el("div","aitools");
+[["gap","Gap analysis"],["tailor","Tailor resume"]].forEach(function(p){
+var btn=el("button","linkbtn",p[1]);btn.type="button";
+btn.onclick=(function(jj,kind){return function(){openAI(jj,kind);};})(j,p[0]);
+ai.appendChild(btn);});
+tools.appendChild(ai);card.appendChild(tools);
 
 var act=el("div","actions");
-var exp=el("button","expand",OPEN[jobKey(j)]?"Hide detail":"Fit breakdown + intel");
+var exp=el("button","expand",OPEN[k]?"Hide details":"Details");
 exp.type="button";
 exp.onclick=function(){OPEN[jobKey(j)]=!OPEN[jobKey(j)];renderGrid();};
 act.appendChild(exp);
@@ -567,14 +704,16 @@ lr.appendChild(a);act.appendChild(lr);
 card.appendChild(act);
 
 var det=el("div","detail"+(OPEN[jobKey(j)]?" open":""));
+var facts=el("div","intel");
+[["Tier",j.priority],["Level",j.level],["Role type",j.roleType],["Sector",j.sector]].forEach(function(r){
+if(!r[1])return;facts.appendChild(el("div","ik",r[0]));facts.appendChild(el("div",null,r[1]));});
+det.appendChild(facts);
 det.appendChild(fitBlock(j));
 det.appendChild(intelBlock(j));
 det.appendChild(noteBlock(j));
 card.appendChild(det);
-
-grid.appendChild(card);
-});
-}
+grid.appendChild(card);});
+NOTECHK.forEach(function(p){p[1].hidden=!(p[0].scrollHeight>p[0].clientHeight+1||!p[0].classList.contains("clamp"));});}
 
 function renderBoard(){
 var board=document.getElementById("board");board.innerHTML="";
@@ -737,7 +876,7 @@ var L=trackedJobs();if(!L.length){noneTracked();return;}
 var subj="My tracked roles - "+L.length+" role"+(L.length===1?"":"s");
 var body=pipeText(true);
 try{navigator.clipboard.writeText(subj+"\n\n"+body);}catch(e){}
-var mk=function(b){return "https://mail.google.com/mail/?view=cm&fs=1&to=tiffany.t.taylor@gmail.com&cc=arbatiste@gmail.com&su="+encodeURIComponent(subj)+"&body="+encodeURIComponent(b);};
+var mk=function(b){return "https://mail.google.com/mail/?view=cm&fs=1&su="+encodeURIComponent(subj)+"&body="+encodeURIComponent(b);};
 var u=mk(body);
 if(u.length>7000)u=mk(pipeText(false));
 if(u.length>7000){copyPipeline();actMsg("Too many to fit in a compose link - copied to your clipboard instead");return;}
@@ -793,10 +932,13 @@ function renderAll(){renderGrid();renderBoard();renderCharts();}
 
 
 var WN_KEY="tt_wn_seen";
-var WHATSNEW=[{"id":"2026-08-14-e-tracks","date":"August 14, 2026","title":"Two tracks: Executive and PM / RMF","body":"The search now covers Program and Project Management, RMF leadership and practitioner roles, and FedRAMP, StateRAMP and CMMC compliance alongside the original Senior Director and VP roles. Use the Both tracks filter to switch between them. Where a role is a step down in scope, the card says so plainly."},{"id":"2026-08-14-d-save","date":"August 14, 2026","title":"Save roles and email them to yourself","body":"Click any stage button on a role to save it. The bar under the tabs lets you email the list to yourself, copy it, download a CSV, or back it up so it survives clearing your browser."},{"id":"2026-08-14-c-guide","date":"August 14, 2026","title":"New How to use tab","body":"A plain-language guide to reading a card, tracking applications, and what the dashboard does and does not know."},{"id":"2026-08-14-b-verified","date":"August 14, 2026","title":"Every role re-checked against its live posting","body":"Roles are now opened and verified for remote status, seniority and published salary before they appear. Anything that fails is removed rather than shown with a lower score. Cards show real posting dates and close dates."},{"id":"2026-08-14-a-comp","date":"August 14, 2026","title":"Honest compensation display","body":"The salary tile now counts roles where even the bottom of the published band clears the floor, and any card whose band starts below it says so in amber."}];
+var WHATSNEW=[
+{id:"2026-09-30-a-refresh",date:"September 30, 2026",title:"A cleaner, faster dashboard",
+ body:"Roles now start near the top of the page, with four tiles instead of nine and the less-used filters behind More filters. Each card has a Save to pipeline menu, and Gap analysis and Tailor resume links that build a ready-made prompt for whichever AI assistant you use - attach your resume there and paste. Roles added since your last visit get a New badge, and a search bar stays pinned at the top as you scroll. The page also follows your device's light or dark setting."},
+{"id":"2026-08-14-e-tracks","date":"August 14, 2026","title":"Two tracks: Executive and PM / RMF","body":"The search now covers Program and Project Management, RMF leadership and practitioner roles, and FedRAMP, StateRAMP and CMMC compliance alongside the original Senior Director and VP roles. Use the Both tracks filter to switch between them. Where a role is a step down in scope, the card says so plainly."},{"id":"2026-08-14-d-save","date":"August 14, 2026","title":"Save roles and email them to yourself","body":"Click any stage button on a role to save it. The bar under the tabs lets you email the list to yourself, copy it, download a CSV, or back it up so it survives clearing your browser."},{"id":"2026-08-14-c-guide","date":"August 14, 2026","title":"New How to use tab","body":"A plain-language guide to reading a card, tracking applications, and what the dashboard does and does not know."},{"id":"2026-08-14-b-verified","date":"August 14, 2026","title":"Every role re-checked against its live posting","body":"Roles are now opened and verified for remote status, seniority and published salary before they appear. Anything that fails is removed rather than shown with a lower score. Cards show real posting dates and close dates."},{"id":"2026-08-14-a-comp","date":"August 14, 2026","title":"Honest compensation display","body":"The salary tile now counts roles where even the bottom of the published band clears the floor, and any card whose band starts below it says so in amber."}];
 function wnUnseen(){var s=localStorage.getItem(WN_KEY)||"";return WHATSNEW.filter(function(w){return w.id>s;});}
 function updateWnDot(){var b=document.getElementById("wnbtn");if(!b)return;var n=wnUnseen().length;b.textContent=n?("What's new ("+n+")"):"What's new";}
-function dismissWhatsNew(){localStorage.setItem(WN_KEY,WHATSNEW[0].id);var b=document.getElementById("whatsnew");if(b)b.style.display="none";updateWnDot();}
+function dismissWhatsNew(){localStorage.setItem(WN_KEY,WHATSNEW.map(function(w){return w.id;}).sort().pop());var b=document.getElementById("whatsnew");if(b)b.style.display="none";updateWnDot();}
 function renderWhatsNew(showAll){
 var box=document.getElementById("whatsnew");if(!box)return;
 var items=showAll?WHATSNEW:wnUnseen();
@@ -828,22 +970,11 @@ var floorSafe=JOBS.filter(function(j){return (j.salaryMin||0)>=(j.track==="Execu
 var tracked=JOBS.filter(function(j){return getRec(jobKey(j)).stage;}).length;
 var closing=JOBS.filter(isUrgent).length;
 s.appendChild(stat(JOBS.length,"Verified roles"));
-var et=stat(execN,"Executive track");
-et.style.borderColor="#818cf8";
-s.appendChild(et);
-var pt2=stat(pmN,"PM / RMF track");
-pt2.style.borderColor="#eab308";
-s.appendChild(pt2);
 s.appendChild(stat(high,"High fit"));
-s.appendChild(stat(JOBS.length,"100% remote"));
-s.appendChild(stat(noClr,"No clearance"));
 var fs=stat(floorSafe,"Min clears floor");
 fs.title="Roles where even the BOTTOM of the published band clears the floor for that track - $225K Executive, $175K PM / RMF";
 if(floorSafe<JOBS.length)fs.style.borderColor="#eab308";
 s.appendChild(fs);
-var ct=stat(closing,"Closing <= 7d");
-if(closing>0)ct.style.borderColor="#f97316";
-s.appendChild(ct);
 var pt=stat(tracked,"In pipeline");
 pt.id="stat-pipeline";
 s.appendChild(pt);
@@ -855,6 +986,7 @@ roles.forEach(function(r){var o=document.createElement("option");o.value=r;o.tex
 }
 
 function showTab(btn){
+var mb=document.getElementById("minibar");if(mb){mb.classList.remove("show");mb.setAttribute("aria-hidden","true");}
 var tabs=document.querySelectorAll(".tab");
 for(var i=0;i<tabs.length;i++)tabs[i].classList.remove("active");
 btn.classList.add("active");
@@ -864,12 +996,19 @@ document.getElementById(btn.getAttribute("data-panel")).classList.add("active");
 if(btn.getAttribute("data-panel")==="p-analytics")renderCharts();
 }
 
+function toggleMore(force){
+var m=document.getElementById("morefilters"),b=document.getElementById("morebtn");
+var open=typeof force==="boolean"?force:!m.classList.contains("open");
+m.classList.toggle("open",open);b.setAttribute("aria-expanded",open?"true":"false");moreLabel();}
+function moreLabel(){
+var n=["priority","sector","level","role","stage"].filter(function(id){return val(id);}).length;
+var open=document.getElementById("morefilters").classList.contains("open");
+document.getElementById("morebtn").textContent=(open?"Fewer filters":"More filters")+(n?" ("+n+")":"");}
 function resetFilters(){
 ["q","track","priority","sector","level","role","comp","stage"].forEach(function(id){
 document.getElementById(id).value="";});
 document.getElementById("sort").value="score";
-renderGrid();
-}
+document.getElementById("q2").value="";moreLabel();renderGrid();}
 
 function toggleTheme(){
 var cur=document.documentElement.getAttribute("data-theme")||"dark";
@@ -880,10 +1019,62 @@ document.getElementById("theme-btn").textContent=next==="light"?"Dark Mode":"Lig
 renderCharts();
 }
 function initTheme(){
-var saved=localStorage.getItem("tt_theme")||"dark";
-document.documentElement.setAttribute("data-theme",saved);
-document.getElementById("theme-btn").textContent=saved==="light"?"Dark Mode":"Light Mode";
-}
+var cur=document.documentElement.getAttribute("data-theme")||"dark";
+document.getElementById("theme-btn").textContent=cur==="light"?"Dark Mode":"Light Mode";
+/* until she picks a theme, follow the device setting as it changes */
+if(window.matchMedia)matchMedia("(prefers-color-scheme: light)").addEventListener("change",function(e){
+if(localStorage.getItem("tt_theme"))return;
+document.documentElement.setAttribute("data-theme",e.matches?"light":"dark");
+initTheme();renderCharts();});}
+/* Gap analysis / tailored resume: builds a prompt from this card's public job data.
+   Nothing is sent anywhere; it is pasted into the job seeker's own AI assistant chat with their resume. */
+function aiJobBlock(j){
+var L=["JOB I'M CONSIDERING"];
+L.push("Title: "+j.title,"Employer: "+j.company,"Level: "+(j.level||"not stated"),"Location: "+(j.location||"not stated"),"Compensation (as published): "+(j.salary||"not published"),"Track: "+(j.track||""));
+if(j.clearance&&j.clearance!=="None")L.push("Clearance: "+j.clearance);
+L.push("Posting: "+j.url);
+if(j.notes)L.push("Dashboard notes: "+j.notes);
+return L.join("\n");}
+function aiPrompt(j,kind){
+var head="I'm a senior IT and cyber risk executive (CISSP, PMP, MS Computer Systems Management, active security clearance), and I'm considering the role below. I've attached my current resume.\n\n"+aiJobBlock(j)+
+"\n\nFirst, open the posting link and read the full job description. If you can't open it, stop and ask me to paste the description - don't guess the requirements from the job title.\n\n";
+if(kind==="gap")return head+
+"Then give me a gap analysis:\n"+
+"1. A table of every required and preferred qualification in the posting (scope of leadership, budget and headcount, domain, certifications, clearance, industry), whether my resume shows it (Yes / Partly / No), and the resume evidence.\n"+
+"2. Hard barriers listed separately from gaps I can close or explain.\n"+
+"3. How this role's scope compares with my current scope - step up, lateral or step down - and what that means for the level and compensation I should negotiate.\n"+
+"4. My strongest selling points for this role, taken only from my resume, framed for an executive audience.\n"+
+"5. How to address each gap honestly in a cover letter or interview.\n"+
+"6. A verdict - apply now, apply with a plan, or skip - with the reason.\n\n"+
+"Rules: use only what's in my resume. Don't assume experience, tools, certifications or numbers I haven't listed. If something is unclear, ask me.";
+return head+
+"Then tailor my resume to this job.\n\n"+
+"Rules - these matter more than keyword matching:\n"+
+"- Use only facts from my resume. You may reorder, emphasise and rephrase, but never add a skill, tool, certification, title, date or number that isn't already there.\n"+
+"- If the posting asks for something my resume doesn't show, don't put it in the resume. List it under \"Gaps not added\" instead.\n"+
+"- Where the posting's wording truthfully describes something I've done, use its wording (it helps with applicant tracking systems).\n"+
+"- ATS-friendly format: one column, standard headings (Executive Summary, Core Competencies, Professional Experience, Certifications, Education), no tables, columns or graphics.\n"+
+"- State the clearance only as \"Active security clearance - details on request\"; never name a level.\n"+
+"- Keep headline metrics (budget, headcount, portfolio size) exactly as they appear in my resume.\n"+"\nGive me:\n"+
+"1. The tailored resume, ready to paste into Word.\n"+
+"2. A short list of what you changed and why.\n"+
+"3. Gaps not added - requirements I don't show, so I can decide how to handle them.\n"+
+"4. Anything you need me to confirm before I send it.\n"+
+"Then offer to write a short cover letter using the same rules.";}
+function openAI(j,kind){
+var d=document.getElementById("aidlg");
+document.getElementById("aititle").textContent=(kind==="gap"?"Gap analysis":"Tailor my resume")+": "+j.title;
+document.getElementById("aisub").textContent=j.company+" - "+(j.city||j.location||j.market||"")+". You can edit the prompt below before copying it.";
+document.getElementById("aitext").value=aiPrompt(j,kind);
+document.getElementById("aimsg").textContent="";
+if(d.showModal)d.showModal();else d.setAttribute("open","");
+document.getElementById("aitext").scrollTop=0;document.getElementById("aigo").focus();}
+function aiCopy(){
+var txt=document.getElementById("aitext").value,m=document.getElementById("aimsg");
+function ok(){m.textContent="Copied - now paste it into your AI assistant with your resume attached.";}
+function fb(){var ta=document.getElementById("aitext");ta.focus();ta.select();
+try{document.execCommand("copy");ok();}catch(e){m.textContent="Select the text above and copy it (Cmd+C / Ctrl+C).";}}
+if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(ok,fb);else fb();}
 initTheme();
 renderWhatsNew(false);
 
@@ -891,6 +1082,8 @@ fetch("jobs.json?v="+Date.now(),{cache:"no-store"})
 .then(function(r){return r.json();})
 .then(function(data){
 JOBS=data.sort(function(a,b){return b.score-a.score;});
+migrateOld();
+markNewJobs();
 buildStats();
 var vdates=[];
 JOBS.forEach(function(j){if(j.verified&&vdates.indexOf(j.verified)<0)vdates.push(j.verified);});
@@ -901,8 +1094,9 @@ document.getElementById("updated").textContent=
 " - "+JOBS.length+" roles, every one re-checked for remote status, level and published salary"+
 (urgent?" - "+urgent+" closing within 7 days":"");
 renderAll();
+initMinibar();
 ["q","track","priority","sector","level","role","comp","stage","sort"].forEach(function(id){
-document.getElementById(id).addEventListener(id==="q"?"input":"change",renderGrid);});
+document.getElementById(id).addEventListener(id==="q"?"input":"change",function(){moreLabel();renderGrid();});});
 })
 .catch(function(e){
 document.getElementById("grid").innerHTML=
@@ -939,8 +1133,7 @@ document.getElementById("grid").innerHTML=
         s.className=MARK;
         s.textContent=(f.days>3?"Needs recheck - last confirmed ":"Confirmed open ")+f.lbl;
         s.title="Date this posting was last opened and confirmed still accepting applications.";
-        s.style.cssText="display:inline-block;font-size:11px;line-height:1.4;margin:0 8px 0 0;padding:2px 7px;border-radius:999px;white-space:nowrap;vertical-align:middle;"
-          +(f.days>3?"background:rgba(194,65,12,.13);color:#c2410c;font-weight:600;":"background:rgba(22,163,74,.12);color:#15803d;");
+        s.className=MARK+" vbadge"+(f.days>3?" stale":"");
         if(!old&&a.parentNode)a.parentNode.insertBefore(s,a);
       });
     }).catch(function(){});
