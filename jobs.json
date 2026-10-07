@@ -20,8 +20,8 @@
   "posted": "2026-09-16",
   "postedDate": "2026-09-16",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Re-opened on Built In 2026-09-23: page live with no removal notice, header 'Hiring Remotely', Posted 7 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -47,52 +47,6 @@
  },
  {
   "id": 2,
-  "key": "tebra-vp-technology-operations",
-  "track": "Executive",
-  "score": 90,
-  "title": "Vice President, Technology Operations",
-  "company": "Tebra",
-  "sector": "Healthcare",
-  "level": "VP",
-  "location": "United States - Remote",
-  "salary": "$282,000-$322,000 base (Zone 1 national average)",
-  "salaryMin": 282000,
-  "salaryMax": 322000,
-  "roleType": "IT Leadership",
-  "priority": "High",
-  "clearance": "None",
-  "url": "https://job-boards.greenhouse.io/tebra/jobs/4715321005",
-  "notes": "Healthcare IT platform - VP owning technology operations - maps to your IT services delivery and operational P&L experience",
-  "posted": "2026-08-12",
-  "postedDate": "2026-08-12",
-  "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
-  "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'United States - Remote'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
-  "fit": {
-   "comp": 5,
-   "domain": 4,
-   "industry": 4,
-   "leadership": 5,
-   "remote": 5
-  },
-  "fitNotes": {
-   "comp": "Posting publishes a single national band of $282,000-$322,000, above the track floor",
-   "domain": "IT services operations and delivery leadership is your day job; less cyber-specific than your core",
-   "industry": "Healthcare IT is a named target sector; you have not worked in an EHR product company",
-   "leadership": "VP-level ownership of a technology operations organization, at or slightly above your current level",
-   "remote": "Posting location reads 'United States - Remote'; body states no office attendance requirement"
-  },
-  "intel": {
-   "hq": "Newport Beach, CA",
-   "levelHistory": "Not determined",
-   "news": "Not determined",
-   "remotePolicy": "US remote on this req",
-   "size": "Not determined"
-  }
- },
- {
-  "id": 3,
   "key": "danaher--vice-president-information-security--remote-us",
   "track": "Executive",
   "score": 88,
@@ -112,8 +66,8 @@
   "posted": "2026-08-22",
   "postedDate": "2026-08-22",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Re-opened on Built In 2026-09-23: page live with no removal notice, header 'Hiring Remotely', Posted One Month Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -138,7 +92,7 @@
   }
  },
  {
-  "id": 4,
+  "id": 3,
   "key": "skylight--vp-defense-and-security--remote-us",
   "track": "Executive",
   "score": 88,
@@ -158,8 +112,8 @@
   "posted": "",
   "postedDate": "",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Opened 2026-09-28 on Built In (Posted One Month Ago, no closed signal). Posting body: Location - This is a fully remote position; all work must be conducted within the U.S.; salary range $210,000 to $270,000; may be required to obtain a public trust or security clearance. Exact posting date not published (Built In shows only One Month Ago). | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -184,7 +138,7 @@
   }
  },
  {
-  "id": 5,
+  "id": 4,
   "key": "guild-mortgage--vp-chief-information-security-officer--remote-us",
   "track": "Executive",
   "score": 86,
@@ -204,8 +158,8 @@
   "posted": "2026-09-11",
   "postedDate": "2026-09-11",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Re-opened on Built In 2026-09-23: page live with no removal notice, header 'Hiring Remotely', Posted 12 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -230,7 +184,7 @@
   }
  },
  {
-  "id": 6,
+  "id": 5,
   "key": "kroll--senior-director-cyber-strategy-and-risk-advisory--remote-us",
   "track": "Executive",
   "score": 85,
@@ -250,8 +204,8 @@
   "posted": "2026-09-04",
   "postedDate": "2026-09-04",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Re-opened on Built In 2026-09-23: page live with no removal notice, header 'Hiring Remotely', Posted 19 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -276,7 +230,7 @@
   }
  },
  {
-  "id": 7,
+  "id": 6,
   "key": "modern-health--senior-director-information-risk-and-governance--remote-us",
   "track": "Executive",
   "score": 84,
@@ -296,8 +250,8 @@
   "posted": "2026-08-11",
   "postedDate": "2026-08-11",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Opened 2026-09-23 on Greenhouse and confirmed on the live board index (boards-api): location 'Remote - US', company described as 'a fully remote workforce', Zone 4 (lists MD) base pay $196,605-$231,285; first published 2026-08-11. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 3,
@@ -322,7 +276,7 @@
   }
  },
  {
-  "id": 8,
+  "id": 7,
   "key": "trace3--vp-security--remote-us",
   "track": "Executive",
   "score": 80,
@@ -342,8 +296,8 @@
   "posted": "2026-09-01",
   "postedDate": "2026-09-01",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Re-opened on Built In 2026-09-23: page live with no removal notice, header 'Hiring Remotely', Posted 22 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -368,7 +322,7 @@
   }
  },
  {
-  "id": 9,
+  "id": 8,
   "key": "docker--senior-director-it--remote-us",
   "track": "Executive",
   "score": 80,
@@ -388,8 +342,8 @@
   "posted": "2026-08-27",
   "postedDate": "2026-08-27",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Opened on Built In 2026-09-23: page live with no removal notice, Posted 27 Days Ago. Body says 'remote-first by design - work from your home, with offices in Seattle and Paris' and carries #LI-REMOTE; compensation stated as United States $207,550-$296,500 plus equity. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -414,7 +368,7 @@
   }
  },
  {
-  "id": 10,
+  "id": 9,
   "key": "circle--vp-global-head-of-product-security-and-risk--remote-us",
   "track": "Executive",
   "score": 80,
@@ -434,8 +388,8 @@
   "posted": "",
   "postedDate": "",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Opened 2026-10-02 on Built In (8727822): page live with no removal notice, header shows Remote work model; body carries the #LI-Remote tag and states Base Pay Range: $317,500 - $365,000 with a note that ranges may differ for candidates in other locations. Board shows Posted One Month Ago - exact date not published. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "leadership": 5,
@@ -460,7 +414,7 @@
   }
  },
  {
-  "id": 11,
+  "id": 10,
   "key": "mlabs-client--head-of-security-and-risk--remote-us",
   "track": "Executive",
   "score": 77,
@@ -480,8 +434,8 @@
   "posted": "2026-09-23",
   "postedDate": "2026-09-23",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Opened 2026-10-02 on Built In (11331015): page live with no removal notice, Posted 9 Days Ago. Body states Location: Remote - US, Remote (Preference for NYC based candidates), Compensation: $200K - $250K; role recruited by MLabs on behalf of an unnamed client. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "leadership": 4,
@@ -506,7 +460,7 @@
   }
  },
  {
-  "id": 12,
+  "id": 11,
   "key": "reddit--senior-director-product-and-finance-technology--remote-us",
   "track": "Executive",
   "score": 76,
@@ -526,8 +480,8 @@
   "posted": "2026-06-24",
   "postedDate": "2026-06-24",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote - United States'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -552,7 +506,7 @@
   }
  },
  {
-  "id": 13,
+  "id": 12,
   "key": "centralsquare-technologies--senior-director-it-and-enterprise-applications--remote-us",
   "track": "Executive",
   "score": 76,
@@ -572,8 +526,8 @@
   "posted": "2026-09-25",
   "postedDate": "2026-09-25",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Opened 2026-09-28 on Built In (Job Posted 3 Days Ago, no closed signal). Employer title reads Senior Director, IT & Enterprise Applications - Remote; body references working whether in the office or remote. No salary published anywhere in the posting. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 2,
@@ -598,7 +552,7 @@
   }
  },
  {
-  "id": 14,
+  "id": 13,
   "key": "toast--senior-director-product-and-platform-security--remote-us",
   "track": "Executive",
   "score": 74,
@@ -618,8 +572,8 @@
   "posted": "2026-09-24",
   "postedDate": "2026-09-24",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Opened 2026-10-02 via the Greenhouse job API and confirmed on the live board index (token toast, req 8221509): title Senior Director, Product and Platform Security; location \"Remote, United States\"; three published zone bands $215,000-$440,000; body carries company hybrid-model boilerplate pointing to a regional locations page but names no office days for this req. Built In copy (11364743) also live, header Remote. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "leadership": 5,
@@ -644,7 +598,7 @@
   }
  },
  {
-  "id": 15,
+  "id": 14,
   "key": "mercury--head-of-revenue-technology-and-architecture--remote-us",
   "track": "Executive",
   "score": 72,
@@ -664,8 +618,8 @@
   "posted": "2026-08-03",
   "postedDate": "2026-08-03",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'San Francisco, CA, New York, NY, Portland, OR, or Remote within United States'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -690,7 +644,7 @@
   }
  },
  {
-  "id": 16,
+  "id": 15,
   "key": "diebold-nixdorf--senior-director-strategic-it-partner-administration-finance--remote-us",
   "track": "Executive",
   "score": 72,
@@ -710,8 +664,8 @@
   "posted": "2026-09-17",
   "postedDate": "2026-09-17",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Opened 2026-10-02 on Built In (11236400): page live with no removal notice, Posted 15 Days Ago, header Remote. Body states candidates must be based in the United States and able to work effectively in a remote leadership role, with periodic travel as required. No salary published. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "leadership": 4,
@@ -736,7 +690,7 @@
   }
  },
  {
-  "id": 17,
+  "id": 16,
   "key": "vida-health--senior-director-engineering-operations-and-security--remote-us",
   "track": "Executive",
   "score": 68,
@@ -756,8 +710,8 @@
   "posted": "2026-09-10",
   "postedDate": "2026-09-10",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Re-opened on Built In 2026-09-23: page live with no removal notice, header 'Hiring Remotely', Posted 13 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -782,7 +736,7 @@
   }
  },
  {
-  "id": 18,
+  "id": 17,
   "key": "vanta--lead-product-grc-subject-matter-expert--remote-us",
   "track": "PM / RMF",
   "score": 86,
@@ -802,8 +756,8 @@
   "posted": "2026-08-12",
   "postedDate": "2026-08-12",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Re-confirmed 2026-09-23 against the live Ashby job board API: posting still listed, location 'Remote U.S.', workplace type Remote, compensation $230K - $270K (plus equity and other components per the board record). | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -828,7 +782,7 @@
   }
  },
  {
-  "id": 19,
+  "id": 18,
   "key": "affirm--director-information-technology-and-security--remote-us",
   "track": "PM / RMF",
   "score": 86,
@@ -848,8 +802,8 @@
   "posted": "2026-02-02",
   "postedDate": "2026-02-02",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Opened 2026-09-25 via the Greenhouse job API and confirmed on the live affirm board index: location 'Remote US', #LI-Remote, Affirm remote-first statement; USA Pacific band (CA, WA, NY, NJ, CT) $300,000-$360,000, all other U.S. states $267,000-$327,000; first published 2026-02-02. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -874,7 +828,7 @@
   }
  },
  {
-  "id": 20,
+  "id": 19,
   "key": "openai--senior-technical-program-manager-security--remote-us",
   "track": "PM / RMF",
   "score": 85,
@@ -894,8 +848,8 @@
   "posted": "2026-06-25",
   "postedDate": "2026-06-25",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Re-confirmed 2026-09-23 against the live Ashby job board API: posting still listed, location 'US - Remote', workplace type Remote, compensation $165.4K - $285K (plus equity and other components per the board record). | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -920,7 +874,7 @@
   }
  },
  {
-  "id": 21,
+  "id": 20,
   "key": "instacart--director-it-internal-audit--remote-us",
   "track": "PM / RMF",
   "score": 84,
@@ -940,8 +894,8 @@
   "posted": "2026-08-10",
   "postedDate": "2026-08-10",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'United States - Remote'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -966,7 +920,7 @@
   }
  },
  {
-  "id": 22,
+  "id": 21,
   "key": "wiz--senior-technical-program-manager-security--remote-us",
   "track": "PM / RMF",
   "score": 84,
@@ -986,8 +940,8 @@
   "posted": "2026-09-22",
   "postedDate": "2026-09-22",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Opened 2026-09-23 via the Greenhouse board API and confirmed on the live wizinc board index: location 'Remote - USA', US base pay range $189,000-$258,000; first published 2026-09-22. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -1012,7 +966,7 @@
   }
  },
  {
-  "id": 23,
+  "id": 22,
   "key": "coinbase--manager-grc--remote-us",
   "track": "PM / RMF",
   "score": 83,
@@ -1032,8 +986,8 @@
   "posted": "2026-08-31",
   "postedDate": "2026-08-31",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote - USA'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -1058,7 +1012,7 @@
   }
  },
  {
-  "id": 24,
+  "id": 23,
   "key": "gitlab--senior-security-compliance-engineer-public-sector--remote-us",
   "track": "PM / RMF",
   "score": 82,
@@ -1078,8 +1032,8 @@
   "posted": "2026-09-04",
   "postedDate": "2026-09-04",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote, United States'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 3,
@@ -1104,7 +1058,7 @@
   }
  },
  {
-  "id": 25,
+  "id": 24,
   "key": "pinterest--staff-technical-program-manager-security--remote-us",
   "track": "PM / RMF",
   "score": 82,
@@ -1124,8 +1078,8 @@
   "posted": "2026-07-29",
   "postedDate": "2026-07-29",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Posting states in-office collaboration 1-2 times per quarter and the role can be situated anywhere in the country. Prior note: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'San Francisco, CA, US; Remote, US'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -1150,7 +1104,7 @@
   }
  },
  {
-  "id": 26,
+  "id": 25,
   "key": "toast--director-customer-trust--remote-us",
   "track": "PM / RMF",
   "score": 82,
@@ -1170,8 +1124,8 @@
   "posted": "2026-09-28",
   "postedDate": "2026-09-28",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Opened 2026-09-30 via the Greenhouse job API and confirmed on the live board index (token toast, req 8221504): location \"Remote, United States\"; three published zone bands $159,000-$326,000; posting body includes company hybrid-model boilerplate pointing to a regional locations page but states no required office days for this req. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -1196,7 +1150,7 @@
   }
  },
  {
-  "id": 27,
+  "id": 26,
   "key": "solventum--fms-fedramp-program-manager--remote-us",
   "track": "PM / RMF",
   "score": 82,
@@ -1216,8 +1170,8 @@
   "posted": "2026-09-28",
   "postedDate": "2026-09-28",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Opened 2026-10-02 on Built In (11408764): page live with no removal notice, Posted 4 Days Ago. Body states Location: Remote, Travel: 20%, relocation not authorized, on-site onboarding during the initial days of employment, and an expected US compensation range of $143,200 - $196,900 including base plus variable incentive pay. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "leadership": 3,
@@ -1242,7 +1196,7 @@
   }
  },
  {
-  "id": 28,
+  "id": 27,
   "key": "gitlab--senior-technical-program-manager--remote-us",
   "track": "PM / RMF",
   "score": 80,
@@ -1262,8 +1216,8 @@
   "posted": "2026-08-25",
   "postedDate": "2026-08-25",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote, Canada; Remote, United States'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -1288,7 +1242,7 @@
   }
  },
  {
-  "id": 29,
+  "id": 28,
   "key": "abridge--program-director-federal--remote-us",
   "track": "PM / RMF",
   "score": 80,
@@ -1308,8 +1262,8 @@
   "posted": "2026-09-22",
   "postedDate": "2026-09-22",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Opened 2026-09-25 via the live Ashby job-board API (req present): location 'Remote - Tier 1', isRemote true, workplace type Remote; published 2026-09-22; Tier 1 $207K-$258K, Tier 2 $186K-$232K. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -1334,7 +1288,7 @@
   }
  },
  {
-  "id": 30,
+  "id": 29,
   "key": "vanta--grc-expert-gtm-v4g--remote-us",
   "track": "PM / RMF",
   "score": 80,
@@ -1354,8 +1308,8 @@
   "posted": "2026-09-04",
   "postedDate": "2026-09-04",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Opened 2026-09-30 on the live Ashby job-board API (org vanta): listed, workplace type Remote, location \"Remote U.S.\", compensation \"$171K - $201K\" cash range plus equity; body asks for travel roughly twice per quarter and carries #LI-remote. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 3,
@@ -1380,7 +1334,7 @@
   }
  },
  {
-  "id": 31,
+  "id": 30,
   "key": "tines--senior-manager-product-security--remote-us",
   "track": "PM / RMF",
   "score": 79,
@@ -1400,8 +1354,8 @@
   "posted": "2026-08-27",
   "postedDate": "2026-08-27",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'United States (Remote)'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -1426,7 +1380,7 @@
   }
  },
  {
-  "id": 32,
+  "id": 31,
   "key": "abnormal-security--senior-security-engineer-fedramp--remote-us",
   "track": "PM / RMF",
   "score": 78,
@@ -1446,8 +1400,8 @@
   "posted": "2026-03-12",
   "postedDate": "2026-03-12",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Title on the board now reads \"Senior Security Engineer\"; body describes a Senior Cloud Security Engineer protecting a FedRAMP authorized environment. Prior note: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote - USA'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -1472,7 +1426,7 @@
   }
  },
  {
-  "id": 33,
+  "id": 32,
   "key": "reddit--staff-technical-program-manager--remote-us",
   "track": "PM / RMF",
   "score": 78,
@@ -1492,8 +1446,8 @@
   "posted": "2026-07-07",
   "postedDate": "2026-07-07",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote - United States'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -1518,7 +1472,7 @@
   }
  },
  {
-  "id": 34,
+  "id": 33,
   "key": "headway--staff-technical-program-manager--remote-us",
   "track": "PM / RMF",
   "score": 77,
@@ -1538,8 +1492,8 @@
   "posted": "2026-06-25",
   "postedDate": "2026-06-25",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Re-confirmed 2026-09-23 against the live Ashby job board API: posting still listed, location 'Remote', workplace type Remote, compensation $190.4K - $238K (plus equity and other components per the board record). | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -1564,7 +1518,7 @@
   }
  },
  {
-  "id": 35,
+  "id": 34,
   "key": "cyberhaven--director-technical-program-management--remote-us",
   "track": "PM / RMF",
   "score": 77,
@@ -1584,8 +1538,8 @@
   "posted": "2026-09-22",
   "postedDate": "2026-09-22",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Posting asks for location in the Eastern Timezone, which covers Maryland. Prior note: Confirmed 2026-09-23 on the live Ashby job board API: listed, location 'US Remote', workplaceType Remote, compensation $200K-$220K plus equity, published 2026-09-22; description read in full. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 5,
@@ -1610,53 +1564,7 @@
   }
  },
  {
-  "id": 36,
-  "key": "reddit--principal-technical-program-manager-performance--remote-us",
-  "track": "PM / RMF",
-  "score": 76,
-  "title": "Principal Technical Program Manager, Performance",
-  "company": "Reddit",
-  "sector": "Commercial",
-  "level": "Senior / Lead",
-  "location": "Remote - United States",
-  "salary": "$260,800-$365,100 base",
-  "salaryMin": 260800,
-  "salaryMax": 365100,
-  "roleType": "Program Management",
-  "priority": "Medium",
-  "clearance": "None",
-  "url": "https://boards.greenhouse.io/reddit/jobs/7947049",
-  "notes": "Highest published band of any program role on this board, but the subject matter is application and infrastructure performance engineering - a real technical-depth gap you would have to argue around",
-  "posted": "2026-05-20",
-  "postedDate": "2026-05-20",
-  "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
-  "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'Remote - United States'; posting content re-read and published pay range matches the record. | Re-verified live 2026-10-05 against board index/posting page.",
-  "fit": {
-   "comp": 5,
-   "domain": 2,
-   "industry": 3,
-   "leadership": 3,
-   "remote": 5
-  },
-  "fitNotes": {
-   "comp": "Published base range $260,800-$365,100, well above the track floor",
-   "domain": "Performance engineering programs are outside your security, risk and services delivery record",
-   "industry": "Consumer internet at very large scale is a new context",
-   "leadership": "Principal TPM - the top individual-contributor program rung",
-   "remote": "Posting location reads 'Remote - United States'"
-  },
-  "intel": {
-   "hq": "San Francisco, CA",
-   "levelHistory": "Not determined",
-   "news": "Not determined",
-   "remotePolicy": "Remote - United States on this req",
-   "size": "Not determined"
-  }
- },
- {
-  "id": 37,
+  "id": 35,
   "key": "tdi--dow-information-systems-security-manager--remote-us",
   "track": "PM / RMF",
   "score": 76,
@@ -1676,8 +1584,8 @@
   "posted": "2026-09-04",
   "postedDate": "2026-09-04",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: Built In posting re-opened and read - no removal notice, remote header and published pay unchanged. Prior: Opened on Built In 2026-09-23: page live with no removal notice, Posted 19 Days Ago. Body: 'The position is remote requiring a Secret or Top-secret, active clearance' and 'Minimal travel will be required'; salary range $150,000-$180,000. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 3,
@@ -1702,7 +1610,7 @@
   }
  },
  {
-  "id": 38,
+  "id": 36,
   "key": "voyager-technologies--grc-lead--remote-us",
   "track": "PM / RMF",
   "score": 76,
@@ -1722,8 +1630,8 @@
   "posted": "2026-09-29",
   "postedDate": "2026-09-29",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Opened 2026-10-02 on Built In (11429330): page live with no removal notice, Posted 3 Days Ago. Body states \"This role is remote\", reports to the Senior Director of Cybersecurity, good-faith base salary range $140,000-$185,000, and access to export-controlled (ITAR) information. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "leadership": 3,
@@ -1748,53 +1656,7 @@
   }
  },
  {
-  "id": 39,
-  "key": "sardine--security-compliance-manager--remote-us",
-  "track": "PM / RMF",
-  "score": 74,
-  "title": "Security Compliance Manager",
-  "company": "Sardine",
-  "sector": "Commercial",
-  "level": "Senior Manager",
-  "location": "United States - Remote",
-  "salary": "$130,000-$190,000 plus equity",
-  "salaryMin": 130000,
-  "salaryMax": 190000,
-  "roleType": "GRC / Risk",
-  "priority": "Stretch",
-  "clearance": "None",
-  "url": "https://jobs.ashbyhq.com/sardine/b968a8f3-acf8-4209-9831-ad45f5f3c54d",
-  "notes": "Security compliance ownership at a small company - domain fit is good but this is a manager-tier seat well below your current level, and only the top of the band clears the track floor",
-  "posted": "2026-08-25",
-  "postedDate": "2026-08-25",
-  "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
-  "verifiedNote": "Re-verified 2026-10-02: posting still listed on the live Ashby job-board API (isListed true, workplace type Remote) - location and compensation re-read and unchanged. Prior: Re-confirmed 2026-09-23 against the live Ashby job board API: posting still listed, location 'United States', workplace type Remote, compensation $130K - $190K (plus equity and other components per the board record). | Re-verified live 2026-10-05 against board index/posting page.",
-  "fit": {
-   "comp": 3,
-   "domain": 5,
-   "industry": 3,
-   "leadership": 2,
-   "remote": 5
-  },
-  "fitNotes": {
-   "comp": "Published range $130,000-$190,000 plus equity; only the upper portion clears the track floor",
-   "domain": "Security compliance program work is a direct match",
-   "industry": "Fraud and risk infrastructure is a new vertical",
-   "leadership": "Manager-tier compliance ownership, likely with few or no direct reports at this company size",
-   "remote": "Ashby board record marks the posting remote with location 'United States'"
-  },
-  "intel": {
-   "hq": "San Francisco, CA",
-   "levelHistory": "Not determined",
-   "news": "Not determined",
-   "remotePolicy": "Remote, United States per the job board record",
-   "size": "Not determined"
-  }
- },
- {
-  "id": 40,
+  "id": 37,
   "key": "mercury--senior-manager-data-and-ai-governance--remote-us",
   "track": "PM / RMF",
   "score": 74,
@@ -1814,8 +1676,8 @@
   "posted": "2026-08-13",
   "postedDate": "2026-08-13",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Opened 2026-09-30 via the Greenhouse job API and confirmed on the live board index (token mercury, req 6142625004): location lists SF, NY, Portland \"or Remote within United States\"; bands $225,800-$282,300 for NYC/LA/Seattle/SF Bay and $203,300-$254,100 for other US locations. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
@@ -1840,7 +1702,7 @@
   }
  },
  {
-  "id": 41,
+  "id": 38,
   "key": "chainguard--senior-technical-program-manager--remote-us",
   "track": "PM / RMF",
   "score": 71,
@@ -1860,8 +1722,8 @@
   "posted": "2026-08-27",
   "postedDate": "2026-08-27",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Re-confirmed 2026-09-23: req still listed on the live Greenhouse board index (boards-api) with location 'United States - Remote'; posting content re-read and published pay range matches the record. Pay range changed since the last run (was $153,000-$180,000); record updated to the posting. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 3,
@@ -1886,7 +1748,7 @@
   }
  },
  {
-  "id": 42,
+  "id": 39,
   "key": "affirm--security-risk-management-lead--remote-us",
   "track": "PM / RMF",
   "score": 68,
@@ -1906,8 +1768,8 @@
   "posted": "2026-06-05",
   "postedDate": "2026-06-05",
   "expiresOn": "",
-  "verified": "2026-10-05",
-  "lastVerified": "2026-10-05",
+  "verified": "2026-10-07",
+  "lastVerified": "2026-10-07",
   "verifiedNote": "Re-verified 2026-10-02: req still listed on the live Greenhouse board index (boards-api) and job content re-read via the job API - location, work model and pay band unchanged. Prior: Opened 2026-09-23 via the Greenhouse board API and confirmed on the live affirm board index: location 'Remote US', 'Affirm is proud to be a remote-first company'; Sapphire band (all other U.S. states) $146,000-$206,000, Pacific band (CA, WA, NY, NJ, CT) $165,000-$225,000; first published 2026-06-05. | Re-verified live 2026-10-05 against board index/posting page.",
   "fit": {
    "comp": 4,
