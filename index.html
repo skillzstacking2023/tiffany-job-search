@@ -317,6 +317,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <div class="morefilters" id="morefilters">
 <select id="priority"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Stretch</option></select>
 <select id="sector"><option value="">All sectors</option><option>Commercial</option><option>Healthcare</option><option>State Gov</option><option>Defense</option></select>
+<select id="wm"><option value="">Any work model</option><option value="Remote">100% remote</option><option value="Onsite - cleared site">Onsite - cleared site</option><option value="Cleared site - limited telework">Cleared site - limited telework</option></select>
 <select id="level"><option value="">All levels</option><option>VP</option><option>Senior Director</option><option>Director</option><option>Senior Manager</option><option>Senior / Lead</option></select>
 <select id="role"><option value="">All functions</option></select>
 <select id="stage">
@@ -355,13 +356,13 @@ document.documentElement.setAttribute("data-theme",t);})();
 <p>Every role on this dashboard has been opened and read against the live posting before it was published. Nothing is listed on the strength of a search-result summary. Four things are checked on each one:</p>
 <ul>
 <li><strong>Still open</strong> - no expired, filled or closed postings</li>
-<li><strong>Genuinely 100% remote</strong>, and remote for someone living in Maryland. If a posting never actually uses the word remote, it is dropped rather than assumed</li>
+<li><strong>Work model</strong> - either genuinely 100% remote and open to someone living in Maryland, or onsite at a cleared site within commuting distance (Fort Meade, Annapolis Junction, Hanover and nearby), with any telework the posting states shown on the card. Hybrid schedules of several days a week are not included. Remote roles must use the word remote; if a posting never states where the work is done and it is outside the Fort Meade area, it is dropped rather than assumed</li>
 <li><strong>Senior Director or VP</strong> - a role titled Director, or one whose body text reads Director, does not belong here</li>
 <li><strong>The salary band that applies to Maryland</strong>, not a higher band published for another state</li>
 </ul>
 <p>Roles that fail any of these are removed entirely rather than kept at a lower score. That is why the list is short. A shorter honest list is the point.</p>
 
-<div class="callout"><p><strong>The search profile behind the scores.</strong> Senior cyber risk and IT services leadership. Targeting 100% remote Senior Director and VP roles in Commercial IT, Healthcare IT, State Government IT, and Defense.</p></div>
+<div class="callout"><p><strong>The search profile behind the scores.</strong> Senior cyber risk and IT services leadership. Targeting remote or cleared-site Director, Senior Director and VP roles in Commercial IT, Healthcare IT, State Government IT, and Defense.</p></div>
 
 <h2>Reading a role card</h2>
 <p>The <strong>number in the ring</strong> is an overall fit score out of 100. Green is a strong fit (85+), amber is good with a gap (75-84), orange is a stretch (65-74).</p>
@@ -402,7 +403,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <h2>What the tiles at the top mean</h2>
 <ul>
-<li><strong>Verified roles</strong> - the total, all individually checked and all 100% remote</li>
+<li><strong>Verified roles</strong> - the total, all individually checked; remote or cleared-site, as the card shows</li>
 <li><strong>High fit</strong> - scored 85 or above</li>
 <li><strong>Min clears floor</strong> - roles where even the <em>bottom</em> of the published band clears the floor for that track ($225K Executive, $175K PM / RMF). This deliberately does not count roles that merely <em>could</em> reach a high number</li>
 <li><strong>In pipeline</strong> - how many you are tracking</li>
@@ -480,7 +481,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 </div>
 </dialog>
 
-<footer>Auto-refreshed daily. Built for Tiffany T. Taylor. Scores reflect fit to your profile: 100% remote, Senior Director or VP, executive-band compensation, Commercial / Healthcare / State Government IT, and Defense. Every role here was opened and re-checked against the live posting for remote status, seniority and published salary - roles that failed were removed rather than downgraded. Where a salary is an estimate rather than a published band, the card says so. Pipeline stages and notes are saved in this browser only.</footer>
+<footer>Auto-refreshed daily. Built for Tiffany T. Taylor. Scores reflect fit to your profile: remote or cleared-site, Director, Senior Director or VP, executive-band compensation, Commercial / Healthcare / State Government IT, and Defense. Every role here was opened and re-checked against the live posting for remote status, seniority and published salary - roles that failed were removed rather than downgraded. Where a salary is an estimate rather than a published band, the card says so. Pipeline stages and notes are saved in this browser only.</footer>
 
 <script>
 var JOBS=[];
@@ -586,6 +587,7 @@ if(q&&hay.indexOf(q)<0)return false;
 if(val("track")&&j.track!==val("track"))return false;
 if(val("priority")&&j.priority!==val("priority"))return false;
 if(val("sector")&&j.sector!==val("sector"))return false;
+if(val("wm")&&(j.workModel||"Remote")!==val("wm"))return false;
 if(val("level")&&j.level!==val("level"))return false;
 if(val("role")&&j.roleType!==val("role"))return false;
 var cv=val("comp");
@@ -666,6 +668,7 @@ var b=el("div","badges");
 if(NEWJOBS[k])b.appendChild(el("span","chip newjob","New"));
 b.appendChild(el("span","chip trk"+(j.track==="Executive"?" exec":" pmrmf"),j.track));
 b.appendChild(el("span","chip remote",j.location));
+if(j.workModel&&j.workModel!=="Remote")b.appendChild(el("span","chip clr-active",j.workModel));
 if(j.clearance==="Active Required")b.appendChild(el("span","chip clr-active","Active clearance required"));
 else if(j.clearance==="Eligible/Sponsor")b.appendChild(el("span","chip clr-elig","Clearance eligible"));
 card.appendChild(b);
@@ -1001,11 +1004,11 @@ var m=document.getElementById("morefilters"),b=document.getElementById("morebtn"
 var open=typeof force==="boolean"?force:!m.classList.contains("open");
 m.classList.toggle("open",open);b.setAttribute("aria-expanded",open?"true":"false");moreLabel();}
 function moreLabel(){
-var n=["priority","sector","level","role","stage"].filter(function(id){return val(id);}).length;
+var n=["priority","sector","wm","level","role","stage"].filter(function(id){return val(id);}).length;
 var open=document.getElementById("morefilters").classList.contains("open");
 document.getElementById("morebtn").textContent=(open?"Fewer filters":"More filters")+(n?" ("+n+")":"");}
 function resetFilters(){
-["q","track","priority","sector","level","role","comp","stage"].forEach(function(id){
+["q","track","priority","sector","wm","level","role","comp","stage"].forEach(function(id){
 document.getElementById(id).value="";});
 document.getElementById("sort").value="score";
 document.getElementById("q2").value="";moreLabel();renderGrid();}
@@ -1095,7 +1098,7 @@ document.getElementById("updated").textContent=
 (urgent?" - "+urgent+" closing within 7 days":"");
 renderAll();
 initMinibar();
-["q","track","priority","sector","level","role","comp","stage","sort"].forEach(function(id){
+["q","track","priority","sector","wm","level","role","comp","stage","sort"].forEach(function(id){
 document.getElementById(id).addEventListener(id==="q"?"input":"change",function(){moreLabel();renderGrid();});});
 })
 .catch(function(e){
