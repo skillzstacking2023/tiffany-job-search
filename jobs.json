@@ -1,52 +1,6 @@
 [
  {
   "id": 1,
-  "key": "engine--vp-security--remote-us",
-  "track": "Executive",
-  "score": 90,
-  "title": "VP, Security",
-  "company": "Engine",
-  "sector": "Commercial",
-  "level": "VP",
-  "location": "Remote - US",
-  "salary": "$298,000-$400,000 base",
-  "salaryMin": 298000,
-  "salaryMax": 400000,
-  "roleType": "Cybersecurity",
-  "priority": "High",
-  "clearance": "None",
-  "url": "https://builtin.com/job/vp-security/11208181",
-  "notes": "Owns security strategy, engineering, operations, corporate IT and enterprise trust at a fast-growing travel and spend platform - the identity and access, security governance, SOC 2 and PCI control, and board-and-customer reporting work all map cleanly onto your background - the new ground is an AI security function and agent-identity work, and the industry is consumer travel technology rather than government services",
-  "posted": "2026-09-16",
-  "postedDate": "2026-09-16",
-  "expiresOn": "",
-  "verified": "2026-10-23",
-  "lastVerified": "2026-10-23",
-  "verifiedNote": " with no removal notice, header 'Hiring Remotely', Posted 7 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page. | Re-verified 2026-10-12: still on live board index/page, remote, at level, pay unchanged. | Re-verified 2026-10-16: still listed/rendering via Built In; remote location unchanged, no closed signal. | Re-verified 2026-10-19: Built In page still renders with no closed signal and 'Hiring Remotely' header; pay and level unchanged. | Re-verified 2026-10-21: req still live on source board, location/remote language unchanged.",
-  "fit": {
-   "comp": 5,
-   "domain": 5,
-   "industry": 3,
-   "leadership": 5,
-   "remote": 5
-  },
-  "fitNotes": {
-   "comp": "Posting publishes 298,000 to 400,000 USD base plus equity, well above the track floor across the entire band",
-   "domain": "Posting lists identity and access controls, AppSec, SecOps, CloudSec, and SOC 2 and PCI control support - close to your security governance and controls-assessment background, with AI security as genuinely new ground",
-   "industry": "Consumer travel and spend management software - a commercial pivot from government services, though the regulated-control work is transferable",
-   "leadership": "Executive-level ownership of security strategy, engineering, operations and corporate IT with direct exposure to executives, the board and enterprise customers",
-   "remote": "Posting header states Hiring Remotely in United States and the work model field reads Remote - the body describes a company-wide hybrid-hub model but states no office attendance requirement for this role"
-  },
-  "intel": {
-   "hq": "Denver, Colorado",
-   "levelHistory": "Not determined",
-   "news": "Posting names Telescope Partners, Blackstone, Elefund and Permira as investors and cites six consecutive years on Built In's Colorado Best Places to Work list",
-   "remotePolicy": "Company describes a hybrid-hub model with in-person, hybrid and fully remote roles - this role is posted as Remote",
-   "size": "Not determined - posting states the platform serves 38,000-plus businesses and 1.8 million travelers"
-  }
- },
- {
-  "id": 2,
   "key": "skylight--vp-defense-and-security--remote-us",
   "track": "Executive",
   "score": 88,
@@ -92,7 +46,7 @@
   }
  },
  {
-  "id": 3,
+  "id": 2,
   "key": "kroll--senior-director-cyber-strategy-and-risk-advisory--remote-us",
   "track": "Executive",
   "score": 85,
@@ -138,53 +92,7 @@
   }
  },
  {
-  "id": 4,
-  "key": "trace3--vp-security--remote-us",
-  "track": "Executive",
-  "score": 80,
-  "title": "VP, Security",
-  "company": "Trace3",
-  "sector": "Commercial",
-  "level": "VP",
-  "location": "Remote - US",
-  "salary": "$250,000-$350,000",
-  "salaryMin": 250000,
-  "salaryMax": 350000,
-  "roleType": "Growth / Capture",
-  "priority": "Medium",
-  "clearance": "None",
-  "url": "https://builtin.com/job/vp-security/10959054",
-  "notes": "Read the shape of this one before the title - it leads the Security Solutions practice at an IT solutions integrator and owns revenue, gross profit, forecasting, pipeline and operating-plan performance, with presales execution, partner relationships and go-to-market strategy - that is commercial practice leadership rather than running an internal security program, so it is a change in kind, not just in scope - the flip side is that it lines up unusually well with your capture and business development experience, and the pay is among the strongest published bands in the Executive track - the posting asks for ability to travel as required without quantifying it",
-  "posted": "2026-09-01",
-  "postedDate": "2026-09-01",
-  "expiresOn": "",
-  "verified": "2026-10-23",
-  "lastVerified": "2026-10-23",
-  "verifiedNote": "with no removal notice, header 'Hiring Remotely', Posted 22 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page. | Re-verified 2026-10-12: still on live board index/page, remote, at level, pay unchanged. | Re-verified 2026-10-16: still listed/rendering via Built In; remote location unchanged, no closed signal. | Re-verified 2026-10-19: Built In page still renders with no closed signal and 'Hiring Remotely' header; pay and level unchanged. | Re-verified 2026-10-21: req still live on source board, location/remote language unchanged.",
-  "fit": {
-   "comp": 5,
-   "domain": 3,
-   "industry": 3,
-   "leadership": 5,
-   "remote": 5
-  },
-  "fitNotes": {
-   "comp": "Posting states 250,000 to 350,000 USD, above the track floor across the whole band, though actual salary is said to depend on location and experience",
-   "domain": "Security subject matter throughout, but the work is go-to-market and client-facing delivery rather than internal security operations or controls assessment",
-   "industry": "IT solutions and consulting - adjacent to your services delivery background but commercially oriented",
-   "leadership": "Owns a practice P&L including revenue, gross profit and forecasting, and leads, coaches and develops practice teams",
-   "remote": "Posting is listed as Remote with hiring remotely in United States; the posting names field office locations but does not require presence at one"
-  },
-  "intel": {
-   "hq": "Irvine, California per the posting",
-   "levelHistory": "Not determined",
-   "news": "Not determined",
-   "remotePolicy": "Posting is listed as Remote, United States; ability to travel as required",
-   "size": "More than 1,200 employees per the posting"
-  }
- },
- {
-  "id": 5,
+  "id": 3,
   "key": "centralsquare-technologies--senior-director-it-and-enterprise-applications--remote-us",
   "track": "Executive",
   "score": 76,
@@ -230,53 +138,7 @@
   }
  },
  {
-  "id": 6,
-  "key": "vida-health--senior-director-engineering-operations-and-security--remote-us",
-  "track": "Executive",
-  "score": 68,
-  "title": "Senior Director, Engineering Operations & Security",
-  "company": "Vida Health",
-  "sector": "Healthcare",
-  "level": "Senior Director",
-  "location": "Remote - US",
-  "salary": "$240,000-$250,000 annually",
-  "salaryMin": 240000,
-  "salaryMax": 250000,
-  "roleType": "IT Leadership",
-  "priority": "Stretch",
-  "clearance": "None",
-  "url": "https://builtin.com/job/senior-director-engineering-operations-security/11118441",
-  "notes": "Honest read - this one leans engineering, not program leadership - Owns security strategy and compliance, corporate IT and incident management, which you can speak to directly - But it also owns DevOps, CI CD, infrastructure as code, cloud infrastructure and quality engineering, and the posting asks for roughly a decade of software engineering - You would be arguing around that requirement rather than meeting it - Tight band with little negotiating room",
-  "posted": "2026-09-10",
-  "postedDate": "2026-09-10",
-  "expiresOn": "",
-  "verified": "2026-10-23",
-  "lastVerified": "2026-10-23",
-  "verifiedNote": "with no removal notice, header 'Hiring Remotely', Posted 13 Days Ago, published range unchanged from the record. | Re-verified live 2026-10-05 against board index/posting page. | Re-verified 2026-10-12: still on live board index/page, remote, at level, pay unchanged. | Re-verified 2026-10-16: still listed/rendering via Built In; remote location unchanged, no closed signal. | Re-verified 2026-10-19: Built In page still renders with no closed signal and 'Hiring Remotely' header; pay and level unchanged. | Re-verified 2026-10-21: req still live on source board, location/remote language unchanged.",
-  "fit": {
-   "comp": 4,
-   "domain": 3,
-   "industry": 4,
-   "leadership": 4,
-   "remote": 5
-  },
-  "fitNotes": {
-   "comp": "240K-250K clears the floor but the band is only 10K wide, so there is almost no negotiating room.",
-   "domain": "Security strategy, compliance, incident management and corporate IT overlap; DevOps, CI CD, reliability engineering and quality engineering do not.",
-   "industry": "Digital health - adjacent to the healthcare IT target and a reasonable industry ramp.",
-   "leadership": "Senior Director over several technical functions with manager development and team restructuring - narrower span than a division lead but real leadership.",
-   "remote": "Posting lists the work location as Remote, hiring remotely in United States, and carries an LI-remote tag."
-  },
-  "intel": {
-   "hq": "Not determined",
-   "levelHistory": "Not determined",
-   "news": "Not determined",
-   "remotePolicy": "Posting states remote, hiring remotely in United States",
-   "size": "Not determined"
-  }
- },
- {
-  "id": 7,
+  "id": 4,
   "key": "affirm--director-information-technology-and-security--remote-us",
   "track": "PM / RMF",
   "score": 86,
@@ -322,7 +184,7 @@
   }
  },
  {
-  "id": 8,
+  "id": 5,
   "key": "openai--senior-technical-program-manager-security--remote-us",
   "track": "PM / RMF",
   "score": 85,
@@ -368,7 +230,7 @@
   }
  },
  {
-  "id": 9,
+  "id": 6,
   "key": "coinbase--manager-grc--remote-us",
   "track": "PM / RMF",
   "score": 83,
@@ -414,7 +276,7 @@
   }
  },
  {
-  "id": 10,
+  "id": 7,
   "key": "pinterest--staff-technical-program-manager-security--remote-us",
   "track": "PM / RMF",
   "score": 82,
@@ -460,7 +322,7 @@
   }
  },
  {
-  "id": 11,
+  "id": 8,
   "key": "vanta--grc-expert-gtm-v4g--remote-us",
   "track": "PM / RMF",
   "score": 80,
@@ -506,7 +368,7 @@
   }
  },
  {
-  "id": 12,
+  "id": 9,
   "key": "reddit--staff-technical-program-manager--remote-us",
   "track": "PM / RMF",
   "score": 78,
@@ -595,10 +457,10 @@
   },
   "verified": "2026-10-23",
   "lastVerified": "2026-10-23",
-  "id": 13
+  "id": 10
  },
  {
-  "id": 14,
+  "id": 11,
   "key": "mercury--senior-manager-data-and-ai-governance--remote-us",
   "track": "PM / RMF",
   "score": 74,
@@ -687,10 +549,10 @@
   },
   "verified": "2026-10-23",
   "lastVerified": "2026-10-23",
-  "id": 15
+  "id": 12
  },
  {
-  "id": 16,
+  "id": 13,
   "key": "reddit--staff-technical-program-manager-infrastructure--remote-us",
   "track": "PM / RMF",
   "score": 72,
@@ -736,7 +598,7 @@
   }
  },
  {
-  "id": 17,
+  "id": 14,
   "key": "affirm--security-risk-management-lead--remote-us",
   "track": "PM / RMF",
   "score": 68,
