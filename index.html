@@ -4,7 +4,7 @@
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tiffany T. Taylor - Executive IT Job Search Dashboard</title>
+<title>Tiffany T. Taylor - IT Leadership and PM / RMF Job Search Dashboard</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 :root{
@@ -249,13 +249,75 @@ h1{font-size:22px}
    buttons side by side beneath it. */
 .actions{display:grid;grid-template-columns:1fr auto;grid-template-areas:"vb vb" "ex ap";gap:8px 10px;align-items:center}
 .linkrow{display:contents}
-.job .verified-badge-v1{grid-area:vb;justify-self:start;margin:0 !important}
+.job .vbadge{grid-area:vb;justify-self:start;margin:0}
 .expand{grid-area:ex;justify-self:start;white-space:nowrap}
 .job a.apply{grid-area:ap;justify-self:end;white-space:nowrap;text-align:center}
 .stagebar{gap:5px}
 @media(max-width:400px){
   .actions{grid-template-columns:1fr;grid-template-areas:"vb" "ex" "ap"}
   .expand,.job a.apply{justify-self:stretch;text-align:center}
+}
+
+/* ---- review fixes + enhancements 2026-11-02 ---- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#04283a;padding:8px 14px;z-index:50;font-weight:700}
+.skip:focus{left:8px;top:8px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hbtns{display:flex;gap:8px;flex:none}
+.tabs{overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{white-space:nowrap}
+.charts{grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr))}
+.filterchips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.fchip{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--text);cursor:pointer;font-family:inherit}
+.fchip:hover{background:var(--chip)}
+.chip.pri-High{background:#14532d55;border-color:#22c55e;color:#86efac}
+.chip.pri-Medium{background:#42200655;border-color:#eab308;color:#fde68a}
+.chip.pri-Stretch{background:#43140755;border-color:#f97316;color:#fdba74}
+[data-theme="light"] .chip.pri-High{background:#dcfce7;border-color:#16a34a;color:#14532d}
+[data-theme="light"] .chip.pri-Medium{background:#fef3c7;border-color:#d97706;color:#78350f}
+[data-theme="light"] .chip.pri-Stretch{background:#ffedd5;border-color:#ea580c;color:#7c2d12}
+.chip.okfloor{background:#14532d33;border-color:#22c55e;color:#86efac}
+[data-theme="light"] .chip.okfloor{background:#dcfce7;border-color:#16a34a;color:#14532d}
+.chip.age-warn{background:#42200655;border-color:#eab308;color:#fde68a}
+.chip.age-old{background:#7f1d1d55;border-color:#ef4444;color:#fecaca}
+[data-theme="light"] .chip.age-warn{background:#fef3c7;border-color:#d97706;color:#78350f}
+[data-theme="light"] .chip.age-old{background:#fee2e2;border-color:#dc2626;color:#7f1d1d}
+[data-theme="light"] .ring .val{color:var(--text) !important}
+.cmpbox{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);font-weight:600;cursor:pointer}
+.cmpbar{display:none;position:sticky;bottom:0;z-index:15;background:var(--bg2);border:1px solid var(--accent);border-radius:12px;padding:10px 14px;margin:0 0 12px;gap:10px;align-items:center;flex-wrap:wrap}
+.cmpbar.show{display:flex}
+.empty .actbtn{margin:8px 4px 0}
+.skel{height:210px;border-radius:15px;background:linear-gradient(90deg,var(--card),var(--card2),var(--card));background-size:200% 100%;animation:sk 1.2s linear infinite}
+@keyframes sk{to{background-position:-200% 0}}
+.nextrow{display:flex;gap:6px;align-items:center;margin-top:8px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.nextrow input[type=date]{background:var(--card2);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:3px 5px;font-size:12px;font-family:inherit}
+.chip.overdue{background:#7f1d1d55;border-color:#ef4444;color:#fecaca}
+[data-theme="light"] .chip.overdue{background:#fee2e2;border-color:#dc2626;color:#7f1d1d}
+.archnote{font-size:12px;color:var(--muted);font-style:italic;margin-top:5px}
+.archhead{margin:22px 0 4px;font-size:14px}
+dialog.cmpdlg{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:15px;padding:0;width:min(980px,calc(100vw - 24px));max-height:calc(100vh - 40px)}
+dialog.cmpdlg::backdrop{background:#0008}
+.cmpin{padding:18px;overflow:auto;max-height:calc(100vh - 44px)}
+.cmptbl{border-collapse:collapse;width:100%;font-size:12.5px}
+.cmptbl th,.cmptbl td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.cmptbl th{background:var(--card2);color:var(--muted);font-weight:700;white-space:nowrap}
+.scoreadj{font-size:12px;color:var(--muted);margin:-2px 0 8px}
+@media(max-width:640px){
+.wrap{padding:0 16px}
+.hbtns{width:100%}
+.board{grid-template-columns:1fr;overflow-x:visible}
+.controls select{flex:1 1 140px}
+}
+@media(prefers-reduced-motion:reduce){.skel{animation:none}}
+@media print{
+.minibar,.tabs,.controls,.hbtns,.actbar,.cardtools,.actions,.cmpbar,.whatsnew,.filterchips,.skip,footer{display:none !important}
+.panel{display:none !important}#p-opps{display:block !important}
+.detail{display:flex !important}
+.grid{grid-template-columns:1fr;gap:10px}
+.job{break-inside:avoid;border:1px solid #999}
+body{background:#fff;color:#000}
+.notes.clamp{display:block;-webkit-line-clamp:unset}
 }
 </style>
 <script>
@@ -265,6 +327,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 </script>
 </head>
 <body>
+<a class="skip" href="#grid">Skip to roles</a>
 <div class="minibar" id="minibar" aria-hidden="true">
 <div class="wrap">
 <input type="search" id="q2" placeholder="Search jobs..." aria-label="Search jobs" tabindex="-1">
@@ -279,8 +342,8 @@ document.documentElement.setAttribute("data-theme",t);})();
 <h1>Tiffany T. Taylor</h1>
 <div class="creds">CISSP - PMP - MS Computer Systems Management - Active clearance (details on request)</div>
 </div>
-<button class="theme-btn" id="wnbtn" onclick="renderWhatsNew(true)">What&#39;s new</button>
-<button class="theme-btn" id="theme-btn" onclick="toggleTheme()">Light Mode</button>
+<div class="hbtns"><button class="theme-btn" id="wnbtn" type="button" onclick="renderWhatsNew(true)">What&#39;s new</button>
+<button class="theme-btn" id="theme-btn" type="button" onclick="toggleTheme()" aria-pressed="false">Light Mode</button></div>
 </div>
 <div class="stats" id="stats"></div>
 <div class="whatsnew" id="whatsnew"></div>
@@ -289,38 +352,40 @@ document.documentElement.setAttribute("data-theme",t);})();
 </header>
 
 <div class="wrap">
-<div class="tabs">
-<button class="tab active" data-panel="p-opps" onclick="showTab(this)">Opportunities</button>
-<button class="tab" data-panel="p-pipe" onclick="showTab(this)">Pipeline</button>
-<button class="tab" data-panel="p-analytics" onclick="showTab(this)">Analytics</button>
-<button class="tab" data-panel="p-guide" onclick="showTab(this)">How to use</button>
+<div class="tabs" role="tablist" aria-label="Dashboard sections">
+<button class="tab active" role="tab" aria-selected="true" id="t-opps" aria-controls="p-opps" data-panel="p-opps" onclick="showTab(this)">Opportunities</button>
+<button class="tab" role="tab" aria-selected="false" id="t-pipe" aria-controls="p-pipe" data-panel="p-pipe" onclick="showTab(this)">Pipeline</button>
+<button class="tab" role="tab" aria-selected="false" id="t-analytics" aria-controls="p-analytics" data-panel="p-analytics" onclick="showTab(this)">Analytics</button>
+<button class="tab" role="tab" aria-selected="false" id="t-guide" aria-controls="p-guide" data-panel="p-guide" onclick="showTab(this)">How to use</button>
 </div>
 
-<div class="panel active" id="p-opps">
+<div class="panel active" id="p-opps" role="tabpanel" aria-labelledby="t-opps">
 <div class="controls">
-<input type="search" id="q" placeholder="Search title, company, notes, intel..." aria-label="Search jobs">
-<select id="track"><option value="">Both tracks</option><option value="Executive">Executive (Sr Dir / VP, $225K+)</option><option value="PM / RMF">PM / RMF (Senior+, $175K+)</option></select>
-<select id="comp">
+<input type="search" id="q" placeholder="Search title, company, notes, intel...  ( / )" aria-label="Search jobs">
+<select id="track" aria-label="Track"><option value="">Both tracks</option><option value="Executive">Executive (Director / VP+, $225K+)</option><option value="PM / RMF">PM / RMF (Senior+, $175K+)</option></select>
+<select id="comp" aria-label="Compensation">
 <option value="">Any compensation</option>
 <option value="min225000">Guaranteed $225K+ (band minimum)</option>
 <option value="min250000">Guaranteed $250K+ (band minimum)</option>
 <option value="max300000">Could reach $300K+ (band maximum)</option>
 </select>
-<select id="sort">
+<select id="sort" aria-label="Sort order">
 <option value="score">Sort: fit score</option>
 <option value="compdesc">Sort: comp high to low</option>
 <option value="company">Sort: company A-Z</option>
-<option value="fresh">Sort: newest first</option><option value="new">Sort: new since last visit</option>
+<option value="fresh">Sort: newest first</option><option value="new">Sort: new since last visit</option><option value="open">Sort: most recently opened</option>
 </select>
 <button class="reset" type="button" onclick="resetFilters()">Reset</button>
+<button class="reset" type="button" onclick="downloadListCSV()" title="Download the roles currently shown">Export list (CSV)</button>
+<button class="reset" type="button" onclick="window.print()" title="Print or save as PDF">Print</button>
 <button class="reset" type="button" id="morebtn" aria-expanded="false" onclick="toggleMore()">More filters</button>
 <div class="morefilters" id="morefilters">
-<select id="priority"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Stretch</option></select>
-<select id="sector"><option value="">All sectors</option><option>Commercial</option><option>Healthcare</option><option>State Gov</option><option>Defense</option></select>
-<select id="wm"><option value="">Any work model</option><option value="Remote">100% remote</option><option value="Onsite - cleared site">Onsite - cleared site</option><option value="Cleared site - limited telework">Cleared site - limited telework</option></select>
-<select id="level"><option value="">All levels</option><option>VP</option><option>Senior Director</option><option>Director</option><option>Senior Manager</option><option>Senior / Lead</option></select>
-<select id="role"><option value="">All functions</option></select>
-<select id="stage">
+<select id="priority" aria-label="Priority"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Stretch</option></select>
+<select id="sector" aria-label="Sector"><option value="">All sectors</option></select>
+<select id="wm" aria-label="Work model"><option value="">Any work model</option><option value="Remote">Remote (US)</option><option value="Onsite - cleared site">Onsite - cleared site</option><option value="Cleared site - limited telework">Cleared site - limited telework</option></select>
+<select id="level" aria-label="Level"><option value="">All levels</option></select>
+<select id="role" aria-label="Function"><option value="">All functions</option></select>
+<select id="stage" aria-label="Pipeline stage">
 <option value="">All pipeline stages</option>
 <option value="untracked">Not tracked</option>
 <option value="interested">Interested</option>
@@ -331,50 +396,52 @@ document.documentElement.setAttribute("data-theme",t);})();
 </select>
 </div>
 </div>
-<div class="count" id="count"></div>
-<div class="grid" id="grid"></div>
+<div class="filterchips" id="filterchips"></div>
+<div class="count" id="count" role="status" aria-live="polite"></div>
+<div class="cmpbar" id="cmpbar"><span id="cmptext"></span><button class="actbtn" type="button" onclick="openCompare()">Compare</button><button class="actbtn" type="button" onclick="clearCompare()">Clear</button></div>
+<div class="grid" id="grid"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
 </div>
 
-<div class="panel" id="p-pipe">
+<div class="panel" id="p-pipe" role="tabpanel" aria-labelledby="t-pipe">
 <div class="actbar">
 <span class="actcount" id="actcount"></span>
 <button class="actbtn" type="button" onclick="emailPipeline()">Email to me</button>
 <button class="actbtn" type="button" onclick="copyPipeline()">Copy list</button>
 <button class="actbtn" type="button" onclick="downloadCSV()">Download CSV</button>
 <button class="actbtn" type="button" onclick="backupJSON()">Backup</button>
-<label class="actbtn" style="cursor:pointer">Restore<input type="file" id="restorefile" accept="application/json,.json" style="display:none" onchange="restoreJSON(event)"></label>
-<span class="actmsg" id="actmsg"></span>
+<button class="actbtn" type="button" onclick="document.getElementById('restorefile').click()">Restore</button><input type="file" id="restorefile" class="vh" tabindex="-1" aria-hidden="true" accept="application/json,.json" onchange="restoreJSON(event)">
+<span class="actmsg" id="actmsg" role="status" aria-live="polite"></span>
 </div>
-<div class="count" id="pipecount" style="margin-top:20px"></div>
+<div class="count" id="pipecount" role="status" aria-live="polite" style="margin-top:20px"></div>
 <div class="board" id="board"></div>
 </div>
 
-<div class="panel" id="p-guide">
+<div class="panel" id="p-guide" role="tabpanel" aria-labelledby="t-guide">
 <div class="guide">
 
 <h2>What is in here, and how it got here</h2>
 <p>Every role on this dashboard has been opened and read against the live posting before it was published. Nothing is listed on the strength of a search-result summary. Four things are checked on each one:</p>
 <ul>
 <li><strong>Still open</strong> - no expired, filled or closed postings</li>
-<li><strong>Work model</strong> - either genuinely 100% remote and open to someone living in Maryland, or onsite at a cleared site within commuting distance (Fort Meade, Annapolis Junction, Hanover and nearby), with any telework the posting states shown on the card. Hybrid schedules of several days a week are not included. Remote roles must use the word remote; if a posting never states where the work is done and it is outside the Fort Meade area, it is dropped rather than assumed</li>
-<li><strong>Senior Director or VP</strong> - a role titled Director, or one whose body text reads Director, does not belong here</li>
+<li><strong>Work model</strong> - either remote and open to someone living in Maryland, or at a cleared site within commuting distance (Fort Meade, Annapolis Junction, Columbia, Hanover, Reston and nearby), with any telework the posting states shown on the card. Hybrid schedules at a commercial office are not included. Remote roles must use the word remote. Where a cleared-site posting does not state a work model, the card says so rather than assuming one</li>
+<li><strong>Level</strong> - the Executive track covers Director, Senior Director, Executive Director, VP and above (including CISO and CIO); the PM / RMF track covers Senior and Lead program, project, RMF and compliance roles</li>
 <li><strong>The salary band that applies to Maryland</strong>, not a higher band published for another state</li>
 </ul>
-<p>Roles that fail any of these are removed entirely rather than kept at a lower score. That is why the list is short. A shorter honest list is the point.</p>
+<p>Roles that fail any of these are removed entirely rather than kept at a lower score. A shorter honest list is the point. Greenhouse, Ashby and Built In roles are re-checked on every refresh; other roles carry a checked-on date and are re-opened at least every three days.</p>
 
-<div class="callout"><p><strong>The search profile behind the scores.</strong> Senior cyber risk and IT services leadership. Targeting remote or cleared-site Director, Senior Director and VP roles in Commercial IT, Healthcare IT, State Government IT, and Defense.</p></div>
+<div class="callout"><p><strong>The search profile behind the scores.</strong> Senior cyber risk and IT services leadership. Targeting remote or cleared-site Director-to-VP executive roles and senior PM / RMF roles in Commercial IT, Healthcare IT, State Government IT, and Defense. Sectors with no current openings simply do not appear in the filters.</p></div>
 
 <h2>Reading a role card</h2>
 <p>The <strong>number in the ring</strong> is an overall fit score out of 100. Green is a strong fit (85+), amber is good with a gap (75-84), orange is a stretch (65-74).</p>
-<p>Under the salary you may see an <strong>amber warning</strong> that the band starts below $225K. That means the employer published a wide range and the top of it is not guaranteed - worth knowing before you invest time.</p>
-<p>The grey line at the bottom shows <strong>how old the posting is, when it closes</strong>, and the date it was last checked against the live listing. Anything closing within seven days is highlighted in amber.</p>
-<p>Click <strong>Details</strong> on any card to open three things: a five-part score breakdown explaining exactly why it scored what it did, what is known about the company, and a free-text notes box that saves as you type.</p>
+<p>Under the salary you may see an <strong>amber warning</strong> that the band starts below the floor for that track ($225K Executive, $175K PM / RMF). That means the employer published a wide range and the top of it is not guaranteed. A green <strong>Min clears floor</strong> chip means even the bottom of the band clears it.</p>
+<p>The chips and grey line at the bottom show <strong>how long the posting has been open</strong>, when it was last checked against the live listing, and a close date when the employer publishes one. Postings open more than 90 days are flagged amber and more than 180 days red - older requisitions are more likely to be stale or already filled internally.</p>
+<p>Click <strong>Details</strong> on any card to open three things: a five-part score breakdown (with the sub-score average shown next to the final score, because the final score also reflects judgment about the seat), what is known about the company, and a free-text notes box that saves as you type. Tick <strong>Compare</strong> on up to four cards to see them side by side.</p>
 
 <h2>Tracking roles you are interested in</h2>
 <p>Every card has a <strong>Save to pipeline</strong> menu - choose Interested, Applied, Screening, Interview or Offer to track the role. Choose <strong>Save to pipeline</strong> again to untrack it.</p>
-<p>Tracked roles appear on the <strong>Pipeline</strong> tab as a board, one column per stage, and the arrows under each card move it forward or back. Your notes travel with the role.</p>
+<p>Tracked roles appear on the <strong>Pipeline</strong> tab as a board, one column per stage, and the arrows under each card move it forward or back. Each card also has a <strong>Next action</strong> date; it turns red when overdue. Your notes travel with the role.</p>
 <div class="callout">
-<p><strong>Your tracking survives the daily refresh.</strong> Each role is remembered by company and title rather than by position in the list, so a role you marked Applied stays Applied tomorrow even though the list around it changes.</p>
+<p><strong>Your tracking survives the daily refresh.</strong> Each role is remembered by company, title and location rather than by position in the list, so a role you marked Applied stays Applied tomorrow even though the list around it changes. If a tracked role leaves the board (closed, filled, or no longer passing checks) it stays on your Pipeline under <strong>No longer listed</strong> with your notes intact.</p>
 </div>
 
 <h2>Sending roles to yourself</h2>
@@ -403,35 +470,37 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <h2>What the tiles at the top mean</h2>
 <ul>
-<li><strong>Verified roles</strong> - the total, all individually checked; remote or cleared-site, as the card shows</li>
+<li><strong>Verified roles</strong> - the total on the board; each was opened and read, and the card shows its work model</li>
 <li><strong>High fit</strong> - scored 85 or above</li>
 <li><strong>Min clears floor</strong> - roles where even the <em>bottom</em> of the published band clears the floor for that track ($225K Executive, $175K PM / RMF). This deliberately does not count roles that merely <em>could</em> reach a high number</li>
 <li><strong>In pipeline</strong> - how many you are tracking</li>
 </ul>
-<p>Roles closing within 7 days are counted on the line under the tiles, and flagged on their cards.</p>
+<p>Roles with a published close date within 7 days are counted on the line under the tiles and flagged on their cards.</p>
 
 <h2>The Analytics tab</h2>
-<p>Six views of the same data: where the remote executive market actually is by sector, how scores are distributed, published salary bands with a dashed line marking the $225K Executive floor, an average of where this slate is strong and where it is thin, your application funnel, and which kinds of executive roles exist remotely.</p>
+<p>Six views of the same data: roles by sector, how scores are distributed, published salary bands with a dashed tick at each role's own track floor, an average of where this slate is strong and where it is thin, where your tracked roles sit by stage, and which kinds of roles are on the board.</p>
 <p>The compensation chart is worth a look - the grey part of each bar is the band minimum and the blue part is the range above it, so you can see at a glance which employers start below the track floor.</p>
 
 <h2>What this dashboard does not know</h2>
 <div class="callout warn">
 <p>Company intel is incomplete. Recent news and hiring history are unknown for most employers here, and those fields say so rather than guessing.</p>
 <p>Where an employer publishes no salary, the card says <strong>Not disclosed - est.</strong> and the number is an estimate, not something the employer stated.</p>
-<p>Most importantly: at Senior Director and VP level, a large share of roles are never posted publicly at all - they are filled through executive search firms and referrals. Treat this as one input to your search, not the whole map of it.</p>
+<p>The "Remote" sub-score is really location fit: remote is 5, a cleared site near Fort Meade lower, and a role whose posting does not state its work model is scored on the stated location only.</p>
+<p>Most importantly: at Director, Senior Director and VP level, a large share of roles are never posted publicly at all - they are filled through executive search firms and referrals. Treat this as one input to your search, not the whole map of it.</p>
 </div>
 
 <h2>When it updates</h2>
-<p>The list refreshes every morning and you get an email summarising what changed. The date under the header always shows when roles were last checked against their live postings.</p>
+<p>The list refreshes on a regular schedule and you get an email summarising what changed. The line under the header shows how many roles were checked on the latest refresh and the oldest check date on the board.</p>
+<p><strong>Keyboard shortcuts:</strong> press <strong>/</strong> to jump to search and <strong>Esc</strong> to clear it. Your filters are saved in the page address, so you can bookmark a view.</p>
 
 </div>
 </div>
 
-<div class="panel" id="p-analytics">
+<div class="panel" id="p-analytics" role="tabpanel" aria-labelledby="t-analytics">
 <div class="charts">
 <div class="chartbox">
 <h3>Opportunities by sector</h3>
-<div class="cs">Where the remote executive market actually is for your profile</div>
+<div class="cs">Where the roles on this board sit by sector</div>
 <div class="canvaswrap"><canvas id="c-sector"></canvas></div>
 </div>
 <div class="chartbox">
@@ -441,7 +510,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 </div>
 <div class="chartbox">
 <h3>Compensation ranges</h3>
-<div class="cs">Published or estimated base bands, highest first. Dashed line is the $225K floor.</div>
+<div class="cs">Published base bands, highest first. Each bar has a dashed tick at its own track floor ($225K Executive, $175K PM / RMF).</div>
 <div class="canvaswrap"><canvas id="c-comp"></canvas></div>
 </div>
 <div class="chartbox">
@@ -450,18 +519,20 @@ document.documentElement.setAttribute("data-theme",t);})();
 <div class="canvaswrap"><canvas id="c-radar"></canvas></div>
 </div>
 <div class="chartbox">
-<h3>Application pipeline</h3>
-<div class="cs">Your progress through the funnel. Updates as you set stages.</div>
+<h3>Roles by pipeline stage</h3>
+<div class="cs">Where each tracked role currently sits. Updates as you set stages.</div>
 <div class="canvaswrap"><canvas id="c-funnel"></canvas></div>
 </div>
 <div class="chartbox">
 <h3>Function mix</h3>
-<div class="cs">Which kinds of executive roles are available remotely</div>
+<div class="cs">Which kinds of roles are on the board</div>
 <div class="canvaswrap"><canvas id="c-role"></canvas></div>
 </div>
 </div>
 </div>
 </div>
+
+<dialog class="cmpdlg" id="cmpdlg" aria-labelledby="cmptitle"><div class="cmpin"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px"><h3 id="cmptitle" style="margin:0">Compare roles</h3><button class="expand" type="button" onclick="document.getElementById('cmpdlg').close()">Close</button></div><div id="cmpbody"></div></div></dialog>
 
 <dialog class="aidlg" id="aidlg" aria-labelledby="aititle">
 <div class="aidlg-in">
@@ -481,41 +552,55 @@ document.documentElement.setAttribute("data-theme",t);})();
 </div>
 </dialog>
 
-<footer>Auto-refreshed daily. Built for Tiffany T. Taylor. Scores reflect fit to your profile: remote or cleared-site, Director, Senior Director or VP, executive-band compensation, Commercial / Healthcare / State Government IT, and Defense. Every role here was opened and re-checked against the live posting for remote status, seniority and published salary - roles that failed were removed rather than downgraded. Where a salary is an estimate rather than a published band, the card says so. Pipeline stages and notes are saved in this browser only.</footer>
+<footer>Refreshed on a regular schedule. Built for Tiffany T. Taylor. Scores reflect fit to your profile: remote or cleared-site roles, Director-to-VP executive roles and senior PM / RMF roles, with compensation at or above the track floor. Every role here was opened and read against its live posting for work model, level and published salary - roles that failed were removed rather than downgraded. Where a salary is an estimate rather than a published band, the card says so. Pipeline stages and notes are saved in this browser only.</footer>
 
 <script>
 var JOBS=[];
 var STAGES=["interested","applied","screening","interview","offer"];
 var STAGE_LABEL={interested:"Interested",applied:"Applied",screening:"Screening",interview:"Interview",offer:"Offer"};
-var STATE=JSON.parse(localStorage.getItem("tt_state_v2")||"{}");
+var MEM={};
+var store={
+get:function(k){try{var v=localStorage.getItem(k);return v==null?(MEM[k]||null):v;}catch(e){return MEM[k]||null;}},
+set:function(k,v){MEM[k]=v;try{localStorage.setItem(k,v);}catch(e){}},
+del:function(k){delete MEM[k];try{localStorage.removeItem(k);}catch(e){}}};
+function loadState(){try{var o=JSON.parse(store.get("tt_state_v2")||"{}");return(o&&typeof o==="object"&&!Array.isArray(o))?o:{};}catch(e){return {};}}
+var STATE=loadState();
 var OPEN={};
 var CHARTS={};
 
-function saveState(){localStorage.setItem("tt_state_v2",JSON.stringify(STATE));}
-function getRec(id){if(!STATE[id])STATE[id]={stage:"",notes:""};return STATE[id];}
-function setStage(id,s){var r=getRec(id);r.stage=(r.stage===s)?"":s;saveState();renderAll();}
+function saveState(){store.set("tt_state_v2",JSON.stringify(STATE));}
+var EMPTYREC={stage:"",notes:"",next:""};
+function getRec(id){return STATE[id]||EMPTYREC;}
+function snapOf(id){for(var i=0;i<JOBS.length;i++){var j=JOBS[i];if(jobKey(j)===id)return {key:id,title:j.title,company:j.company,url:j.url,salary:j.salary,location:j.location,score:j.score,track:j.track,sector:j.sector,level:j.level,priority:j.priority,savedOn:today()};}return null;}
+function writeRec(id){if(!STATE[id])STATE[id]={stage:"",notes:"",next:""};var r=STATE[id];var sn=snapOf(id);if(sn)r.snap=sn;return r;}
+function pruneRec(id){var r=STATE[id];if(r&&!r.stage&&!r.notes&&!r.next)delete STATE[id];}
+function setStage(id,s){var r=writeRec(id);r.stage=(r.stage===s)?"":s;pruneRec(id);saveState();renderAll();}
 function moveStage(id,dir){
-var r=getRec(id);var i=STAGES.indexOf(r.stage);var n=i+dir;
+var r=writeRec(id);var i=STAGES.indexOf(r.stage);var n=i+dir;
 if(n<0){r.stage="";}else if(n>=STAGES.length){return;}else{r.stage=STAGES[n];}
-saveState();renderAll();
+pruneRec(id);saveState();renderAll();
 }
-function setNotes(id,v){getRec(id).notes=v;saveState();}
+function setNotes(id,v){writeRec(id).notes=v;pruneRec(id);saveState();}
+function setNext(id,v){writeRec(id).next=v;pruneRec(id);saveState();renderBoard();}
+function priorityOf(sc){return sc>=85?"High":sc>=75?"Medium":"Stretch";}
+function floorOf(j){return j.track==="Executive"?225000:175000;}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
 function val(id){return document.getElementById(id).value;}
 function scoreColor(s){return s>=85?"#22c55e":s>=75?"#eab308":"#f97316";}
-function migrateOld(){return 0;}
 function secClass(s){return s==="State Gov"?"secStateGov":"sec-"+s;}
 function slugify(s){return String(s==null?"":s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+/,"").replace(/-+$/,"").slice(0,80);}
 function jobKey(j){return j.key?j.key:(slugify(j.company)+"--"+slugify(j.title)+"--"+slugify(j.location||""));}
-function daysOld(d){if(!d)return null;var t=new Date(d+"T00:00:00");return Math.floor((Date.now()-t)/86400000);}
-function daysLeft(d){if(!d)return null;var t=new Date(d+"T00:00:00");return Math.ceil((t-Date.now())/86400000);}
+function dayNum(d){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d||"");return m?Math.round(Date.UTC(+m[1],+m[2]-1,+m[3])/86400000):null;}
+function todayNum(){var n=new Date();return Math.round(Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())/86400000);}
+function daysOld(d){var n=dayNum(d);return n===null?null:todayNum()-n;}
+function daysLeft(d){var n=dayNum(d);return n===null?null:n-todayNum();}
+function agoText(a){return a<=0?"today":a===1?"yesterday":a+" days ago";}
 function ageLine(j){
 var p=[];
 var a=daysOld(j.posted);
-p.push(a===null?"Posting date not published":(a<=1?"Posted today":"Posted "+a+" days ago"));
+p.push(a===null?"Posting date not published":(a<=0?"Posted today":a===1?"Posted yesterday":"Posted "+a+" days ago"));
 var l=daysLeft(j.expiresOn);
 if(l!==null)p.push(l<0?"CLOSED":(l===0?"Closes today":l===1?"Closes tomorrow":"Closes in "+l+" days"));
-if(j.verified)p.push("Verified against posting "+j.verified);
 return p.join("  -  ");
 }
 function isUrgent(j){var l=daysLeft(j.expiresOn);return l!==null&&l<=7;}
@@ -537,9 +622,12 @@ return w;
 function fitBlock(j){
 var box=el("div");
 box.appendChild(el("div","dh","Why it scored "+j.score));
-var keys=[["leadership","Leadership"],["domain","Domain"],["remote","Remote"],["comp","Comp"],["industry","Industry"]];
+(function(){var t=0,n=0;["leadership","domain","remote","comp","industry"].forEach(function(d){if(j.fit&&typeof j.fit[d]==="number"){t+=j.fit[d];n++;}});
+if(n){var avg=Math.round(t/n*20);var d=j.score-avg;
+box.appendChild(el("div","scoreadj","Sub-score average "+avg+" - final score "+j.score+(d===0?" (no adjustment)":" ("+(d>0?"+":"")+d+" judgment adjustment for seat type, posting age and scope)")));}})();
+var keys=[["leadership","Leadership"],["domain","Domain"],["remote","Location fit"],["comp","Comp"],["industry","Industry"]];
 keys.forEach(function(k){
-var v=(j.fit&&j.fit[k[0]])||0;
+var v=(j.fit&&typeof j.fit[k[0]]==="number")?j.fit[k[0]]:0;
 var row=el("div","fitrow");
 row.appendChild(el("div","fitlabel",k[1]));
 var bar=el("div","bar");
@@ -573,17 +661,17 @@ box.appendChild(el("div","dh","Your notes"));
 var ta=document.createElement("textarea");
 ta.className="notebox";
 ta.placeholder="Recruiter name, referral path, tailored resume version, follow-up date...";
-ta.value=getRec(jobKey(j)).notes||"";
+ta.value=getRec(jobKey(j)).notes||"";ta.setAttribute("aria-label","Your notes for "+j.title);
 ta.addEventListener("input",function(){setNotes(jobKey(j),ta.value);});
 box.appendChild(ta);
 return box;
 }
 
 function matches(j){
-var q=val("q").toLowerCase();
-var hay=(j.title+" "+j.company+" "+j.location+" "+j.notes+" "+j.roleType+" "+j.sector+" "+
-JSON.stringify(j.intel||{})+" "+JSON.stringify(j.fitNotes||{})).toLowerCase();
-if(q&&hay.indexOf(q)<0)return false;
+var q=val("q").toLowerCase().trim();
+if(q){var hay=(j.title+" "+j.company+" "+j.location+" "+j.notes+" "+j.roleType+" "+j.sector+" "+j.track+" "+(j.level||"")+" "+(j.workModel||"Remote")+" "+(j.clearance||"")+" "+j.salary+" "+
+Object.keys(j.intel||{}).map(function(x){return j.intel[x];}).join(" ")+" "+Object.keys(j.fitNotes||{}).map(function(x){return j.fitNotes[x];}).join(" ")).toLowerCase();
+if(q.split(/\s+/).some(function(w){return w&&hay.indexOf(w)<0;}))return false;}
 if(val("track")&&j.track!==val("track"))return false;
 if(val("priority")&&j.priority!==val("priority"))return false;
 if(val("sector")&&j.sector!==val("sector"))return false;
@@ -607,6 +695,7 @@ var s=val("sort");
 var out=list.slice();
 if(s==="compdesc")out.sort(function(a,b){return (b.salaryMax||0)-(a.salaryMax||0);});
 else if(s==="new")out.sort(function(a,b){return (NEWJOBS[jobKey(b)]?1:0)-(NEWJOBS[jobKey(a)]?1:0)||b.score-a.score;});
+else if(s==="open")out.sort(function(a,b){return (daysOld(a.posted)===null?99999:daysOld(a.posted))-(daysOld(b.posted)===null?99999:daysOld(b.posted));});
 else if(s==="fresh")out.sort(function(a,b){return String(b.posted||"").localeCompare(String(a.posted||""));});
 else if(s==="company")out.sort(function(a,b){return a.company.localeCompare(b.company);});
 else out.sort(function(a,b){return b.score-a.score;});
@@ -623,13 +712,13 @@ try{
 var cached=sessionStorage.getItem(SESS);
 if(cached){NEWJOBS=JSON.parse(cached);}
 else{
-var prev=JSON.parse(localStorage.getItem(SEEN)||"null");
+var prev=JSON.parse(store.get(SEEN)||"null");
 if(prev){var p={};prev.forEach(function(x){p[x]=1;});
 JOBS.forEach(function(j){var k=jobKey(j);if(!p[k])NEWJOBS[k]=1;});}
 sessionStorage.setItem(SESS,JSON.stringify(NEWJOBS));}
-localStorage.setItem(SEEN,JSON.stringify(JOBS.map(jobKey)));
+store.set(SEEN,JSON.stringify(JOBS.map(jobKey)));
 }catch(e){NEWJOBS={};}}
-function toFilters(){document.getElementById("q").scrollIntoView({behavior:"smooth",block:"center"});
+function toFilters(){document.getElementById("q").scrollIntoView({behavior:(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)?"auto":"smooth",block:"center"});
 setTimeout(function(){document.getElementById("q").focus({preventScroll:true});},300);}
 function initMinibar(){
 var bar=document.getElementById("minibar"),q=document.getElementById("q"),q2=document.getElementById("q2");
@@ -645,27 +734,37 @@ bar.classList.toggle("show",show);bar.setAttribute("aria-hidden",show?"false":"t
 [].forEach.call(bar.querySelectorAll("input,button"),function(x){x.tabIndex=show?0:-1;});}
 window.addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(check);}},{passive:true});
 window.addEventListener("resize",check);check();}
+var CMP={};
+function chipEl(cls,txt,title){var c=el("span","chip "+cls,txt);if(title)c.title=title;return c;}
+function safeUrl(u){return /^https:\/\//i.test(u||"")?u:"#";}
 function renderGrid(){
-var grid=document.getElementById("grid");grid.innerHTML="";NOTECHK=[];
+var grid=document.getElementById("grid");
+var fa=document.activeElement,fid=fa&&fa.getAttribute?fa.getAttribute("data-fid"):null;
+grid.innerHTML="";NOTECHK=[];
 var list=sortJobs(JOBS.filter(matches));
 var nNew=Object.keys(NEWJOBS).length;
 var ctext=list.length+" of "+JOBS.length+" roles shown";
 document.getElementById("count").textContent=ctext+(nNew?" - "+nNew+" new since your last visit":"");
 document.getElementById("minicount").textContent=ctext;
-if(!list.length){grid.innerHTML='<div class="empty">No matches. Try clearing filters.</div>';return;}
+renderFilterChips();syncHash();
+if(!list.length){
+var em=el("div","empty");em.appendChild(el("p",null,"No roles match"+(val("q")?" \""+val("q")+"\"":"")+" with the current filters."));
+var cb=el("button","actbtn","Clear all filters");cb.type="button";cb.onclick=resetFilters;em.appendChild(cb);
+grid.appendChild(em);return;}
 list.forEach(function(j){
 var k=jobKey(j),rec=getRec(k);
-var card=el("div","job"+(rec.stage?" st-"+rec.stage:""));
+var card=el("div","job"+(rec.stage?" st-"+rec.stage:""));card.setAttribute("data-key",k);
 
 var row=el("div","row");
 var left=el("div");
-left.appendChild(el("p","title",j.title));
+var tt=el("h2","title",j.title);tt.style.fontSize="16.5px";tt.style.margin="0";left.appendChild(tt);
 left.appendChild(el("div","company",j.company));
 row.appendChild(left);var rg=ring(j.score);rg.setAttribute("role","img");rg.setAttribute("aria-label","Fit score "+j.score+" of 100 - "+j.priority);rg.title=j.priority+" fit";
 row.appendChild(rg);card.appendChild(row);
 
 var b=el("div","badges");
 if(NEWJOBS[k])b.appendChild(el("span","chip newjob","New"));
+b.appendChild(el("span","chip pri-"+j.priority,j.priority+" fit"));
 b.appendChild(el("span","chip trk"+(j.track==="Executive"?" exec":" pmrmf"),j.track));
 b.appendChild(el("span","chip remote",j.location));
 if(j.workModel&&j.workModel!=="Remote")b.appendChild(el("span","chip clr-active",j.workModel));
@@ -674,21 +773,33 @@ else if(j.clearance==="Eligible/Sponsor")b.appendChild(el("span","chip clr-elig"
 card.appendChild(b);
 
 card.appendChild(el("div","salary",j.salary));
-var jf=(j.track==="Executive")?225000:175000;
+var jf=floorOf(j);
 if((j.salaryMin||0)<jf)card.appendChild(el("div","floorwarn",
 "Band starts at $"+Math.round((j.salaryMin||0)/1000)+"K - below the $"+Math.round(jf/1000)+"K floor for this track, so the top of this band is not guaranteed"));
 var nt=el("div","notes"+(OPEN["n:"+k]?"":" clamp"),j.notes);card.appendChild(nt);
-var nm=el("button","linkbtn morebtn",OPEN["n:"+k]?"Less":"More");nm.type="button";nm.hidden=true;
+var nm=el("button","linkbtn morebtn",OPEN["n:"+k]?"Less":"More");nm.type="button";nm.hidden=true;nm.setAttribute("data-fid","m:"+k);nm.setAttribute("aria-expanded",OPEN["n:"+k]?"true":"false");
 nm.onclick=(function(kk){return function(){OPEN["n:"+kk]=!OPEN["n:"+kk];renderGrid();};})(k);
 card.appendChild(nm);NOTECHK.push([nt,nm]);
+
+var st=el("div","badges");
+if((j.salaryMin||0)>=jf)st.appendChild(chipEl("okfloor","Min clears $"+Math.round(jf/1000)+"K","Even the bottom of the published band clears the track floor"));
+var oa=daysOld(j.posted);
+if(oa!==null&&oa>=0){var oc=oa>180?"age-old":oa>90?"age-warn":"";var os=oa>=60?Math.round(oa/30)+" mo":oa+" d";
+st.appendChild(chipEl(oc,"Open "+os,oa>90?"Long-open requisitions are more likely to be stale or filled internally":"Days since the posting date"));}
+var vd=j.lastVerified||j.verified,va=daysOld(vd);
+if(va!==null){st.appendChild(chipEl(va>3?"age-warn":"okfloor",va>3?"Needs recheck - "+agoText(va):"Checked "+agoText(va),"Date this posting was last opened and confirmed still accepting applications ("+vd+")"));}
+card.appendChild(st);
 card.appendChild(el("div","agel"+(isUrgent(j)?" urgent":""),ageLine(j)));
 
 var tools=el("div","cardtools");
-var ss=el("select","stagesel"+(rec.stage?" on":""));ss.setAttribute("aria-label","Pipeline stage for "+j.title);
+var ss=el("select","stagesel"+(rec.stage?" on":""));ss.setAttribute("aria-label","Pipeline stage for "+j.title);ss.setAttribute("data-fid","s:"+k);
 [["","Save to pipeline"]].concat(STAGES.map(function(x){return [x,STAGE_LABEL[x]];})).forEach(function(o){
 var op=document.createElement("option");op.value=o[0];op.textContent=o[1];if(rec.stage===o[0])op.selected=true;ss.appendChild(op);});
-ss.onchange=(function(kk){return function(){var r=getRec(kk);r.stage=this.value;saveState();renderAll();};})(k);
+ss.onchange=(function(kk){return function(){var r=writeRec(kk);r.stage=this.value;pruneRec(kk);saveState();renderAll();};})(k);
 tools.appendChild(ss);
+var cl=el("label","cmpbox");var cx=document.createElement("input");cx.type="checkbox";cx.checked=!!CMP[k];cx.setAttribute("data-fid","c:"+k);
+cx.onchange=(function(kk){return function(){if(this.checked){if(Object.keys(CMP).length>=4){this.checked=false;actMsg("Compare up to 4 roles at a time");return;}CMP[kk]=1;}else delete CMP[kk];updateCmpBar();};})(k);
+cl.appendChild(cx);cl.appendChild(document.createTextNode("Compare"));tools.appendChild(cl);
 var ai=el("div","aitools");
 [["gap","Gap analysis"],["tailor","Tailor resume"]].forEach(function(p){
 var btn=el("button","linkbtn",p[1]);btn.type="button";
@@ -697,18 +808,19 @@ ai.appendChild(btn);});
 tools.appendChild(ai);card.appendChild(tools);
 
 var act=el("div","actions");
+var did="d:"+k.replace(/[^a-z0-9-]/g,"");
 var exp=el("button","expand",OPEN[k]?"Hide details":"Details");
-exp.type="button";
-exp.onclick=function(){OPEN[jobKey(j)]=!OPEN[jobKey(j)];renderGrid();};
+exp.type="button";exp.setAttribute("aria-expanded",OPEN[k]?"true":"false");exp.setAttribute("aria-controls",did);exp.setAttribute("data-fid","e:"+k);
+exp.onclick=function(){OPEN[k]=!OPEN[k];renderGrid();};
 act.appendChild(exp);
 var lr=el("div","linkrow");
-var a=el("a","apply","View / Apply");a.href=j.url;a.target="_blank";a.rel="noopener";
+var a=el("a","apply","View / Apply");a.href=safeUrl(j.url);a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label","View or apply: "+j.title+" at "+j.company+" (opens in a new tab)");
 lr.appendChild(a);act.appendChild(lr);
 card.appendChild(act);
 
-var det=el("div","detail"+(OPEN[jobKey(j)]?" open":""));
+var det=el("div","detail"+(OPEN[k]?" open":""));det.id=did;
 var facts=el("div","intel");
-[["Tier",j.priority],["Level",j.level],["Role type",j.roleType],["Sector",j.sector]].forEach(function(r){
+[["Tier",j.priority],["Level",j.level],["Role type",j.roleType],["Sector",j.sector],["Work model",j.workModel||"Remote"]].forEach(function(r){
 if(!r[1])return;facts.appendChild(el("div","ik",r[0]));facts.appendChild(el("div",null,r[1]));});
 det.appendChild(facts);
 det.appendChild(fitBlock(j));
@@ -716,41 +828,92 @@ det.appendChild(intelBlock(j));
 det.appendChild(noteBlock(j));
 card.appendChild(det);
 grid.appendChild(card);});
-NOTECHK.forEach(function(p){p[1].hidden=!(p[0].scrollHeight>p[0].clientHeight+1||!p[0].classList.contains("clamp"));});}
+NOTECHK.forEach(function(p){p[1].hidden=!(p[0].scrollHeight>p[0].clientHeight+1||!p[0].classList.contains("clamp"));});
+if(fid){var t=grid.querySelector('[data-fid="'+fid.replace(/"/g,'')+'"]');if(t&&!t.hidden)try{t.focus({preventScroll:true});}catch(e){}}
+updateCmpBar();}
 
+function updateCmpBar(){var n=Object.keys(CMP).length,bar=document.getElementById("cmpbar");if(!bar)return;
+bar.classList.toggle("show",n>0);document.getElementById("cmptext").textContent=n+" role"+(n===1?"":"s")+" selected to compare (max 4)";}
+function clearCompare(){CMP={};renderGrid();}
+function openCompare(){
+var ks=Object.keys(CMP),js=ks.map(function(k){return JOBS.filter(function(j){return jobKey(j)===k;})[0];}).filter(Boolean);
+if(js.length<2){actMsg("Select at least 2 roles to compare");return;}
+var rows=[["Role",function(j){return j.title;}],["Company",function(j){return j.company;}],["Track / level",function(j){return j.track+" - "+(j.level||"");}],["Fit score",function(j){return j.score+" ("+j.priority+")";}],
+["Salary",function(j){return j.salary;}],["Band vs floor",function(j){return (j.salaryMin>=floorOf(j)?"Min clears $"+Math.round(floorOf(j)/1000)+"K":"Min below $"+Math.round(floorOf(j)/1000)+"K floor; max "+(j.salaryMax>=floorOf(j)?"clears":"below")+" it");}],
+["Work model",function(j){return (j.workModel||"Remote")+" - "+j.location;}],["Clearance",function(j){return j.clearance||"None";}],
+["Open for",function(j){var a=daysOld(j.posted);return a===null?"Date not published":a+" days";}],["Last checked",function(j){return j.lastVerified||j.verified||"";}],
+["Leadership",function(j){return j.fit.leadership+"/5";}],["Domain",function(j){return j.fit.domain+"/5";}],["Location fit",function(j){return j.fit.remote+"/5";}],["Comp",function(j){return j.fit.comp+"/5";}],["Industry",function(j){return j.fit.industry+"/5";}]];
+var t=document.createElement("table");t.className="cmptbl";
+rows.forEach(function(r){var tr=document.createElement("tr");var th=document.createElement("th");th.scope="row";th.textContent=r[0];tr.appendChild(th);
+js.forEach(function(j){var td=document.createElement("td");td.textContent=r[1](j);tr.appendChild(td);});t.appendChild(tr);});
+var body=document.getElementById("cmpbody");body.innerHTML="";body.appendChild(t);
+var d=document.getElementById("cmpdlg");if(d.showModal)d.showModal();else d.setAttribute("open","");}
+
+/* active-filter chips + URL hash */
+var FIDS=["q","track","comp","sort","priority","sector","wm","level","role","stage"];
+function renderFilterChips(){
+var box=document.getElementById("filterchips");if(!box)return;box.innerHTML="";
+FIDS.forEach(function(id){var v=val(id);if(!v||(id==="sort"&&v==="score"))return;
+var sel=document.getElementById(id);var lab=id==="q"?"Search: "+v:(sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text:v);
+var c=el("button","fchip",lab+"  x");c.type="button";c.setAttribute("aria-label","Remove filter "+lab);
+c.onclick=function(){document.getElementById(id).value=id==="sort"?"score":"";if(id==="q")document.getElementById("q2").value="";moreLabel();renderGrid();};box.appendChild(c);});}
+var HASHOK=false;
+function syncHash(){if(!HASHOK)return;var p=[];FIDS.forEach(function(id){var v=val(id);if(v&&!(id==="sort"&&v==="score"))p.push(id+"="+encodeURIComponent(v));});
+var h=p.length?"#"+p.join("&"):"";try{history.replaceState(null,"",location.pathname+location.search+h);}catch(e){}}
+function readHash(){var h=location.hash.replace(/^#/,"");if(!h)return;h.split("&").forEach(function(kv){var i=kv.indexOf("=");if(i<1)return;var id=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));
+if(FIDS.indexOf(id)<0)return;var e=document.getElementById(id);if(!e)return;e.value=v;if(e.tagName==="SELECT"&&e.value!==v)e.value="";});
+document.getElementById("q2").value=val("q");if(["priority","sector","wm","level","role","stage"].some(function(id){return val(id);}))toggleMore(true);}
+function fillOptions(id,vals,all){var sel=document.getElementById(id);var cur=sel.value;
+vals.forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v+" ("+JOBS.filter(function(j){return (all(j))===v;}).length+")";sel.appendChild(o);});sel.value=cur;}
+
+function archivedList(){
+var known={};JOBS.forEach(function(j){known[jobKey(j)]=1;});
+var out=[];Object.keys(STATE).forEach(function(k){var r=STATE[k];if(!known[k]&&r&&r.stage&&r.snap){var o={};for(var x in r.snap)o[x]=r.snap[x];o.key=k;o.archived=true;out.push(o);}});
+return out;}
+function trackedJobs(){return JOBS.filter(function(j){return getRec(jobKey(j)).stage;}).concat(archivedList());}
+function pcard(j,col){
+var k=jobKey(j),rec=getRec(k);
+var c=el("div","pcard");
+c.appendChild(el("div","pt",j.title));
+c.appendChild(el("div","pc",j.company));
+c.appendChild(el("div","pm",(j.score!=null?j.score+" fit - ":"")+(j.salary||"")));
+if(j.archived)c.appendChild(el("div","archnote","No longer listed on the board - the posting may be closed or filled. Saved "+(j.savedOn||"")));
+var n=rec.notes;
+if(n)c.appendChild(el("div","pn",n));
+var nr=el("div","nextrow");
+var lab=el("label",null,"Next action ");var inp=document.createElement("input");inp.type="date";inp.value=rec.next||"";inp.setAttribute("aria-label","Next action date for "+j.title);
+inp.onchange=function(){setNext(k,inp.value);};lab.appendChild(inp);nr.appendChild(lab);
+var dl_=daysLeft(rec.next);
+if(rec.next&&dl_!==null&&dl_<0)nr.appendChild(el("span","chip overdue","Overdue "+(-dl_)+" d"));
+else if(rec.next&&dl_===0)nr.appendChild(el("span","chip age-warn","Due today"));
+c.appendChild(nr);
+var mb=el("div","movebar");
+var back=el("button","movebtn","< Back");back.type="button";back.setAttribute("aria-label","Move "+j.title+" back one stage");
+back.onclick=function(){moveStage(k,-1);};
+var fwd=el("button","movebtn","Next >");fwd.type="button";fwd.setAttribute("aria-label","Move "+j.title+" forward one stage");
+fwd.onclick=function(){moveStage(k,1);};
+mb.appendChild(back);mb.appendChild(fwd);
+c.appendChild(mb);
+return c;}
 function renderBoard(){
 var board=document.getElementById("board");board.innerHTML="";
-var tracked=JOBS.filter(function(j){return getRec(jobKey(j)).stage;}).length;
+var all=trackedJobs();
+var live=all.filter(function(j){return !j.archived;}).length,arch=all.length-live;
 document.getElementById("pipecount").textContent=
-tracked+" of "+JOBS.length+" roles are in your pipeline. Use the stage buttons on any card, or the arrows below, to move a role along.";
+live+" of "+JOBS.length+" roles are in your pipeline"+(arch?" (plus "+arch+" no longer listed)":"")+". Use the stage menu on any card, or the arrows below, to move a role along.";
 var pn=document.querySelector("#stat-pipeline .n");
-if(pn)pn.textContent=tracked;
+if(pn)pn.textContent=live;
 var ac=document.getElementById("actcount");
-if(ac)ac.textContent=tracked?(tracked+" role"+(tracked===1?"":"s")+" saved"):"No roles saved yet - click Interested on any role to save it";
+if(ac)ac.textContent=all.length?(all.length+" role"+(all.length===1?"":"s")+" saved"):"No roles saved yet - use Save to pipeline on any role";
 STAGES.forEach(function(s){
 var col=el("div","col");
 var head=el("div","colhead");
 head.appendChild(el("div","colname",STAGE_LABEL[s]));
-var inCol=JOBS.filter(function(j){return getRec(jobKey(j)).stage===s;});
+var inCol=all.filter(function(j){return getRec(jobKey(j)).stage===s;});
 head.appendChild(el("div","colcount",String(inCol.length)));
 col.appendChild(head);
 if(!inCol.length)col.appendChild(el("div","colempty","Nothing here yet"));
-inCol.sort(function(a,b){return b.score-a.score;}).forEach(function(j){
-var c=el("div","pcard");
-c.appendChild(el("div","pt",j.title));
-c.appendChild(el("div","pc",j.company));
-c.appendChild(el("div","pm",j.score+" fit - "+j.salary));
-var n=getRec(jobKey(j)).notes;
-if(n)c.appendChild(el("div","pn",n));
-var mb=el("div","movebar");
-var back=el("button","movebtn","< Back");back.type="button";
-back.onclick=function(){moveStage(jobKey(j),-1);};
-var fwd=el("button","movebtn","Next >");fwd.type="button";
-fwd.onclick=function(){moveStage(jobKey(j),1);};
-mb.appendChild(back);mb.appendChild(fwd);
-c.appendChild(mb);
-col.appendChild(c);
-});
+inCol.sort(function(a,b){var an=getRec(jobKey(a)).next||"9999",bn=getRec(jobKey(b)).next||"9999";return an<bn?-1:an>bn?1:(b.score||0)-(a.score||0);}).forEach(function(j){col.appendChild(pcard(j,s));});
 board.appendChild(col);
 });
 }
@@ -771,19 +934,20 @@ var lineC=css("--line")||"#2a3752";
 Chart.defaults.color=mutedC;
 Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif";
 
-var secs=["Commercial","Healthcare","State Gov","Defense"];
+var secs=[];JOBS.forEach(function(j){if(secs.indexOf(j.sector)<0)secs.push(j.sector);});secs.sort();
+var secCol={"Commercial":"#22c55e","Healthcare":"#2dd4bf","State Gov":"#60a5fa","Defense":"#f97316"};
 var secCounts=secs.map(function(s){return JOBS.filter(function(j){return j.sector===s;}).length;});
 mk("c-sector",{type:"doughnut",
 data:{labels:secs,datasets:[{data:secCounts,
-backgroundColor:["#22c55e","#2dd4bf","#60a5fa","#f97316"],borderWidth:0}]},
+backgroundColor:secs.map(function(x){return secCol[x]||"#94a3b8";}),borderWidth:0}]},
 options:{responsive:true,maintainAspectRatio:false,cutout:"58%",
 plugins:{legend:{position:"right",labels:{boxWidth:12,padding:14}}}}});
 
 var bands=["High 85-100","Medium 75-84","Stretch 65-74"];
 var bandCounts=[
-JOBS.filter(function(j){return j.score>=85;}).length,
-JOBS.filter(function(j){return j.score>=75&&j.score<85;}).length,
-JOBS.filter(function(j){return j.score<75;}).length];
+JOBS.filter(function(j){return priorityOf(j.score)==="High";}).length,
+JOBS.filter(function(j){return priorityOf(j.score)==="Medium";}).length,
+JOBS.filter(function(j){return priorityOf(j.score)==="Stretch";}).length];
 mk("c-score",{type:"bar",
 data:{labels:bands,datasets:[{data:bandCounts,
 backgroundColor:["#22c55e","#eab308","#f97316"],borderRadius:6}]},
@@ -791,38 +955,37 @@ options:{responsive:true,maintainAspectRatio:false,
 plugins:{legend:{display:false}},
 scales:{y:{beginAtZero:true,ticks:{precision:0},grid:{color:lineC}},x:{grid:{display:false}}}}});
 
-var byComp=JOBS.slice().sort(function(a,b){return (b.salaryMax||0)-(a.salaryMax||0);}).slice(0,12);
+var byComp=JOBS.slice().sort(function(a,b){return (b.salaryMax||0)-(a.salaryMax||0);});
+var cw=document.getElementById("c-comp");if(cw&&cw.parentNode)cw.parentNode.style.height=Math.max(270,byComp.length*26+70)+"px";
 var floorLine={id:"floorLine",afterDatasetsDraw:function(c){
 if(!c.scales||!c.scales.x)return;
-var x=c.scales.x.getPixelForValue(225);
-var g=c.ctx;g.save();
-g.strokeStyle="#f97316";g.lineWidth=2;g.setLineDash([5,4]);
-g.beginPath();g.moveTo(x,c.chartArea.top);g.lineTo(x,c.chartArea.bottom);g.stroke();
-g.setLineDash([]);g.fillStyle="#f97316";g.font="bold 10px -apple-system,sans-serif";
-g.textAlign="left";g.fillText("$225K floor",x+4,c.chartArea.top+11);
-g.restore();}};
+var meta=c.getDatasetMeta(0);var g=c.ctx;g.save();
+g.strokeStyle="#f97316";g.lineWidth=2;g.setLineDash([4,3]);
+byComp.forEach(function(j,i){var bar=meta.data[i];if(!bar)return;var x=c.scales.x.getPixelForValue(floorOf(j)/1000);var h=bar.height||18;
+g.beginPath();g.moveTo(x,bar.y-h/2-3);g.lineTo(x,bar.y+h/2+3);g.stroke();});
+g.setLineDash([]);g.restore();}};
 mk("c-comp",{type:"bar",plugins:[floorLine],
-data:{labels:byComp.map(function(j){return j.company;}),
+data:{labels:byComp.map(function(j){var t=j.title.length>22?j.title.slice(0,20)+"..":j.title;return j.company.split(" ")[0]+" - "+t;}),
 datasets:[
 {label:"Band minimum",data:byComp.map(function(j){return (j.salaryMin||0)/1000;}),
-backgroundColor:"#334155",borderRadius:4,stack:"s"},
+backgroundColor:css("--muted")||"#64748b",borderRadius:4,stack:"s"},
 {label:"Band above minimum",data:byComp.map(function(j){return ((j.salaryMax||0)-(j.salaryMin||0))/1000;}),
 backgroundColor:"#38bdf8",borderRadius:4,stack:"s"}]},
 options:{responsive:true,maintainAspectRatio:false,indexAxis:"y",
 plugins:{legend:{position:"bottom",labels:{boxWidth:12}},
 tooltip:{callbacks:{label:function(c){
 var j=byComp[c.dataIndex];
-return j.salary;}}}},
+return j.salary+" (track floor $"+Math.round(floorOf(j)/1000)+"K)";}}}},
 scales:{x:{stacked:true,grid:{color:lineC},ticks:{callback:function(v){return "$"+v+"K";}}},
 y:{stacked:true,grid:{display:false},ticks:{font:{size:11}}}}}});
 
 var dims=["leadership","domain","remote","comp","industry"];
 var avg=dims.map(function(d){
 var t=0,n=0;
-JOBS.forEach(function(j){if(j.fit&&j.fit[d]){t+=j.fit[d];n++;}});
+JOBS.forEach(function(j){if(j.fit&&typeof j.fit[d]==="number"){t+=j.fit[d];n++;}});
 return n?(t/n).toFixed(2):0;});
 mk("c-radar",{type:"radar",
-data:{labels:["Leadership scope","Domain match","Remote confidence","Comp clears floor","Industry transfer"],
+data:{labels:["Leadership scope","Domain match","Location fit","Comp clears floor","Industry transfer"],
 datasets:[{label:"Average across slate",data:avg,
 backgroundColor:"rgba(56,189,248,.22)",borderColor:"#38bdf8",pointBackgroundColor:"#38bdf8",borderWidth:2}]},
 options:{responsive:true,maintainAspectRatio:false,
@@ -831,7 +994,7 @@ scales:{r:{min:0,max:5,ticks:{stepSize:1,backdropColor:"transparent"},
 grid:{color:lineC},angleLines:{color:lineC},pointLabels:{font:{size:11}}}}}});
 
 var funnel=STAGES.map(function(s){
-return JOBS.filter(function(j){return getRec(jobKey(j)).stage===s;}).length;});
+return trackedJobs().filter(function(j){return getRec(jobKey(j)).stage===s;}).length;});
 mk("c-funnel",{type:"bar",
 data:{labels:STAGES.map(function(s){return STAGE_LABEL[s];}),
 datasets:[{data:funnel,
@@ -852,7 +1015,6 @@ scales:{x:{beginAtZero:true,ticks:{precision:0},grid:{color:lineC}},
 y:{grid:{display:false},ticks:{font:{size:11}}}}}});
 }
 
-function trackedJobs(){return JOBS.filter(function(j){return getRec(jobKey(j)).stage;});}
 function actMsg(s){var m=document.getElementById("actmsg");if(!m)return;m.textContent=s;
 setTimeout(function(){if(m)m.textContent="";},4000);}
 function pipeText(full){
@@ -873,7 +1035,7 @@ o.push("");});
 o.push("Dashboard: https://skillzstacking2023.github.io/tiffany-job-search/");
 return o.join("\n");}
 function noneTracked(){
-alert("Nothing tracked yet.\n\nOpen the Opportunities tab and click a stage button - Interested, Applied, Screening, Interview or Offer - on any role you want to keep.");}
+alert("Nothing tracked yet.\n\nOpen the Opportunities tab and use Save to pipeline on any role you want to keep.");}
 function emailPipeline(){
 var L=trackedJobs();if(!L.length){noneTracked();return;}
 var subj="My tracked roles - "+L.length+" role"+(L.length===1?"":"s");
@@ -883,7 +1045,8 @@ var mk=function(b){return "https://mail.google.com/mail/?view=cm&fs=1&su="+encod
 var u=mk(body);
 if(u.length>7000)u=mk(pipeText(false));
 if(u.length>7000){copyPipeline();actMsg("Too many to fit in a compose link - copied to your clipboard instead");return;}
-var w=window.open(u,"_blank","noopener");
+var w=window.open(u,"_blank");
+if(w){try{w.opener=null;}catch(e){}}
 if(!w){actMsg("Popup blocked - the list is copied to your clipboard instead");return;}
 actMsg("Opened Gmail with "+L.length+" role"+(L.length===1?"":"s")+" - also copied to your clipboard");}
 function fallbackCopy(txt){
@@ -903,17 +1066,25 @@ function dl(text,name,mime){
 var b=new Blob([text],{type:mime});var a=document.createElement("a");
 a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();
 setTimeout(function(){URL.revokeObjectURL(a.href);document.body.removeChild(a);},600);}
-function today(){return new Date().toISOString().slice(0,10);}
+function today(){var n=new Date();function z(x){return (x<10?"0":"")+x;}return n.getFullYear()+"-"+z(n.getMonth()+1)+"-"+z(n.getDate());}
 function downloadCSV(){
 var L=trackedJobs();
 if(!L.length){noneTracked();return;}
 var head=["Stage","Title","Company","Sector","Level","Location","Salary","Band min","Band max","Fit score","Priority","Closes","URL","My notes"];
 var rows=[head.map(csvEsc).join(",")];
 L.forEach(function(j){var r=getRec(jobKey(j));
-rows.push([STAGE_LABEL[r.stage]||"",j.title,j.company,j.sector,j.level,j.location,j.salary,
+rows.push([STAGE_LABEL[r.stage]||"",j.title+(j.archived?" (no longer listed)":""),j.company,j.sector,j.level,j.location,j.salary,
 j.salaryMin||"",j.salaryMax||"",j.score,j.priority,j.expiresOn||"",j.url,r.notes||""].map(csvEsc).join(","));});
 dl(rows.join("\n"),"tiffany-tracked-roles-"+today()+".csv","text/csv;charset=utf-8");
 actMsg("Downloaded "+L.length+" role"+(L.length===1?"":"s")+" as CSV");}
+function downloadListCSV(){
+var L=sortJobs(JOBS.filter(matches));
+if(!L.length){actMsg("Nothing to export with the current filters");return;}
+var head=["Track","Title","Company","Sector","Level","Location","Work model","Clearance","Salary","Band min","Band max","Fit score","Priority","Posted","Last checked","URL"];
+var rows=[head.map(csvEsc).join(",")];
+L.forEach(function(j){rows.push([j.track,j.title,j.company,j.sector,j.level,j.location,j.workModel||"Remote",j.clearance||"None",j.salary,j.salaryMin||"",j.salaryMax||"",j.score,j.priority,j.posted||"",j.lastVerified||j.verified||"",j.url].map(csvEsc).join(","));});
+dl(rows.join("\n"),"tiffany-roles-"+today()+".csv","text/csv;charset=utf-8");
+actMsg("Exported "+L.length+" role"+(L.length===1?"":"s")+" as CSV");}
 function backupJSON(){
 dl(JSON.stringify({saved:today(),state:STATE},null,2),"tiffany-pipeline-backup-"+today()+".json","application/json");
 actMsg("Backup downloaded - keep it somewhere safe");}
@@ -926,22 +1097,31 @@ try{
 var d=JSON.parse(rd.result);
 var st=(d&&d.state)?d.state:d;
 if(!st||typeof st!=="object"||Array.isArray(st))throw new Error("that file is not a pipeline backup");
-STATE=st;saveState();renderAll();
+var clean={},n=0;Object.keys(st).forEach(function(k){var r=st[k];if(!r||typeof r!=="object")return;
+var o={stage:(STAGES.indexOf(r.stage)>=0)?r.stage:"",notes:typeof r.notes==="string"?r.notes.slice(0,5000):"",next:/^\d{4}-\d{2}-\d{2}$/.test(r.next||"")?r.next:""};
+if(r.snap&&typeof r.snap==="object")o.snap=r.snap;
+if(o.stage||o.notes||o.next){clean[k]=o;n++;}});
+if(!n)throw new Error("no pipeline entries found in that file");
+if(!confirm("Replace your current pipeline ("+Object.keys(STATE).length+" entries) with the backup ("+n+" entries)?"))return;
+STATE=clean;saveState();renderAll();
 actMsg("Pipeline restored from "+((d&&d.saved)?d.saved:"backup"));
 }catch(e){alert("Could not read that backup file.\n\n"+e.message);}};
 rd.onerror=function(){alert("Could not read that file.");};
 rd.readAsText(f);ev.target.value="";}
-function renderAll(){renderGrid();renderBoard();renderCharts();}
+function analyticsOpen(){return document.getElementById("p-analytics").classList.contains("active");}
+function renderAll(){renderGrid();renderBoard();if(analyticsOpen())renderCharts();}
 
 
 var WN_KEY="tt_wn_seen";
 var WHATSNEW=[
+{id:"2026-11-02-a-review",date:"November 2, 2026",title:"Review fixes and a better pipeline",
+ body:"Search now matches only real text (typing remote no longer matches everything). Each card shows a priority chip, whether the band minimum clears the track floor, how long the posting has been open and when it was last checked. Filters are saved in the page address and show as removable chips. You can tick Compare on up to four roles, set a Next action date on pipeline cards (red when overdue), and export the filtered list to CSV or print it. Roles you track that later leave the board now stay on your Pipeline under No longer listed. Press / to search."},
 {id:"2026-09-30-a-refresh",date:"September 30, 2026",title:"A cleaner, faster dashboard",
  body:"Roles now start near the top of the page, with four tiles instead of nine and the less-used filters behind More filters. Each card has a Save to pipeline menu, and Gap analysis and Tailor resume links that build a ready-made prompt for whichever AI assistant you use - attach your resume there and paste. Roles added since your last visit get a New badge, and a search bar stays pinned at the top as you scroll. The page also follows your device's light or dark setting."},
-{"id":"2026-08-14-e-tracks","date":"August 14, 2026","title":"Two tracks: Executive and PM / RMF","body":"The search now covers Program and Project Management, RMF leadership and practitioner roles, and FedRAMP, StateRAMP and CMMC compliance alongside the original Senior Director and VP roles. Use the Both tracks filter to switch between them. Where a role is a step down in scope, the card says so plainly."},{"id":"2026-08-14-d-save","date":"August 14, 2026","title":"Save roles and email them to yourself","body":"Click any stage button on a role to save it. The bar under the tabs lets you email the list to yourself, copy it, download a CSV, or back it up so it survives clearing your browser."},{"id":"2026-08-14-c-guide","date":"August 14, 2026","title":"New How to use tab","body":"A plain-language guide to reading a card, tracking applications, and what the dashboard does and does not know."},{"id":"2026-08-14-b-verified","date":"August 14, 2026","title":"Every role re-checked against its live posting","body":"Roles are now opened and verified for remote status, seniority and published salary before they appear. Anything that fails is removed rather than shown with a lower score. Cards show real posting dates and close dates."},{"id":"2026-08-14-a-comp","date":"August 14, 2026","title":"Honest compensation display","body":"The salary tile now counts roles where even the bottom of the published band clears the floor, and any card whose band starts below it says so in amber."}];
-function wnUnseen(){var s=localStorage.getItem(WN_KEY)||"";return WHATSNEW.filter(function(w){return w.id>s;});}
+{"id":"2026-08-14-e-tracks","date":"August 14, 2026","title":"Two tracks: Executive and PM / RMF","body":"The search now covers Program and Project Management, RMF leadership and practitioner roles, and FedRAMP, StateRAMP and CMMC compliance alongside the original Senior Director and VP roles. Use the Both tracks filter to switch between them. Where a role is a step down in scope, the card says so plainly."},{"id":"2026-08-14-d-save","date":"August 14, 2026","title":"Save roles and email them to yourself","body":"Use Save to pipeline on a role to track it. The bar under the tabs lets you email the list to yourself, copy it, download a CSV, or back it up so it survives clearing your browser."},{"id":"2026-08-14-c-guide","date":"August 14, 2026","title":"New How to use tab","body":"A plain-language guide to reading a card, tracking applications, and what the dashboard does and does not know."},{"id":"2026-08-14-b-verified","date":"August 14, 2026","title":"Every role re-checked against its live posting","body":"Roles are now opened and verified for work model, level and published salary before they appear. Anything that fails is removed rather than shown with a lower score. Cards show real posting dates."},{"id":"2026-08-14-a-comp","date":"August 14, 2026","title":"Honest compensation display","body":"The salary tile now counts roles where even the bottom of the published band clears the floor, and any card whose band starts below it says so in amber."}];
+function wnUnseen(){var s=store.get(WN_KEY)||"";return WHATSNEW.filter(function(w){return w.id>s;});}
 function updateWnDot(){var b=document.getElementById("wnbtn");if(!b)return;var n=wnUnseen().length;b.textContent=n?("What's new ("+n+")"):"What's new";}
-function dismissWhatsNew(){localStorage.setItem(WN_KEY,WHATSNEW.map(function(w){return w.id;}).sort().pop());var b=document.getElementById("whatsnew");if(b)b.style.display="none";updateWnDot();}
+function dismissWhatsNew(){store.set(WN_KEY,WHATSNEW.map(function(w){return w.id;}).sort().pop());var b=document.getElementById("whatsnew");if(b)b.style.display="none";updateWnDot();}
 function renderWhatsNew(showAll){
 var box=document.getElementById("whatsnew");if(!box)return;
 var items=showAll?WHATSNEW:wnUnseen();
@@ -964,14 +1144,9 @@ updateWnDot();}
 function buildStats(){
 var s=document.getElementById("stats");s.innerHTML="";
 function stat(n,l){var d=el("div","stat");d.appendChild(el("div","n",n));d.appendChild(el("div","l",l));return d;}
-var high=JOBS.filter(function(j){return j.priority==="High";}).length;
-var vp=JOBS.filter(function(j){return j.level==="VP";}).length;
-var noClr=JOBS.filter(function(j){return !j.clearance||j.clearance==="None";}).length;
-var execN=JOBS.filter(function(j){return j.track==="Executive";}).length;
-var pmN=JOBS.filter(function(j){return j.track!=="Executive";}).length;
-var floorSafe=JOBS.filter(function(j){return (j.salaryMin||0)>=(j.track==="Executive"?225000:175000);}).length;
+var high=JOBS.filter(function(j){return priorityOf(j.score)==="High";}).length;
+var floorSafe=JOBS.filter(function(j){return (j.salaryMin||0)>=floorOf(j);}).length;
 var tracked=JOBS.filter(function(j){return getRec(jobKey(j)).stage;}).length;
-var closing=JOBS.filter(isUrgent).length;
 s.appendChild(stat(JOBS.length,"Verified roles"));
 s.appendChild(stat(high,"High fit"));
 var fs=stat(floorSafe,"Min clears floor");
@@ -984,15 +1159,16 @@ s.appendChild(pt);
 var roles=[];
 JOBS.forEach(function(j){if(roles.indexOf(j.roleType)<0)roles.push(j.roleType);});
 roles.sort();
-var rsel=document.getElementById("role");
-roles.forEach(function(r){var o=document.createElement("option");o.value=r;o.textContent=r;rsel.appendChild(o);});
+fillOptions("role",roles,function(j){return j.roleType;});
+var secs=[];JOBS.forEach(function(j){if(secs.indexOf(j.sector)<0)secs.push(j.sector);});secs.sort();fillOptions("sector",secs,function(j){return j.sector;});
+var lv=[];JOBS.forEach(function(j){if(j.level&&lv.indexOf(j.level)<0)lv.push(j.level);});lv.sort();fillOptions("level",lv,function(j){return j.level;});
 }
 
 function showTab(btn){
 var mb=document.getElementById("minibar");if(mb){mb.classList.remove("show");mb.setAttribute("aria-hidden","true");}
 var tabs=document.querySelectorAll(".tab");
-for(var i=0;i<tabs.length;i++)tabs[i].classList.remove("active");
-btn.classList.add("active");
+for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active");tabs[i].setAttribute("aria-selected","false");}
+btn.classList.add("active");btn.setAttribute("aria-selected","true");
 var panels=document.querySelectorAll(".panel");
 for(var k=0;k<panels.length;k++)panels[k].classList.remove("active");
 document.getElementById(btn.getAttribute("data-panel")).classList.add("active");
@@ -1017,18 +1193,20 @@ function toggleTheme(){
 var cur=document.documentElement.getAttribute("data-theme")||"dark";
 var next=cur==="light"?"dark":"light";
 document.documentElement.setAttribute("data-theme",next);
-localStorage.setItem("tt_theme",next);
-document.getElementById("theme-btn").textContent=next==="light"?"Dark Mode":"Light Mode";
-renderCharts();
+store.set("tt_theme",next);
+var tb=document.getElementById("theme-btn");tb.textContent=next==="light"?"Dark Mode":"Light Mode";tb.setAttribute("aria-pressed",next==="light"?"true":"false");
+if(analyticsOpen())renderCharts();
 }
-function initTheme(){
+function updateThemeBtn(){
 var cur=document.documentElement.getAttribute("data-theme")||"dark";
-document.getElementById("theme-btn").textContent=cur==="light"?"Dark Mode":"Light Mode";
-/* until she picks a theme, follow the device setting as it changes */
+var tb=document.getElementById("theme-btn");tb.textContent=cur==="light"?"Dark Mode":"Light Mode";tb.setAttribute("aria-pressed",cur==="light"?"true":"false");}
+function initTheme(){
+updateThemeBtn();
+/* until a theme is chosen by hand, follow the device setting as it changes */
 if(window.matchMedia)matchMedia("(prefers-color-scheme: light)").addEventListener("change",function(e){
-if(localStorage.getItem("tt_theme"))return;
+if(store.get("tt_theme"))return;
 document.documentElement.setAttribute("data-theme",e.matches?"light":"dark");
-initTheme();renderCharts();});}
+updateThemeBtn();if(analyticsOpen())renderCharts();});}
 /* Gap analysis / tailored resume: builds a prompt from this card's public job data.
    Nothing is sent anywhere; it is pasted into the job seeker's own AI assistant chat with their resume. */
 function aiJobBlock(j){
@@ -1081,73 +1259,44 @@ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeT
 initTheme();
 renderWhatsNew(false);
 
+document.addEventListener("keydown",function(e){
+var tag=(e.target&&e.target.tagName)||"";
+if(e.key==="/"&&tag!=="INPUT"&&tag!=="TEXTAREA"&&tag!=="SELECT"){e.preventDefault();var t=document.querySelector(".tab");showTab(t);var q=document.getElementById("q");q.focus();q.select();}
+else if(e.key==="Escape"&&e.target&&(e.target.id==="q"||e.target.id==="q2")&&e.target.value){document.getElementById("q").value="";document.getElementById("q2").value="";renderGrid();}});
+var tabEls=document.querySelectorAll(".tab");
+[].forEach.call(tabEls,function(t,i){t.addEventListener("keydown",function(e){var n=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(!n)return;var x=tabEls[(i+n+tabEls.length)%tabEls.length];x.focus();showTab(x);});});
+
 fetch("jobs.json?v="+Date.now(),{cache:"no-store"})
-.then(function(r){return r.json();})
+.then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
 .then(function(data){
+if(!Array.isArray(data))throw new Error("unexpected data format");
 JOBS=data.sort(function(a,b){return b.score-a.score;});
-migrateOld();
+JOBS.forEach(function(j){j.priority=priorityOf(j.score);});
 markNewJobs();
 buildStats();
-var vdates=[];
-JOBS.forEach(function(j){if(j.verified&&vdates.indexOf(j.verified)<0)vdates.push(j.verified);});
-vdates.sort().reverse();
+var counts={},oldest=null,newest=null;
+JOBS.forEach(function(j){var v=j.lastVerified||j.verified;if(!v)return;counts[v]=(counts[v]||0)+1;if(!oldest||v<oldest)oldest=v;if(!newest||v>newest)newest=v;});
 var urgent=JOBS.filter(isUrgent).length;
-document.getElementById("updated").textContent=
-"Last verified against live postings: "+(vdates[0]||"not recorded")+
-" - "+JOBS.length+" roles, every one re-checked for remote status, level and published salary"+
-(urgent?" - "+urgent+" closing within 7 days":"");
+var desc=newest?(newest===oldest?JOBS.length+" roles, all checked "+newest:counts[newest]+" of "+JOBS.length+" roles checked "+newest+"; oldest check "+oldest):JOBS.length+" roles";
+document.getElementById("updated").textContent="Latest refresh: "+desc+". Each role was read against its live posting for work model, level and published salary."+(urgent?" "+urgent+" closing within 7 days.":"");
+readHash();moreLabel();HASHOK=true;
 renderAll();
 initMinibar();
-["q","track","priority","sector","wm","level","role","comp","stage","sort"].forEach(function(id){
+if(/[?&]debug\b/.test(location.search))selfCheck();
+FIDS.forEach(function(id){
 document.getElementById(id).addEventListener(id==="q"?"input":"change",function(){moreLabel();renderGrid();});});
 })
 .catch(function(e){
-document.getElementById("grid").innerHTML=
-'<div class="empty">Could not load jobs.json - '+e.message+'</div>';});
+var g=document.getElementById("grid");g.innerHTML="";var d=el("div","empty","Could not load the job list ("+e.message+"). Reload the page to try again.");g.appendChild(d);});
+
+function selfCheck(){var bad=[];JOBS.forEach(function(j){var k=j.key;
+if(j.salaryMax<floorOf(j))bad.push(k+": salaryMax below track floor");
+if(!j.workModel&&!/remote/i.test(j.location))bad.push(k+": no workModel");
+var v=daysOld(j.lastVerified);if(v===null||v>3)bad.push(k+": stale or missing lastVerified");
+if(j.verified!==j.lastVerified)bad.push(k+": verified != lastVerified");
+if(/\b(she|her|hers|herself)\b/i.test(j.notes))bad.push(k+": third-person pronoun");});
+console.log(bad.length?"Self-check issues:\n"+bad.join("\n"):"Self-check passed ("+JOBS.length+" roles)");}
 </script>
 
-<!-- verified-badge-v1 : renders lastVerified ("Confirmed open ...") on each job card. Additive and fail-safe: if jobs.json has no lastVerified field, nothing is drawn. -->
-<script>
-(function(){
-  var MARK="verified-badge-v1";
-  function info(d){
-    if(!/^\d{4}-\d{2}-\d{2}$/.test(d||""))return null;
-    var t=new Date(d+"T00:00:00"), n=new Date();
-    n=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-    var days=Math.round((n-t)/864e5);
-    if(days<0)days=0;
-    var lbl=days===0?"today":days===1?"yesterday":days+" days ago";
-    return {lbl:lbl,days:days};
-  }
-  function norm(u){try{return new URL(u,location.href).href.replace(/[#?].*$/,"");}catch(e){return u||"";}}
-  function paint(){
-    fetch("jobs.json?cb="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(jobs){
-      if(!Array.isArray(jobs))return;
-      var map={};
-      jobs.forEach(function(j){ var v=j.lastVerified||j.verified; if(j.url&&v) map[norm(j.url)]=v; });
-      if(!Object.keys(map).length)return;
-      document.querySelectorAll(".job").forEach(function(card){
-        var a=card.querySelector("a.apply")||card.querySelector("a[href]");
-        if(!a)return;
-        var f=info(map[norm(a.getAttribute("href"))]);
-        var old=card.querySelector("."+MARK);
-        if(!f){ if(old)old.remove(); return; }
-        var s=old||document.createElement("span");
-        s.className=MARK;
-        s.textContent=(f.days>3?"Needs recheck - last confirmed ":"Confirmed open ")+f.lbl;
-        s.title="Date this posting was last opened and confirmed still accepting applications.";
-        s.className=MARK+" vbadge"+(f.days>3?" stale":"");
-        if(!old&&a.parentNode)a.parentNode.insertBefore(s,a);
-      });
-    }).catch(function(){});
-  }
-  function boot(){ setTimeout(paint,1000); setTimeout(paint,3000);
-    try{ var g=document.querySelector("#grid,.grid");
-      if(g)new MutationObserver(function(){clearTimeout(window.__vbT);window.__vbT=setTimeout(paint,250);}).observe(g,{childList:true});
-    }catch(e){}
-  }
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot();
-})();
-</script>
 </body>
 </html>
