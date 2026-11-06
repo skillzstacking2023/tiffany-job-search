@@ -141,6 +141,53 @@
     "postedDate": "2026-10-27"
   },
   {
+    "id": 4,
+    "key": "caci--deputy-program-manager--jessup-md",
+    "track": "PM / RMF",
+    "score": 74,
+    "title": "Deputy Program Manager",
+    "company": "CACI",
+    "sector": "Defense",
+    "level": "Senior / Lead",
+    "location": "Jessup, MD",
+    "workModel": "Onsite - cleared site",
+    "salary": "$109,800-$241,600 (CACI posted range)",
+    "salaryMin": 109800,
+    "salaryMax": 241600,
+    "roleType": "Program Management",
+    "priority": "Stretch",
+    "clearance": "Active Required",
+    "url": "https://caci.wd1.myworkdayjobs.com/External/job/Jessup-MD-US/Deputy-Program-Manager_332382-1",
+    "notes": "Deputy PM accountable for cost, schedule, technical performance and customer relationships on a DoD/IC program group - reports to a Program/Portfolio Director, so a step down in managed scope from a division lead. Onsite in Jessup MD; up to 25% local travel. Only the top of the posted range clears the track floor - your active clearance is a differentiator.",
+    "posted": "2026-11-04",
+    "postedDate": "2026-11-04",
+    "expiresOn": "",
+    "verified": "2026-11-06",
+    "lastVerified": "2026-11-06",
+    "verifiedNote": "Read the CACI Workday CXS posting 2026-11-06: canApply true, posted 2026-11-04, onsite in Jessup MD, travel up to 25% local, posted range $109,800-$241,600.",
+    "fit": {
+      "leadership": 3,
+      "domain": 4,
+      "remote": 3,
+      "comp": 3,
+      "industry": 4
+    },
+    "fitNotes": {
+      "leadership": "Deputy role reporting to a Program/Portfolio Director - program leadership but below division-lead scope.",
+      "domain": "National-security program execution, cost/schedule/performance and customer management line up with your program and capture-to-execution background.",
+      "remote": "Posting states onsite in Jessup MD with up to 25% local travel - cleared-site, commutable from Ellicott City.",
+      "comp": "Posted range $109,800-$241,600; the maximum clears the track floor but the range is wide.",
+      "industry": "Defense integrator program work on DoD and Intelligence Community customers."
+    },
+    "intel": {
+      "size": "Not determined",
+      "hq": "Reston, VA",
+      "remotePolicy": "Posting states onsite in Jessup MD",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
+  },
+  {
     "key": "zscaler--security-compliance-program-manager--remote-us",
     "track": "PM / RMF",
     "score": 72,
@@ -159,7 +206,7 @@
     "notes": "Security-compliance program role that is customer-facing (deals, events, enablement) rather than audit-back-office; maximum of the band sits exactly at the track floor and it is an individual-contributor seat, so a clear step down in managed scope for you. Federal/SLED experience and clearance eligibility are listed as pluses, and your active clearance is a differentiator",
     "posted": "2026-10-07",
     "expiresOn": "",
-    "verifiedNote": "Greenhouse job API 2026-10-30: req live, Remote - USA, body says remote role, range $140,000-$175,000 unchanged. Re-confirmed 2026-11-02: still listed on the live board/posting page. Re-confirmed 2026-11-03: still on the live Greenhouse board.",
+    "verifiedNote": "Greenhouse job API 2026-10-30: req live, Remote - USA, body says remote role, range $140,000-$175,000 unchanged. Re-confirmed 2026-11-02: still listed on the live board/posting page. Re-confirmed 2026-11-03: still on the live Greenhouse board. Re-confirmed 2026-11-06 on the live Greenhouse board index (still listed, Remote - USA).",
     "fit": {
       "leadership": 2,
       "domain": 4,
@@ -181,9 +228,9 @@
       "news": "Not determined",
       "levelHistory": "Req first published 2026-10-07"
     },
-    "verified": "2026-11-04",
-    "lastVerified": "2026-11-04",
-    "id": 4,
+    "verified": "2026-11-06",
+    "lastVerified": "2026-11-06",
+    "id": 5,
     "postedDate": "2026-10-07"
   }
 ]
