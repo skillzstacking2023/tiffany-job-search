@@ -47,7 +47,54 @@
     "postedDate": "2026-10-27"
   },
   {
+    "key": "gdit--it-program-manager--chantilly-va",
+    "score": 76,
+    "title": "IT Program Manager - TS/SCI with Polygraph",
+    "company": "General Dynamics Information Technology",
+    "location": "Chantilly, VA",
+    "workModel": "Onsite - cleared site",
+    "salary": "$182,882-$247,428 (GDIT posted range)",
+    "salaryMin": 182882,
+    "salaryMax": 247428,
+    "priority": "Medium",
+    "clearance": "Active Required",
+    "url": "https://gdit.wd5.myworkdayjobs.com/External_Career_Site/job/USA-VA-Chantilly/IT-Program-Manager---TS-SCI-with-Polygraph_RQ225303",
+    "notes": "Program-director-level seat leading a team that provides development and O&M support for a portfolio of business applications, with contract performance and delivery accountability. Onsite in Chantilly VA with under 10% travel. A step down in managed scope from a division lead; your active clearance is a differentiator. The whole posted band clears the track floor.",
+    "posted": "2026-11-02",
+    "postedDate": "2026-11-02",
+    "verifiedNote": "Read the GDIT Workday posting 2026-11-07: canApply true, posted 2026-11-02, telecommuting option stated as Onsite, work location Chantilly VA, travel under 10%, posted range $182,882-$247,428, 7+ years experience.",
+    "fit": {
+      "leadership": 4,
+      "domain": 4,
+      "remote": 3,
+      "comp": 4,
+      "industry": 4
+    },
+    "fitNotes": {
+      "leadership": "Program Director responsibilities over a delivery team and contract performance - below division-lead scope.",
+      "domain": "IT program delivery and O&M for a business-application portfolio matches your program and delivery background.",
+      "remote": "Posting states telecommuting option Onsite at Chantilly VA, under 10% travel - cleared-site, within reach of Ellicott City.",
+      "comp": "Posted range $182,882-$247,428; the bottom of the band clears the PM / RMF track floor.",
+      "industry": "Defense integrator IT program work."
+    },
     "id": 2,
+    "track": "PM / RMF",
+    "sector": "Defense",
+    "level": "Senior / Lead",
+    "roleType": "Program Management",
+    "expiresOn": "",
+    "verified": "2026-11-07",
+    "lastVerified": "2026-11-07",
+    "intel": {
+      "size": "Not determined",
+      "hq": "Falls Church, VA",
+      "remotePolicy": "Posting states Onsite in Chantilly VA",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
+  },
+  {
+    "id": 3,
     "key": "caci--deputy-program-manager--jessup-md",
     "track": "PM / RMF",
     "score": 74,
@@ -94,7 +141,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "key": "northrop-grumman--manager-programs-3--baltimore-md",
     "track": "PM / RMF",
     "score": 68,
@@ -136,6 +183,53 @@
       "size": "Not determined",
       "hq": "Falls Church, VA",
       "remotePolicy": "Posting states full-time onsite in Baltimore MD",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
+  },
+  {
+    "key": "leidos--senior-program-manager-undersea-systems--remote-us",
+    "score": 66,
+    "title": "Senior Program Manager",
+    "company": "Leidos",
+    "location": "Remote/Teleworker - US",
+    "workModel": "Remote",
+    "salary": "$154,050-$278,475 (Leidos posted range)",
+    "salaryMin": 154050,
+    "salaryMax": 278475,
+    "priority": "Stretch",
+    "clearance": "Eligible/Sponsor",
+    "url": "https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Senior-Program-Manager_R-00196153",
+    "notes": "Leads a multidisciplinary engineering team in Leidos's Undersea Systems Division (remote vehicles, maritime sensors, subsea telemetry, ISR). Program-management seat, but the domain is maritime systems engineering, not IT or cyber, so expect a real domain gap. Band starts below the PM / RMF track floor, so the top of the range is not guaranteed.",
+    "posted": "2026-11-04",
+    "postedDate": "2026-11-04",
+    "verifiedNote": "Read the Leidos Workday posting 2026-11-07: canApply true, posted 2026-11-04, location listed as Remote/Teleworker US, posted range $154,050-$278,475, the posting asks for ability to obtain a clearance.",
+    "fit": {
+      "leadership": 3,
+      "domain": 2,
+      "remote": 5,
+      "comp": 3,
+      "industry": 2
+    },
+    "fitNotes": {
+      "leadership": "Senior program manager leading a multidisciplinary project team - below division-lead scope.",
+      "domain": "Maritime sensors and subsea systems engineering - outside your cyber risk and IT program background.",
+      "remote": "Posting lists the location as Remote/Teleworker US; no state restriction stated.",
+      "comp": "Posted range $154,050-$278,475; the bottom of the band is below the track floor.",
+      "industry": "Defense technology, but a different engineering domain."
+    },
+    "id": 5,
+    "track": "PM / RMF",
+    "sector": "Defense",
+    "level": "Senior / Lead",
+    "roleType": "Program Management",
+    "expiresOn": "",
+    "verified": "2026-11-07",
+    "lastVerified": "2026-11-07",
+    "intel": {
+      "size": "Not determined",
+      "hq": "Reston, VA",
+      "remotePolicy": "Posting lists Remote/Teleworker US",
       "news": "Not determined",
       "levelHistory": "Not determined"
     }
