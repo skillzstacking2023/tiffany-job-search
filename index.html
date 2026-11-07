@@ -29,9 +29,9 @@ h1{margin:0 0 6px;font-size:29px;letter-spacing:-.02em}
 .theme-btn{flex:none;background:var(--card);border:1px solid var(--line);color:var(--text);
 padding:9px 15px;border-radius:10px;font-size:13px;font-weight:600;cursor:pointer}
 .theme-btn:hover{border-color:var(--accent)}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px;max-width:760px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 16px;min-width:0}
-.stat .n{font-size:23px;font-weight:800;letter-spacing:-.02em}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:18px;max-width:900px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 14px;min-width:0}
+.stat .n{font-variant-numeric:tabular-nums;font-size:21px;font-weight:800;letter-spacing:-.02em}
 .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
 .updated{color:var(--muted);font-size:12px;margin-top:12px}
 
@@ -89,7 +89,7 @@ color:var(--text);border:1px solid var(--line);font-weight:600}
 [data-theme="light"] .chip.lvl{background:#f3e8ff;border-color:#9333ea;color:#581c87}
 [data-theme="light"] .chip.trk.exec{background:#e0e7ff;border-color:#4f46e5;color:#312e81}
 [data-theme="light"] .chip.trk.pmrmf{background:#fef3c7;border-color:#d97706;color:#78350f}
-[data-theme="light"] .floorwarn{color:#c2410c}
+[data-theme="light"] .floorwarn{color:var(--muted)}
 .vbadge{display:inline-block;font-size:12px;line-height:1.4;margin:0 8px 0 0;padding:2px 7px;border-radius:999px;white-space:nowrap;vertical-align:middle;background:#14532d55;color:#86efac}
 .vbadge.stale{background:#7c2d1255;color:#fdba74;font-weight:600}
 [data-theme="light"] .vbadge{background:#dcfce7;color:#14532d}
@@ -109,7 +109,7 @@ color:var(--text);border:1px solid var(--line);font-weight:600}
 .pri.Stretch{background:#431407;color:#fdba74}
 .salary{color:var(--text);font-size:13.5px;font-weight:600}
 .notes{color:var(--muted);font-size:13px}
-.floorwarn{font-size:12px;color:#fdba74;font-weight:600}
+.floorwarn{font-size:12px;color:var(--muted);font-weight:500}
 .actbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);
 border:1px solid var(--accent);border-radius:12px;padding:12px 15px;margin:16px 0 2px}
 .actcount{font-size:13px;font-weight:700;margin-right:4px}
@@ -758,16 +758,14 @@ var card=el("div","job"+(rec.stage?" st-"+rec.stage:""));card.setAttribute("data
 var row=el("div","row");
 var left=el("div");
 var tt=el("h2","title",j.title);tt.style.fontSize="16.5px";tt.style.margin="0";left.appendChild(tt);
-left.appendChild(el("div","company",j.company));
+left.appendChild(el("div","company",j.company+(j.location?"  -  "+j.location:"")));
 row.appendChild(left);var rg=ring(j.score);rg.setAttribute("role","img");rg.setAttribute("aria-label","Fit score "+j.score+" of 100 - "+j.priority);rg.title=j.priority+" fit";
 row.appendChild(rg);card.appendChild(row);
 
 var b=el("div","badges");
 if(NEWJOBS[k])b.appendChild(el("span","chip newjob","New"));
-b.appendChild(el("span","chip pri-"+j.priority,j.priority+" fit"));
 b.appendChild(el("span","chip trk"+(j.track==="Executive"?" exec":" pmrmf"),j.track));
-b.appendChild(el("span","chip remote",j.location));
-if(j.workModel&&j.workModel!=="Remote")b.appendChild(el("span","chip clr-active",j.workModel));
+b.appendChild(el("span","chip remote",j.workModel||"Remote"));
 if(j.clearance==="Active Required")b.appendChild(el("span","chip clr-active","Active clearance required"));
 else if(j.clearance==="Eligible/Sponsor")b.appendChild(el("span","chip clr-elig","Clearance eligible"));
 card.appendChild(b);
@@ -775,7 +773,7 @@ card.appendChild(b);
 card.appendChild(el("div","salary",j.salary));
 var jf=floorOf(j);
 if((j.salaryMin||0)<jf)card.appendChild(el("div","floorwarn",
-"Band starts at $"+Math.round((j.salaryMin||0)/1000)+"K - below the $"+Math.round(jf/1000)+"K floor for this track, so the top of this band is not guaranteed"));
+"Band starts at $"+Math.round((j.salaryMin||0)/1000)+"K, below the $"+Math.round(jf/1000)+"K track floor"));
 var nt=el("div","notes"+(OPEN["n:"+k]?"":" clamp"),j.notes);card.appendChild(nt);
 var nm=el("button","linkbtn morebtn",OPEN["n:"+k]?"Less":"More");nm.type="button";nm.hidden=true;nm.setAttribute("data-fid","m:"+k);nm.setAttribute("aria-expanded",OPEN["n:"+k]?"true":"false");
 nm.onclick=(function(kk){return function(){OPEN["n:"+kk]=!OPEN["n:"+kk];renderGrid();};})(k);
@@ -787,7 +785,7 @@ var oa=daysOld(j.posted);
 if(oa!==null&&oa>=0){var oc=oa>180?"age-old":oa>90?"age-warn":"";var os=oa>=60?Math.round(oa/30)+" mo":oa+" d";
 st.appendChild(chipEl(oc,"Open "+os,oa>90?"Long-open requisitions are more likely to be stale or filled internally":"Days since the posting date"));}
 var vd=j.lastVerified||j.verified,va=daysOld(vd);
-if(va!==null){st.appendChild(chipEl(va>3?"age-warn":"okfloor",va>3?"Needs recheck - "+agoText(va):"Checked "+agoText(va),"Date this posting was last opened and confirmed still accepting applications ("+vd+")"));}
+if(va!==null){st.appendChild(chipEl(va>3?"":"okfloor","Checked "+agoText(va),"Date this posting was last opened and confirmed still accepting applications ("+vd+")"));}
 card.appendChild(st);
 card.appendChild(el("div","agel"+(isUrgent(j)?" urgent":""),ageLine(j)));
 
@@ -1147,12 +1145,12 @@ function stat(n,l){var d=el("div","stat");d.appendChild(el("div","n",n));d.appen
 var high=JOBS.filter(function(j){return priorityOf(j.score)==="High";}).length;
 var floorSafe=JOBS.filter(function(j){return (j.salaryMin||0)>=floorOf(j);}).length;
 var tracked=JOBS.filter(function(j){return getRec(jobKey(j)).stage;}).length;
+var nEx=JOBS.filter(function(j){return j.track==="Executive";}).length;
+var top=JOBS.reduce(function(m,j){return Math.max(m,j.salaryMax||0);},0);
 s.appendChild(stat(JOBS.length,"Verified roles"));
-s.appendChild(stat(high,"High fit"));
-var fs=stat(floorSafe,"Min clears floor");
-fs.title="Roles where even the BOTTOM of the published band clears the floor for that track - $225K Executive, $175K PM / RMF";
-if(floorSafe<JOBS.length)fs.style.borderColor="#eab308";
-s.appendChild(fs);
+s.appendChild(stat(nEx,"Executive"));
+s.appendChild(stat(JOBS.length-nEx,"PM / RMF"));
+if(top)s.appendChild(stat("$"+Math.round(top/1000)+"K","Top band"));
 var pt=stat(tracked,"In pipeline");
 pt.id="stat-pipeline";
 s.appendChild(pt);
@@ -1257,7 +1255,7 @@ function fb(){var ta=document.getElementById("aitext");ta.focus();ta.select();
 try{document.execCommand("copy");ok();}catch(e){m.textContent="Select the text above and copy it (Cmd+C / Ctrl+C).";}}
 if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(ok,fb);else fb();}
 initTheme();
-renderWhatsNew(false);
+updateWnDot();
 
 document.addEventListener("keydown",function(e){
 var tag=(e.target&&e.target.tagName)||"";
