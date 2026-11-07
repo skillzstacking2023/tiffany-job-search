@@ -1,5 +1,52 @@
 [
   {
+    "key": "parsons--portfolio-director-air-and-space-force-programs--remote-us",
+    "score": 78,
+    "title": "Portfolio Director, Air and Space Force Programs",
+    "company": "Parsons",
+    "location": "Remote - US",
+    "workModel": "Remote",
+    "level": "Director",
+    "roleType": "Program Management",
+    "salary": "$157,500-$283,500 (Parsons posted range)",
+    "salaryMin": 157500,
+    "salaryMax": 283500,
+    "priority": "Medium",
+    "clearance": "None",
+    "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---Remote-Any-Location/Portfolio-Director--Air-and-Space-Force-Programs_R185128",
+    "notes": "Strategic and operational leadership over a portfolio of Air Force and Space Force programs, including IDIQ, task-order and multi-award vehicles - performance, client relationships, compliance and growth. Asks for 20 years managing federal defense programs or portfolios and up to 50% travel. Band starts below the Executive track floor, so the top of the range is not guaranteed. Portfolio scope fits your background; the customer base is Air and Space Force rather than IC.",
+    "posted": "2026-11-03",
+    "postedDate": "2026-11-03",
+    "verifiedNote": "Read the Parsons Workday posting 2026-11-07: canApply true, posted 2026-11-03, location Remote (Any Location), posted range $157,500-$283,500, security clearance requirement stated as None, travel up to 50%, 20 years experience.",
+    "fit": {
+      "leadership": 5,
+      "domain": 3,
+      "remote": 5,
+      "comp": 3,
+      "industry": 4
+    },
+    "fitNotes": {
+      "leadership": "Director-level ownership of a multi-contract portfolio, client relationships and resource alignment - close to the scope you hold.",
+      "domain": "Federal defense portfolio and contract-vehicle management; the posting is not cyber-specific.",
+      "remote": "Posting lists the location as Remote (Any Location); it also states travel up to 50%.",
+      "comp": "Posted range $157,500-$283,500; the bottom of the band is below the Executive track floor.",
+      "industry": "Defense services for Air Force and Space Force customers."
+    },
+    "id": 1,
+    "track": "Executive",
+    "sector": "Defense",
+    "expiresOn": "",
+    "verified": "2026-11-07",
+    "lastVerified": "2026-11-07",
+    "intel": {
+      "size": "Not determined",
+      "hq": "Centreville, VA",
+      "remotePolicy": "Posting lists Remote (Any Location)",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
+  },
+  {
     "track": "Executive",
     "score": 76,
     "title": "Director, Strategic Capture",
@@ -43,8 +90,55 @@
       "news": "Not determined",
       "levelHistory": "Not determined"
     },
-    "id": 1,
+    "id": 2,
     "postedDate": "2026-10-27"
+  },
+  {
+    "key": "saic--director-business-development-usg--reston-va",
+    "score": 66,
+    "title": "Director, Business Development - USG",
+    "company": "SAIC",
+    "location": "Reston, VA",
+    "workModel": "Remote",
+    "level": "Director",
+    "roleType": "Growth / Capture",
+    "salary": "$200,001-$240,000 (SAIC target range)",
+    "salaryMin": 200001,
+    "salaryMax": 240000,
+    "priority": "Stretch",
+    "clearance": "Active Required",
+    "url": "https://jobs.saic.com/jobs/18445299-director-business-development-usg",
+    "notes": "Drives revenue growth across U.S. Government accounts for defense and intelligence customers. The posting calls it a high-impact individual-contributor role with a path toward building a team, so it is Director in title but not a people-leadership seat - a clear step down from your current scope. Up to 25% travel. Your active clearance is a differentiator.",
+    "posted": "2026-11-03",
+    "postedDate": "2026-11-03",
+    "verifiedNote": "Read the SAIC posting 2026-11-07: posted Nov 3 2026, location Reston VA, potential for remote work listed as Remote, travel 25%, target range $200,001-$240,000, described as an individual-contributor role.",
+    "fit": {
+      "leadership": 2,
+      "domain": 3,
+      "remote": 4,
+      "comp": 4,
+      "industry": 4
+    },
+    "fitNotes": {
+      "leadership": "Individual-contributor business-development role with a stated path toward building a team.",
+      "domain": "Growth and capture for defense and intelligence customers draws on your capture-to-execution experience.",
+      "remote": "Posting lists Reston VA with potential for remote work marked Remote; the posting does not describe further telework terms.",
+      "comp": "Target range $200,001-$240,000; the top clears the Executive track floor but the bottom does not.",
+      "industry": "Mission integrator serving defense and intelligence customers."
+    },
+    "id": 3,
+    "track": "Executive",
+    "sector": "Defense",
+    "expiresOn": "",
+    "verified": "2026-11-07",
+    "lastVerified": "2026-11-07",
+    "intel": {
+      "size": "Not determined",
+      "hq": "Reston, VA",
+      "remotePolicy": "Posting lists potential for remote work: Remote",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
   },
   {
     "key": "gdit--it-program-manager--chantilly-va",
@@ -77,7 +171,7 @@
       "comp": "Posted range $182,882-$247,428; the bottom of the band clears the PM / RMF track floor.",
       "industry": "Defense integrator IT program work."
     },
-    "id": 2,
+    "id": 4,
     "track": "PM / RMF",
     "sector": "Defense",
     "level": "Senior / Lead",
@@ -94,7 +188,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 5,
     "key": "caci--deputy-program-manager--jessup-md",
     "track": "PM / RMF",
     "score": 74,
@@ -141,7 +235,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 6,
     "key": "northrop-grumman--manager-programs-3--baltimore-md",
     "track": "PM / RMF",
     "score": 68,
@@ -188,6 +282,53 @@
     }
   },
   {
+    "key": "parsons--6g-security-program-manager--remote-us",
+    "score": 67,
+    "title": "6G Security Program Manager",
+    "company": "Parsons",
+    "location": "Remote - US (meetings in Northern VA / DC / MD)",
+    "workModel": "Remote",
+    "level": "Senior / Lead",
+    "roleType": "Program Management",
+    "salary": "$157,500-$283,500 (Parsons posted range)",
+    "salaryMin": 157500,
+    "salaryMax": 283500,
+    "priority": "Stretch",
+    "clearance": "Active Required",
+    "url": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---Remote-Any-Location/XMLNAME-6G-Security-Program-Manager_R187859",
+    "notes": "Technical program manager for research and development on advanced wireless and 6G security for Department of War customers - full lifecycle management and direct client and technical-director contact. Remote, but the posting requires attending weekly meetings in Northern Virginia, DC or Maryland. Wireless and R&D domain is a gap against your cyber risk background; band starts below the PM / RMF track floor. Your active clearance is a differentiator.",
+    "posted": "2026-11-05",
+    "postedDate": "2026-11-05",
+    "verifiedNote": "Read the Parsons Workday posting 2026-11-07: canApply true, posted 2026-11-05, location Remote (Any Location), must attend weekly meetings in Northern Virginia, DC or MD, posted range $157,500-$283,500.",
+    "fit": {
+      "leadership": 3,
+      "domain": 3,
+      "remote": 4,
+      "comp": 3,
+      "industry": 3
+    },
+    "fitNotes": {
+      "leadership": "Technical program manager working with clients and technical directors - below division-lead scope.",
+      "domain": "Security program management, but focused on wireless and 6G R&D rather than RMF or IT services.",
+      "remote": "Posting lists Remote (Any Location) and states weekly meetings in Northern Virginia, Washington DC and or MD.",
+      "comp": "Posted range $157,500-$283,500; the bottom of the band is below the track floor.",
+      "industry": "Defense R&D for Department of War customers."
+    },
+    "id": 7,
+    "track": "PM / RMF",
+    "sector": "Defense",
+    "expiresOn": "",
+    "verified": "2026-11-07",
+    "lastVerified": "2026-11-07",
+    "intel": {
+      "size": "Not determined",
+      "hq": "Centreville, VA",
+      "remotePolicy": "Posting lists Remote (Any Location); weekly meetings in the DC area",
+      "news": "Not determined",
+      "levelHistory": "Not determined"
+    }
+  },
+  {
     "key": "leidos--senior-program-manager-undersea-systems--remote-us",
     "score": 66,
     "title": "Senior Program Manager",
@@ -218,7 +359,7 @@
       "comp": "Posted range $154,050-$278,475; the bottom of the band is below the track floor.",
       "industry": "Defense technology, but a different engineering domain."
     },
-    "id": 5,
+    "id": 8,
     "track": "PM / RMF",
     "sector": "Defense",
     "level": "Senior / Lead",
